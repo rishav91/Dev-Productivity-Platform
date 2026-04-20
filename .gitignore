@@ -24,6 +24,7 @@ node_modules/
 .next/
 frontend/.next/
 frontend/node_modules/
+frontend/.env*.local
 
 # Misc
 .DS_Store
