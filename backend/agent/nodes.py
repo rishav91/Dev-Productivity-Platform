@@ -1,11 +1,6 @@
 from __future__ import annotations
 
 import json
-import os
-import time
-from typing import Any
-
-import anthropic
 import asyncpg
 from langsmith import traceable
 
@@ -22,6 +17,7 @@ from backend.agent.prompts import (
 )
 from backend.agent.state import AgentState
 from backend.context.assembly import assemble
+from backend.providers.llm import call_with_tool
 from backend.schemas.models import (
     ContextBundle,
     DivergenceSignals,
@@ -29,16 +25,6 @@ from backend.schemas.models import (
     InsightPayload,
     SourceType,
 )
-
-MODEL = "claude-sonnet-4-20250514"
-_anthropic: anthropic.AsyncAnthropic | None = None
-
-
-def _get_anthropic() -> anthropic.AsyncAnthropic:
-    global _anthropic
-    if _anthropic is None:
-        _anthropic = anthropic.AsyncAnthropic(api_key=os.environ["ANTHROPIC_API_KEY"])
-    return _anthropic
 
 
 def _get_db_conn() -> asyncpg.Connection:
@@ -106,32 +92,23 @@ async def hypothesize_node(state: AgentState) -> AgentState:
         context_json=json.dumps(bundle.model_dump(mode="json"), indent=2),
     )
 
-    client = _get_anthropic()
-    t0 = time.monotonic()
+    try:
+        _, args, cost, elapsed_ms = await call_with_tool(
+            system=HYPOTHESIZE_SYSTEM,
+            user=user_msg,
+            tool=EXTRACT_DIVERGENCE_TOOL,
+            max_tokens=1024,
+            temperature=0.1,
+        )
+    except RuntimeError as e:
+        return {**state, "error": f"hypothesize_node: {e}"}
 
-    resp = await client.messages.create(
-        model=MODEL,
-        max_tokens=1024,
-        temperature=0.1,
-        system=HYPOTHESIZE_SYSTEM,
-        tools=[EXTRACT_DIVERGENCE_TOOL],
-        tool_choice={"type": "any"},
-        messages=[{"role": "user", "content": user_msg}],
-    )
-
-    elapsed_ms = int((time.monotonic() - t0) * 1000)
-    input_cost, output_cost = _estimate_cost(resp.usage)
-
-    tool_use = next((b for b in resp.content if b.type == "tool_use"), None)
-    if tool_use is None or tool_use.name != "extract_divergence_signals":
-        return {**state, "error": "hypothesize_node: Claude did not call extract_divergence_signals"}
-
-    signals = DivergenceSignals.model_validate(tool_use.input)
+    signals = DivergenceSignals.model_validate(args)
 
     return {
         **state,
         "divergence_signals": signals,
-        "cost_usd": state.get("cost_usd", 0.0) + input_cost + output_cost,
+        "cost_usd": state.get("cost_usd", 0.0) + cost,
         "latency_ms": state.get("latency_ms", 0) + elapsed_ms,
     }
 
@@ -156,27 +133,16 @@ async def synthesize_and_gate_node(state: AgentState) -> AgentState:
         slack_json=json.dumps(slack.model_dump(mode="json") if slack else None, indent=2),
     )
 
-    client = _get_anthropic()
-    t0 = time.monotonic()
-
-    resp = await client.messages.create(
-        model=MODEL,
-        max_tokens=2048,
-        temperature=0.2,
-        system=SYNTHESIZE_SYSTEM,
-        tools=[PRODUCE_INSIGHT_TOOL],
-        tool_choice={"type": "any"},
-        messages=[{"role": "user", "content": user_msg}],
-    )
-
-    elapsed_ms = int((time.monotonic() - t0) * 1000)
-    input_cost, output_cost = _estimate_cost(resp.usage)
-
-    tool_use = next((b for b in resp.content if b.type == "tool_use"), None)
-    if tool_use is None or tool_use.name != "produce_insight":
-        return {**state, "error": "synthesize_node: Claude did not call produce_insight"}
-
-    raw: dict[str, Any] = tool_use.input
+    try:
+        _, raw, cost, elapsed_ms = await call_with_tool(
+            system=SYNTHESIZE_SYSTEM,
+            user=user_msg,
+            tool=PRODUCE_INSIGHT_TOOL,
+            max_tokens=2048,
+            temperature=0.2,
+        )
+    except RuntimeError as e:
+        return {**state, "error": f"synthesize_node: {e}"}
 
     # Parse evidence items
     evidence = [EvidenceItem.model_validate(e) for e in raw.get("evidence", [])]
@@ -208,14 +174,6 @@ async def synthesize_and_gate_node(state: AgentState) -> AgentState:
     return {
         **state,
         "insight": insight,
-        "cost_usd": state.get("cost_usd", 0.0) + input_cost + output_cost,
+        "cost_usd": state.get("cost_usd", 0.0) + cost,
         "latency_ms": state.get("latency_ms", 0) + elapsed_ms,
     }
-
-
-def _estimate_cost(usage: Any) -> tuple[float, float]:
-    """Estimate USD cost from Anthropic usage object (claude-sonnet-4 pricing)."""
-    input_tokens = getattr(usage, "input_tokens", 0)
-    output_tokens = getattr(usage, "output_tokens", 0)
-    # claude-sonnet-4-20250514: $3/MTok input, $15/MTok output
-    return (input_tokens * 3e-6, output_tokens * 15e-6)

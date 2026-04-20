@@ -1,29 +1,49 @@
 from __future__ import annotations
 
+import asyncio
 import json
-import os
 from datetime import datetime, timedelta, timezone
 from typing import Any
 
 import asyncpg
-from openai import AsyncOpenAI
+import litellm
 
+from backend.providers.config import get_embed_model
 from backend.schemas.models import InsightPayload, PRData
 
-EMBED_MODEL = "text-embedding-3-small"
-_oai_client: AsyncOpenAI | None = None
-
-
-def _client() -> AsyncOpenAI:
-    global _oai_client
-    if _oai_client is None:
-        _oai_client = AsyncOpenAI(api_key=os.environ["OPENAI_API_KEY"])
-    return _oai_client
+# sentence-transformers model cache — populated lazily when EMBED_PROVIDER=local
+_local_st_model: Any = None
+_local_st_model_name: str | None = None
 
 
 async def embed(text: str) -> list[float]:
-    resp = await _client().embeddings.create(input=text, model=EMBED_MODEL)
-    return resp.data[0].embedding
+    """Embed text using the configured provider (openai / ollama / local)."""
+    spec = get_embed_model()  # e.g. "openai/text-embedding-3-small" or "local/all-MiniLM-L6-v2"
+
+    if spec.startswith("local/"):
+        model_name = spec.removeprefix("local/")
+        return await asyncio.get_event_loop().run_in_executor(None, _embed_local, model_name, text)
+
+    resp = await litellm.aembedding(model=spec, input=text)
+    return resp.data[0]["embedding"]
+
+
+def _embed_local(model_name: str, text: str) -> list[float]:
+    """sentence-transformers inference — runs in a thread pool to avoid blocking the event loop."""
+    global _local_st_model, _local_st_model_name
+    try:
+        from sentence_transformers import SentenceTransformer  # type: ignore[import]
+    except ImportError as exc:
+        raise RuntimeError(
+            "sentence-transformers not installed. "
+            "Run: pip install sentence-transformers"
+        ) from exc
+
+    if _local_st_model is None or _local_st_model_name != model_name:
+        _local_st_model = SentenceTransformer(model_name)
+        _local_st_model_name = model_name
+
+    return _local_st_model.encode(text).tolist()
 
 
 def _vec_literal(embedding: list[float]) -> str:
