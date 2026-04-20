@@ -12,7 +12,7 @@ from fastapi.middleware.cors import CORSMiddleware
 load_dotenv()
 
 from backend.agent.graph import run_analysis
-from backend.schemas.models import AnalysisRequest, ArtifactSnapshot
+from backend.schemas.models import AnalysisRequest, ArtifactSnapshot, RunSummary
 
 _pool: asyncpg.Pool | None = None
 
@@ -67,6 +67,27 @@ async def analyze(request: AnalysisRequest) -> ArtifactSnapshot:
         )
 
     return snapshot
+
+
+@app.get("/runs", response_model=list[RunSummary])
+async def list_runs(page: int = 1, page_size: int = 10) -> list[RunSummary]:
+    """Paginated list of analysis runs, newest first."""
+    offset = (max(page, 1) - 1) * page_size
+    async with _get_pool().acquire() as conn:
+        rows = await conn.fetch(
+            """
+            SELECT run_id, pr_id, ticket_id, status, created_at, completed_at,
+                   insight->>'blocker_type' AS blocker_type,
+                   (insight->>'severity')::int AS severity,
+                   insight->>'status' AS insight_status
+            FROM analysis_runs
+            ORDER BY created_at DESC
+            LIMIT $1 OFFSET $2
+            """,
+            page_size,
+            offset,
+        )
+    return [RunSummary(**dict(r)) for r in rows]
 
 
 @app.get("/runs/{run_id}", response_model=ArtifactSnapshot)

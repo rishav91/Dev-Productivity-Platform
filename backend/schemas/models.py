@@ -122,6 +122,18 @@ class ArtifactSnapshot(BaseModel):
     langsmith_trace_url: str | None = None
 
 
+class RunSummary(BaseModel):
+    run_id: str
+    pr_id: str
+    ticket_id: str
+    status: str
+    created_at: datetime
+    completed_at: datetime | None = None
+    blocker_type: str | None = None
+    severity: int | None = None
+    insight_status: str | None = None
+
+
 # ---------------------------------------------------------------------------
 # SignalExtractor ABC — phase 1 implementations are fixture-backed
 # Phase 2 stubs: RepoHistoryExtractor, WebhookEventExtractor
