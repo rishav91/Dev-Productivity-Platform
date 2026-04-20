@@ -58,6 +58,7 @@ MANDATORY RULES — violating any of these is a failure:
    - If no baseline (history sparse): cap severity at 2
 9. Upgrade severity by 1 (max 5) when recurrence_count >= 3 — this is a structural pattern.
 10. missing_sources must list any source types not provided (e.g. ["slack_thread"] if no Slack).
+11. blocker_type is REQUIRED when status="insight". Never return status="insight" with blocker_type=null or omitted.
 """
 
 SYNTHESIZE_USER = """Produce an InsightPayload by calling produce_insight.
@@ -141,7 +142,10 @@ PRODUCE_INSIGHT_TOOL = {
                 "items": {
                     "type": "object",
                     "properties": {
-                        "source_type": {"type": "string"},
+                        "source_type": {
+                            "type": "string",
+                            "enum": ["github_pr", "jira_ticket", "slack_thread", "repo_history", "webhook_event"],
+                        },
                         "source_id": {"type": "string"},
                         "quote": {"type": "string"},
                         "rationale": {"type": "string"},
@@ -155,7 +159,7 @@ PRODUCE_INSIGHT_TOOL = {
             "baseline_cycle_p85_days": {"type": ["number", "null"]},
         },
         "required": [
-            "status", "summary", "recommended_actions", "evidence",
+            "status", "blocker_type", "summary", "recommended_actions", "evidence",
             "missing_sources", "confidence", "recurrence_count", "baseline_cycle_p85_days",
         ],
     },
