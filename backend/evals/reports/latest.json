@@ -1,0 +1,194 @@
+{
+  "run_at": "2026-04-20T12:33:04.361088+00:00",
+  "total_cases": 6,
+  "passed": 2,
+  "pass_rate": 0.333,
+  "metrics": {
+    "blocker_type_accuracy": 1.0,
+    "false_positive_rate": 0.0,
+    "false_negative_rate": 0.0,
+    "severity_within_1_rate": 0.5,
+    "abstention_correct_rate": 1.0,
+    "owner_precision": 1.0
+  },
+  "targets": {
+    "blocker_type_accuracy": 0.8,
+    "false_positive_rate": 0.15,
+    "false_negative_rate": 0.2,
+    "severity_within_1_rate": 0.85,
+    "abstention_correct_rate": 0.9,
+    "owner_precision": 0.75
+  },
+  "targets_met": {
+    "blocker_type_accuracy": true,
+    "false_positive_rate": true,
+    "false_negative_rate": true,
+    "severity_within_1_rate": false,
+    "abstention_correct_rate": true,
+    "owner_precision": true
+  },
+  "per_case": [
+    {
+      "case_id": "eval_001",
+      "scenario_id": "001",
+      "description": "Review bottleneck in payments/ \u2014 eng_bob blocking",
+      "passed": false,
+      "status_match": true,
+      "blocker_type_match": true,
+      "severity_within_1": false,
+      "owner_match": true,
+      "recurrence_ok": true,
+      "abstention_correct": true,
+      "confidence": 0.8,
+      "expected": {
+        "status": "insight",
+        "blocker_type": "review_bottleneck",
+        "severity_min": 3,
+        "owner": "eng_bob"
+      },
+      "actual": {
+        "status": "insight",
+        "blocker_type": "review_bottleneck",
+        "severity": 5,
+        "owner": "eng_bob",
+        "recurrence_count": 4
+      },
+      "notes": "eng_bob p85 cycle is 6.2 days, PR at 9 days is above p85. Slack explicitly mentions 'waiting on Bob'."
+    },
+    {
+      "case_id": "eval_002",
+      "scenario_id": "002",
+      "description": "Scope creep in api/ \u2014 847 lines vs 'small change' estimate",
+      "passed": true,
+      "status_match": true,
+      "blocker_type_match": true,
+      "severity_within_1": true,
+      "owner_match": true,
+      "recurrence_ok": true,
+      "abstention_correct": true,
+      "confidence": 0.8,
+      "expected": {
+        "status": "insight",
+        "blocker_type": "scope_creep",
+        "severity_min": 3,
+        "owner": "eng_frank"
+      },
+      "actual": {
+        "status": "insight",
+        "blocker_type": "scope_creep",
+        "severity": 2,
+        "owner": "eng_frank",
+        "recurrence_count": 2
+      },
+      "notes": "Ticket says '2-3 hours / small change', PR diff is 847 lines. No Slack."
+    },
+    {
+      "case_id": "eval_003",
+      "scenario_id": "003",
+      "description": "No issue \u2014 PR merged in 2 days, ticket done",
+      "passed": false,
+      "status_match": true,
+      "blocker_type_match": true,
+      "severity_within_1": false,
+      "owner_match": true,
+      "recurrence_ok": true,
+      "abstention_correct": true,
+      "confidence": 1.0,
+      "expected": {
+        "status": "no_issue",
+        "blocker_type": null,
+        "severity_min": null,
+        "owner": null
+      },
+      "actual": {
+        "status": "no_issue",
+        "blocker_type": "none",
+        "severity": 1,
+        "owner": "eng_carol",
+        "recurrence_count": 0
+      },
+      "notes": "Dashboard PR, 2 days, merged, ticket closed. No signals."
+    },
+    {
+      "case_id": "eval_004",
+      "scenario_id": "004",
+      "description": "Dependency block in infra/ \u2014 waiting on networking team",
+      "passed": true,
+      "status_match": true,
+      "blocker_type_match": true,
+      "severity_within_1": true,
+      "owner_match": true,
+      "recurrence_ok": true,
+      "abstention_correct": true,
+      "confidence": 0.9,
+      "expected": {
+        "status": "insight",
+        "blocker_type": "dependency_block",
+        "severity_min": 2,
+        "owner": null
+      },
+      "actual": {
+        "status": "insight",
+        "blocker_type": "dependency_block",
+        "severity": 2,
+        "owner": "eng_dave",
+        "recurrence_count": 1
+      },
+      "notes": "Ticket status=Blocked, Slack mentions 'next week earliest'."
+    },
+    {
+      "case_id": "eval_005",
+      "scenario_id": "005",
+      "description": "Unclear requirements in auth/ \u2014 TBD on isolation approach",
+      "passed": false,
+      "status_match": true,
+      "blocker_type_match": true,
+      "severity_within_1": false,
+      "owner_match": true,
+      "recurrence_ok": true,
+      "abstention_correct": true,
+      "confidence": 0.8,
+      "expected": {
+        "status": "insight",
+        "blocker_type": "unclear_requirements",
+        "severity_min": 2,
+        "owner": null
+      },
+      "actual": {
+        "status": "insight",
+        "blocker_type": "unclear_requirements",
+        "severity": 4,
+        "owner": "eng_bob",
+        "recurrence_count": 4
+      },
+      "notes": "Ticket description says 'TBD on isolation approach', reviewer also flags vagueness."
+    },
+    {
+      "case_id": "eval_006",
+      "scenario_id": "006",
+      "description": "Trivial change \u2014 no issue expected",
+      "passed": false,
+      "status_match": true,
+      "blocker_type_match": true,
+      "severity_within_1": false,
+      "owner_match": true,
+      "recurrence_ok": true,
+      "abstention_correct": true,
+      "confidence": 0.8,
+      "expected": {
+        "status": "no_issue",
+        "blocker_type": null,
+        "severity_min": null,
+        "owner": null
+      },
+      "actual": {
+        "status": "no_issue",
+        "blocker_type": "none",
+        "severity": 1,
+        "owner": "eng_alice",
+        "recurrence_count": 2
+      },
+      "notes": "3-line config change, 1 day open, no review comments, no Slack."
+    }
+  ]
+}
