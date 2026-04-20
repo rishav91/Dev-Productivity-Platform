@@ -60,7 +60,7 @@ CREATE INDEX IF NOT EXISTS idx_pr_history_created ON pr_history (created_at DESC
 CREATE TABLE IF NOT EXISTS insight_history (
     insight_id      TEXT PRIMARY KEY,
     component       TEXT NOT NULL,
-    blocker_type    TEXT NOT NULL,
+    blocker_type    TEXT,          -- NULL for status='no_issue' or 'insufficient_evidence'
     severity        INTEGER,
     summary         TEXT NOT NULL,
     confidence      NUMERIC(4, 3) NOT NULL,
