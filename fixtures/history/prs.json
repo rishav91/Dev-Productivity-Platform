@@ -1,0 +1,5349 @@
+[
+  {
+    "pr_id": "PR-1000",
+    "title": "Fix payment processor retry logic",
+    "author": "eng_alice",
+    "changed_files": [
+      "payments/tests/test_processor.py"
+    ],
+    "diff_chunks": [
+      "# diff chunk for payments/tests/test_processor.py"
+    ],
+    "review_comments": [
+      "Needs security review before merge"
+    ],
+    "created_at": "2025-11-30T00:00:00+00:00",
+    "days_open": 2,
+    "diff_line_count": 314,
+    "_component": "payments",
+    "_reviewer": "eng_bob",
+    "_cycle_days": 1.74
+  },
+  {
+    "pr_id": "PR-1001",
+    "title": "Refactor payment models for new schema",
+    "author": "eng_alice",
+    "changed_files": [
+      "payments/tests/test_processor.py",
+      "payments/utils.py"
+    ],
+    "diff_chunks": [
+      "# diff chunk for payments/tests/test_processor.py",
+      "# diff chunk for payments/utils.py"
+    ],
+    "review_comments": [
+      "Needs security review before merge"
+    ],
+    "created_at": "2026-01-01T00:00:00+00:00",
+    "days_open": 1,
+    "diff_line_count": 179,
+    "_component": "payments",
+    "_reviewer": "eng_bob",
+    "_cycle_days": 0.67
+  },
+  {
+    "pr_id": "PR-1002",
+    "title": "Refactor payment models for new schema",
+    "author": "eng_bob",
+    "changed_files": [
+      "payments/models.py",
+      "payments/processor.py"
+    ],
+    "diff_chunks": [
+      "# diff chunk for payments/models.py",
+      "# diff chunk for payments/processor.py"
+    ],
+    "review_comments": [
+      "@eng_alice can you take a look at this?",
+      "Needs security review before merge",
+      "LGTM, minor nits inline"
+    ],
+    "created_at": "2026-03-26T00:00:00+00:00",
+    "days_open": 8,
+    "diff_line_count": 342,
+    "_component": "payments",
+    "_reviewer": "eng_alice",
+    "_cycle_days": 7.78
+  },
+  {
+    "pr_id": "PR-1003",
+    "title": "Update Kubernetes deployment config",
+    "author": "eng_carol",
+    "changed_files": [
+      "infra/deploy.yml",
+      "infra/terraform/main.tf",
+      "infra/scripts/migrate.sh",
+      "infra/k8s/deployment.yaml"
+    ],
+    "diff_chunks": [
+      "# diff chunk for infra/deploy.yml",
+      "# diff chunk for infra/terraform/main.tf",
+      "# diff chunk for infra/scripts/migrate.sh",
+      "# diff chunk for infra/k8s/deployment.yaml"
+    ],
+    "review_comments": [],
+    "created_at": "2025-11-22T00:00:00+00:00",
+    "days_open": 4,
+    "diff_line_count": 474,
+    "_component": "infra",
+    "_reviewer": "eng_dave",
+    "_cycle_days": 3.93
+  },
+  {
+    "pr_id": "PR-1004",
+    "title": "Refactor permissions middleware",
+    "author": "eng_carol",
+    "changed_files": [
+      "auth/models.py",
+      "auth/permissions.py",
+      "auth/tokens.py"
+    ],
+    "diff_chunks": [
+      "# diff chunk for auth/models.py",
+      "# diff chunk for auth/permissions.py",
+      "# diff chunk for auth/tokens.py"
+    ],
+    "review_comments": [
+      "LGTM, minor nits inline"
+    ],
+    "created_at": "2026-01-14T00:00:00+00:00",
+    "days_open": 1,
+    "diff_line_count": 989,
+    "_component": "auth",
+    "_reviewer": "eng_dave",
+    "_cycle_days": 0.5
+  },
+  {
+    "pr_id": "PR-1005",
+    "title": "Add webhook signature validation",
+    "author": "eng_eve",
+    "changed_files": [
+      "payments/validators.py",
+      "payments/tests/test_processor.py"
+    ],
+    "diff_chunks": [
+      "# diff chunk for payments/validators.py",
+      "# diff chunk for payments/tests/test_processor.py"
+    ],
+    "review_comments": [
+      "Needs security review before merge"
+    ],
+    "created_at": "2026-02-08T00:00:00+00:00",
+    "days_open": 2,
+    "diff_line_count": 573,
+    "_component": "payments",
+    "_reviewer": "eng_carol",
+    "_cycle_days": 2.16
+  },
+  {
+    "pr_id": "PR-1006",
+    "title": "Update serializers for v2 schema",
+    "author": "eng_alice",
+    "changed_files": [
+      "api/routes.py",
+      "api/serializers.py",
+      "api/pagination.py"
+    ],
+    "diff_chunks": [
+      "# diff chunk for api/routes.py",
+      "# diff chunk for api/serializers.py",
+      "# diff chunk for api/pagination.py"
+    ],
+    "review_comments": [],
+    "created_at": "2026-01-28T00:00:00+00:00",
+    "days_open": 2,
+    "diff_line_count": 58,
+    "_component": "api",
+    "_reviewer": "eng_frank",
+    "_cycle_days": 1.6
+  },
+  {
+    "pr_id": "PR-1007",
+    "title": "Fix filter state bug",
+    "author": "eng_bob",
+    "changed_files": [
+      "dashboard/tests/test_views.py",
+      "dashboard/filters.py",
+      "dashboard/charts.py"
+    ],
+    "diff_chunks": [
+      "# diff chunk for dashboard/tests/test_views.py",
+      "# diff chunk for dashboard/filters.py",
+      "# diff chunk for dashboard/charts.py"
+    ],
+    "review_comments": [
+      "@eng_carol can you take a look at this?"
+    ],
+    "created_at": "2026-01-16T00:00:00+00:00",
+    "days_open": 6,
+    "diff_line_count": 113,
+    "_component": "dashboard",
+    "_reviewer": "eng_carol",
+    "_cycle_days": 5.54
+  },
+  {
+    "pr_id": "PR-1008",
+    "title": "Refactor deploy pipeline",
+    "author": "eng_dave",
+    "changed_files": [
+      "infra/scripts/migrate.sh",
+      "infra/deploy.yml"
+    ],
+    "diff_chunks": [
+      "# diff chunk for infra/scripts/migrate.sh",
+      "# diff chunk for infra/deploy.yml"
+    ],
+    "review_comments": [],
+    "created_at": "2026-01-10T00:00:00+00:00",
+    "days_open": 3,
+    "diff_line_count": 62,
+    "_component": "infra",
+    "_reviewer": "eng_eve",
+    "_cycle_days": 3.08
+  },
+  {
+    "pr_id": "PR-1009",
+    "title": "Fix Terraform variable references",
+    "author": "eng_carol",
+    "changed_files": [
+      "infra/monitoring/alerts.yaml"
+    ],
+    "diff_chunks": [
+      "# diff chunk for infra/monitoring/alerts.yaml"
+    ],
+    "review_comments": [
+      "LGTM, minor nits inline"
+    ],
+    "created_at": "2026-02-09T00:00:00+00:00",
+    "days_open": 2,
+    "diff_line_count": 1338,
+    "_component": "infra",
+    "_reviewer": "eng_alice",
+    "_cycle_days": 1.78
+  },
+  {
+    "pr_id": "PR-1010",
+    "title": "Fix filter state bug",
+    "author": "eng_bob",
+    "changed_files": [
+      "dashboard/views.py",
+      "dashboard/filters.py"
+    ],
+    "diff_chunks": [
+      "# diff chunk for dashboard/views.py",
+      "# diff chunk for dashboard/filters.py"
+    ],
+    "review_comments": [
+      "@eng_dave can you take a look at this?"
+    ],
+    "created_at": "2026-02-01T00:00:00+00:00",
+    "days_open": 8,
+    "diff_line_count": 117,
+    "_component": "dashboard",
+    "_reviewer": "eng_dave",
+    "_cycle_days": 8.05
+  },
+  {
+    "pr_id": "PR-1011",
+    "title": "Refactor permissions middleware",
+    "author": "eng_carol",
+    "changed_files": [
+      "auth/oauth.py"
+    ],
+    "diff_chunks": [
+      "# diff chunk for auth/oauth.py"
+    ],
+    "review_comments": [
+      "LGTM, minor nits inline"
+    ],
+    "created_at": "2026-01-26T00:00:00+00:00",
+    "days_open": 4,
+    "diff_line_count": 598,
+    "_component": "auth",
+    "_reviewer": "eng_dave",
+    "_cycle_days": 3.73
+  },
+  {
+    "pr_id": "PR-1012",
+    "title": "Update serializers for v2 schema",
+    "author": "eng_bob",
+    "changed_files": [
+      "api/routes.py",
+      "api/serializers.py",
+      "api/tests/test_routes.py",
+      "api/throttling.py"
+    ],
+    "diff_chunks": [
+      "# diff chunk for api/routes.py",
+      "# diff chunk for api/serializers.py",
+      "# diff chunk for api/tests/test_routes.py",
+      "# diff chunk for api/throttling.py"
+    ],
+    "review_comments": [
+      "@eng_frank can you take a look at this?",
+      "LGTM, minor nits inline"
+    ],
+    "created_at": "2025-11-29T00:00:00+00:00",
+    "days_open": 6,
+    "diff_line_count": 195,
+    "_component": "api",
+    "_reviewer": "eng_frank",
+    "_cycle_days": 6.34
+  },
+  {
+    "pr_id": "PR-1013",
+    "title": "Add OAuth2 PKCE support",
+    "author": "eng_eve",
+    "changed_files": [
+      "auth/tests/test_tokens.py",
+      "auth/permissions.py",
+      "auth/models.py",
+      "auth/oauth.py"
+    ],
+    "diff_chunks": [
+      "# diff chunk for auth/tests/test_tokens.py",
+      "# diff chunk for auth/permissions.py",
+      "# diff chunk for auth/models.py",
+      "# diff chunk for auth/oauth.py"
+    ],
+    "review_comments": [
+      "@eng_alice can you take a look at this?",
+      "LGTM, minor nits inline"
+    ],
+    "created_at": "2025-12-24T00:00:00+00:00",
+    "days_open": 7,
+    "diff_line_count": 565,
+    "_component": "auth",
+    "_reviewer": "eng_alice",
+    "_cycle_days": 6.53
+  },
+  {
+    "pr_id": "PR-1014",
+    "title": "Add pagination to list endpoints",
+    "author": "eng_alice",
+    "changed_files": [
+      "api/routes.py"
+    ],
+    "diff_chunks": [
+      "# diff chunk for api/routes.py"
+    ],
+    "review_comments": [
+      "LGTM, minor nits inline"
+    ],
+    "created_at": "2025-11-08T00:00:00+00:00",
+    "days_open": 2,
+    "diff_line_count": 501,
+    "_component": "api",
+    "_reviewer": "eng_frank",
+    "_cycle_days": 1.87
+  },
+  {
+    "pr_id": "PR-1015",
+    "title": "Update serializers for v2 schema",
+    "author": "eng_alice",
+    "changed_files": [
+      "api/tests/test_routes.py",
+      "api/serializers.py"
+    ],
+    "diff_chunks": [
+      "# diff chunk for api/tests/test_routes.py",
+      "# diff chunk for api/serializers.py"
+    ],
+    "review_comments": [],
+    "created_at": "2025-11-23T00:00:00+00:00",
+    "days_open": 1,
+    "diff_line_count": 542,
+    "_component": "api",
+    "_reviewer": "eng_eve",
+    "_cycle_days": 0.81
+  },
+  {
+    "pr_id": "PR-1016",
+    "title": "Add new chart component",
+    "author": "eng_bob",
+    "changed_files": [
+      "dashboard/tests/test_views.py",
+      "dashboard/filters.py",
+      "dashboard/views.py",
+      "dashboard/charts.py"
+    ],
+    "diff_chunks": [
+      "# diff chunk for dashboard/tests/test_views.py",
+      "# diff chunk for dashboard/filters.py",
+      "# diff chunk for dashboard/views.py",
+      "# diff chunk for dashboard/charts.py"
+    ],
+    "review_comments": [
+      "@eng_frank can you take a look at this?"
+    ],
+    "created_at": "2026-04-03T00:00:00+00:00",
+    "days_open": 7,
+    "diff_line_count": 160,
+    "_component": "dashboard",
+    "_reviewer": "eng_frank",
+    "_cycle_days": 6.97
+  },
+  {
+    "pr_id": "PR-1017",
+    "title": "Add OAuth2 PKCE support",
+    "author": "eng_bob",
+    "changed_files": [
+      "auth/permissions.py",
+      "auth/models.py"
+    ],
+    "diff_chunks": [
+      "# diff chunk for auth/permissions.py",
+      "# diff chunk for auth/models.py"
+    ],
+    "review_comments": [],
+    "created_at": "2026-02-14T00:00:00+00:00",
+    "days_open": 4,
+    "diff_line_count": 164,
+    "_component": "auth",
+    "_reviewer": "eng_alice",
+    "_cycle_days": 4.19
+  },
+  {
+    "pr_id": "PR-1018",
+    "title": "Update payment validator edge cases",
+    "author": "eng_frank",
+    "changed_files": [
+      "payments/webhook.py",
+      "payments/validators.py"
+    ],
+    "diff_chunks": [
+      "# diff chunk for payments/webhook.py",
+      "# diff chunk for payments/validators.py"
+    ],
+    "review_comments": [
+      "Needs security review before merge",
+      "LGTM, minor nits inline"
+    ],
+    "created_at": "2025-12-15T00:00:00+00:00",
+    "days_open": 3,
+    "diff_line_count": 1371,
+    "_component": "payments",
+    "_reviewer": "eng_alice",
+    "_cycle_days": 2.53
+  },
+  {
+    "pr_id": "PR-1019",
+    "title": "Fix payment processor retry logic",
+    "author": "eng_bob",
+    "changed_files": [
+      "payments/models.py",
+      "payments/validators.py",
+      "payments/utils.py",
+      "payments/processor.py"
+    ],
+    "diff_chunks": [
+      "# diff chunk for payments/models.py",
+      "# diff chunk for payments/validators.py",
+      "# diff chunk for payments/utils.py",
+      "# diff chunk for payments/processor.py"
+    ],
+    "review_comments": [
+      "@eng_alice can you take a look at this?",
+      "Needs security review before merge",
+      "LGTM, minor nits inline"
+    ],
+    "created_at": "2026-03-01T00:00:00+00:00",
+    "days_open": 6,
+    "diff_line_count": 149,
+    "_component": "payments",
+    "_reviewer": "eng_alice",
+    "_cycle_days": 6.1
+  },
+  {
+    "pr_id": "PR-1020",
+    "title": "Add monitoring alerts for latency",
+    "author": "eng_frank",
+    "changed_files": [
+      "infra/monitoring/alerts.yaml",
+      "infra/k8s/deployment.yaml",
+      "infra/deploy.yml",
+      "infra/terraform/main.tf"
+    ],
+    "diff_chunks": [
+      "# diff chunk for infra/monitoring/alerts.yaml",
+      "# diff chunk for infra/k8s/deployment.yaml",
+      "# diff chunk for infra/deploy.yml",
+      "# diff chunk for infra/terraform/main.tf"
+    ],
+    "review_comments": [],
+    "created_at": "2026-03-02T00:00:00+00:00",
+    "days_open": 2,
+    "diff_line_count": 229,
+    "_component": "infra",
+    "_reviewer": "eng_dave",
+    "_cycle_days": 1.89
+  },
+  {
+    "pr_id": "PR-1021",
+    "title": "Refactor dashboard views",
+    "author": "eng_alice",
+    "changed_files": [
+      "dashboard/views.py"
+    ],
+    "diff_chunks": [
+      "# diff chunk for dashboard/views.py"
+    ],
+    "review_comments": [],
+    "created_at": "2026-01-01T00:00:00+00:00",
+    "days_open": 1,
+    "diff_line_count": 1192,
+    "_component": "dashboard",
+    "_reviewer": "eng_dave",
+    "_cycle_days": 0.96
+  },
+  {
+    "pr_id": "PR-1022",
+    "title": "Add pagination to list endpoints",
+    "author": "eng_bob",
+    "changed_files": [
+      "api/serializers.py",
+      "api/pagination.py",
+      "api/tests/test_routes.py",
+      "api/throttling.py"
+    ],
+    "diff_chunks": [
+      "# diff chunk for api/serializers.py",
+      "# diff chunk for api/pagination.py",
+      "# diff chunk for api/tests/test_routes.py",
+      "# diff chunk for api/throttling.py"
+    ],
+    "review_comments": [
+      "@eng_frank can you take a look at this?",
+      "Bumping this \u2014 been open a while"
+    ],
+    "created_at": "2026-03-31T00:00:00+00:00",
+    "days_open": 9,
+    "diff_line_count": 322,
+    "_component": "api",
+    "_reviewer": "eng_frank",
+    "_cycle_days": 8.77
+  },
+  {
+    "pr_id": "PR-1023",
+    "title": "Refactor payment models for new schema",
+    "author": "eng_eve",
+    "changed_files": [
+      "payments/webhook.py"
+    ],
+    "diff_chunks": [
+      "# diff chunk for payments/webhook.py"
+    ],
+    "review_comments": [
+      "Needs security review before merge",
+      "LGTM, minor nits inline"
+    ],
+    "created_at": "2026-01-14T00:00:00+00:00",
+    "days_open": 4,
+    "diff_line_count": 117,
+    "_component": "payments",
+    "_reviewer": "eng_alice",
+    "_cycle_days": 4.22
+  },
+  {
+    "pr_id": "PR-1024",
+    "title": "Add monitoring alerts for latency",
+    "author": "eng_frank",
+    "changed_files": [
+      "infra/k8s/deployment.yaml"
+    ],
+    "diff_chunks": [
+      "# diff chunk for infra/k8s/deployment.yaml"
+    ],
+    "review_comments": [],
+    "created_at": "2026-02-10T00:00:00+00:00",
+    "days_open": 2,
+    "diff_line_count": 353,
+    "_component": "infra",
+    "_reviewer": "eng_dave",
+    "_cycle_days": 1.74
+  },
+  {
+    "pr_id": "PR-1025",
+    "title": "Refactor route handlers",
+    "author": "eng_carol",
+    "changed_files": [
+      "api/tests/test_routes.py",
+      "api/throttling.py",
+      "api/serializers.py"
+    ],
+    "diff_chunks": [
+      "# diff chunk for api/tests/test_routes.py",
+      "# diff chunk for api/throttling.py",
+      "# diff chunk for api/serializers.py"
+    ],
+    "review_comments": [],
+    "created_at": "2026-04-05T00:00:00+00:00",
+    "days_open": 2,
+    "diff_line_count": 304,
+    "_component": "api",
+    "_reviewer": "eng_frank",
+    "_cycle_days": 2.38
+  },
+  {
+    "pr_id": "PR-1026",
+    "title": "Fix payment processor retry logic",
+    "author": "eng_alice",
+    "changed_files": [
+      "payments/tests/test_processor.py",
+      "payments/validators.py"
+    ],
+    "diff_chunks": [
+      "# diff chunk for payments/tests/test_processor.py",
+      "# diff chunk for payments/validators.py"
+    ],
+    "review_comments": [
+      "Needs security review before merge"
+    ],
+    "created_at": "2025-11-28T00:00:00+00:00",
+    "days_open": 2,
+    "diff_line_count": 83,
+    "_component": "payments",
+    "_reviewer": "eng_carol",
+    "_cycle_days": 1.93
+  },
+  {
+    "pr_id": "PR-1027",
+    "title": "Refactor payment models for new schema",
+    "author": "eng_alice",
+    "changed_files": [
+      "payments/utils.py",
+      "payments/tests/test_processor.py",
+      "payments/webhook.py"
+    ],
+    "diff_chunks": [
+      "# diff chunk for payments/utils.py",
+      "# diff chunk for payments/tests/test_processor.py",
+      "# diff chunk for payments/webhook.py"
+    ],
+    "review_comments": [
+      "Needs security review before merge",
+      "LGTM, minor nits inline"
+    ],
+    "created_at": "2025-12-29T00:00:00+00:00",
+    "days_open": 2,
+    "diff_line_count": 636,
+    "_component": "payments",
+    "_reviewer": "eng_bob",
+    "_cycle_days": 1.79
+  },
+  {
+    "pr_id": "PR-1028",
+    "title": "Add webhook signature validation",
+    "author": "eng_carol",
+    "changed_files": [
+      "payments/utils.py",
+      "payments/validators.py",
+      "payments/webhook.py"
+    ],
+    "diff_chunks": [
+      "# diff chunk for payments/utils.py",
+      "# diff chunk for payments/validators.py",
+      "# diff chunk for payments/webhook.py"
+    ],
+    "review_comments": [
+      "Needs security review before merge"
+    ],
+    "created_at": "2026-02-17T00:00:00+00:00",
+    "days_open": 3,
+    "diff_line_count": 113,
+    "_component": "payments",
+    "_reviewer": "eng_bob",
+    "_cycle_days": 3.3
+  },
+  {
+    "pr_id": "PR-1029",
+    "title": "Add new chart component",
+    "author": "eng_alice",
+    "changed_files": [
+      "dashboard/filters.py",
+      "dashboard/views.py"
+    ],
+    "diff_chunks": [
+      "# diff chunk for dashboard/filters.py",
+      "# diff chunk for dashboard/views.py"
+    ],
+    "review_comments": [
+      "LGTM, minor nits inline"
+    ],
+    "created_at": "2025-10-21T00:00:00+00:00",
+    "days_open": 2,
+    "diff_line_count": 135,
+    "_component": "dashboard",
+    "_reviewer": "eng_carol",
+    "_cycle_days": 1.84
+  },
+  {
+    "pr_id": "PR-1030",
+    "title": "Refactor dashboard views",
+    "author": "eng_bob",
+    "changed_files": [
+      "dashboard/charts.py",
+      "dashboard/views.py"
+    ],
+    "diff_chunks": [
+      "# diff chunk for dashboard/charts.py",
+      "# diff chunk for dashboard/views.py"
+    ],
+    "review_comments": [
+      "@eng_carol can you take a look at this?",
+      "Bumping this \u2014 been open a while",
+      "LGTM, minor nits inline"
+    ],
+    "created_at": "2025-11-01T00:00:00+00:00",
+    "days_open": 11,
+    "diff_line_count": 167,
+    "_component": "dashboard",
+    "_reviewer": "eng_carol",
+    "_cycle_days": 10.7
+  },
+  {
+    "pr_id": "PR-1031",
+    "title": "Refactor payment models for new schema",
+    "author": "eng_carol",
+    "changed_files": [
+      "payments/processor.py",
+      "payments/tests/test_processor.py",
+      "payments/models.py"
+    ],
+    "diff_chunks": [
+      "# diff chunk for payments/processor.py",
+      "# diff chunk for payments/tests/test_processor.py",
+      "# diff chunk for payments/models.py"
+    ],
+    "review_comments": [
+      "Needs security review before merge"
+    ],
+    "created_at": "2026-03-04T00:00:00+00:00",
+    "days_open": 2,
+    "diff_line_count": 180,
+    "_component": "payments",
+    "_reviewer": "eng_carol",
+    "_cycle_days": 2.31
+  },
+  {
+    "pr_id": "PR-1032",
+    "title": "Fix payment processor retry logic",
+    "author": "eng_alice",
+    "changed_files": [
+      "payments/validators.py",
+      "payments/utils.py",
+      "payments/processor.py"
+    ],
+    "diff_chunks": [
+      "# diff chunk for payments/validators.py",
+      "# diff chunk for payments/utils.py",
+      "# diff chunk for payments/processor.py"
+    ],
+    "review_comments": [
+      "Needs security review before merge",
+      "LGTM, minor nits inline"
+    ],
+    "created_at": "2026-01-10T00:00:00+00:00",
+    "days_open": 1,
+    "diff_line_count": 573,
+    "_component": "payments",
+    "_reviewer": "eng_carol",
+    "_cycle_days": 1.09
+  },
+  {
+    "pr_id": "PR-1033",
+    "title": "Refactor dashboard views",
+    "author": "eng_alice",
+    "changed_files": [
+      "dashboard/filters.py",
+      "dashboard/charts.py"
+    ],
+    "diff_chunks": [
+      "# diff chunk for dashboard/filters.py",
+      "# diff chunk for dashboard/charts.py"
+    ],
+    "review_comments": [],
+    "created_at": "2026-04-01T00:00:00+00:00",
+    "days_open": 1,
+    "diff_line_count": 551,
+    "_component": "dashboard",
+    "_reviewer": "eng_dave",
+    "_cycle_days": 0.85
+  },
+  {
+    "pr_id": "PR-1034",
+    "title": "Update payment validator edge cases",
+    "author": "eng_frank",
+    "changed_files": [
+      "payments/models.py",
+      "payments/validators.py",
+      "payments/tests/test_processor.py",
+      "payments/utils.py"
+    ],
+    "diff_chunks": [
+      "# diff chunk for payments/models.py",
+      "# diff chunk for payments/validators.py",
+      "# diff chunk for payments/tests/test_processor.py",
+      "# diff chunk for payments/utils.py"
+    ],
+    "review_comments": [
+      "Needs security review before merge"
+    ],
+    "created_at": "2026-03-17T00:00:00+00:00",
+    "days_open": 2,
+    "diff_line_count": 1282,
+    "_component": "payments",
+    "_reviewer": "eng_bob",
+    "_cycle_days": 2.37
+  },
+  {
+    "pr_id": "PR-1035",
+    "title": "Refactor permissions middleware",
+    "author": "eng_eve",
+    "changed_files": [
+      "auth/permissions.py"
+    ],
+    "diff_chunks": [
+      "# diff chunk for auth/permissions.py"
+    ],
+    "review_comments": [
+      "@eng_alice can you take a look at this?"
+    ],
+    "created_at": "2026-02-04T00:00:00+00:00",
+    "days_open": 7,
+    "diff_line_count": 480,
+    "_component": "auth",
+    "_reviewer": "eng_alice",
+    "_cycle_days": 6.53
+  },
+  {
+    "pr_id": "PR-1036",
+    "title": "Refactor dashboard views",
+    "author": "eng_dave",
+    "changed_files": [
+      "dashboard/views.py",
+      "dashboard/charts.py"
+    ],
+    "diff_chunks": [
+      "# diff chunk for dashboard/views.py",
+      "# diff chunk for dashboard/charts.py"
+    ],
+    "review_comments": [],
+    "created_at": "2025-12-08T00:00:00+00:00",
+    "days_open": 3,
+    "diff_line_count": 104,
+    "_component": "dashboard",
+    "_reviewer": "eng_dave",
+    "_cycle_days": 3.0
+  },
+  {
+    "pr_id": "PR-1037",
+    "title": "Fix payment processor retry logic",
+    "author": "eng_bob",
+    "changed_files": [
+      "payments/processor.py"
+    ],
+    "diff_chunks": [
+      "# diff chunk for payments/processor.py"
+    ],
+    "review_comments": [
+      "Needs security review before merge"
+    ],
+    "created_at": "2026-02-15T00:00:00+00:00",
+    "days_open": 4,
+    "diff_line_count": 301,
+    "_component": "payments",
+    "_reviewer": "eng_alice",
+    "_cycle_days": 4.44
+  },
+  {
+    "pr_id": "PR-1038",
+    "title": "Add new chart component",
+    "author": "eng_dave",
+    "changed_files": [
+      "dashboard/tests/test_views.py",
+      "dashboard/charts.py",
+      "dashboard/views.py",
+      "dashboard/filters.py"
+    ],
+    "diff_chunks": [
+      "# diff chunk for dashboard/tests/test_views.py",
+      "# diff chunk for dashboard/charts.py",
+      "# diff chunk for dashboard/views.py",
+      "# diff chunk for dashboard/filters.py"
+    ],
+    "review_comments": [
+      "LGTM, minor nits inline"
+    ],
+    "created_at": "2025-11-02T00:00:00+00:00",
+    "days_open": 2,
+    "diff_line_count": 1335,
+    "_component": "dashboard",
+    "_reviewer": "eng_dave",
+    "_cycle_days": 2.36
+  },
+  {
+    "pr_id": "PR-1039",
+    "title": "Refactor dashboard views",
+    "author": "eng_bob",
+    "changed_files": [
+      "dashboard/views.py",
+      "dashboard/charts.py"
+    ],
+    "diff_chunks": [
+      "# diff chunk for dashboard/views.py",
+      "# diff chunk for dashboard/charts.py"
+    ],
+    "review_comments": [
+      "@eng_frank can you take a look at this?"
+    ],
+    "created_at": "2026-03-15T00:00:00+00:00",
+    "days_open": 8,
+    "diff_line_count": 182,
+    "_component": "dashboard",
+    "_reviewer": "eng_frank",
+    "_cycle_days": 7.57
+  },
+  {
+    "pr_id": "PR-1040",
+    "title": "Refactor dashboard views",
+    "author": "eng_eve",
+    "changed_files": [
+      "dashboard/charts.py",
+      "dashboard/filters.py",
+      "dashboard/tests/test_views.py",
+      "dashboard/views.py"
+    ],
+    "diff_chunks": [
+      "# diff chunk for dashboard/charts.py",
+      "# diff chunk for dashboard/filters.py",
+      "# diff chunk for dashboard/tests/test_views.py",
+      "# diff chunk for dashboard/views.py"
+    ],
+    "review_comments": [
+      "@eng_carol can you take a look at this?"
+    ],
+    "created_at": "2026-02-11T00:00:00+00:00",
+    "days_open": 6,
+    "diff_line_count": 418,
+    "_component": "dashboard",
+    "_reviewer": "eng_carol",
+    "_cycle_days": 5.84
+  },
+  {
+    "pr_id": "PR-1041",
+    "title": "Add monitoring alerts for latency",
+    "author": "eng_dave",
+    "changed_files": [
+      "infra/k8s/deployment.yaml",
+      "infra/terraform/main.tf",
+      "infra/monitoring/alerts.yaml"
+    ],
+    "diff_chunks": [
+      "# diff chunk for infra/k8s/deployment.yaml",
+      "# diff chunk for infra/terraform/main.tf",
+      "# diff chunk for infra/monitoring/alerts.yaml"
+    ],
+    "review_comments": [
+      "LGTM, minor nits inline"
+    ],
+    "created_at": "2026-01-27T00:00:00+00:00",
+    "days_open": 4,
+    "diff_line_count": 425,
+    "_component": "infra",
+    "_reviewer": "eng_alice",
+    "_cycle_days": 3.59
+  },
+  {
+    "pr_id": "PR-1042",
+    "title": "Update auth models for multi-tenant",
+    "author": "eng_dave",
+    "changed_files": [
+      "auth/permissions.py",
+      "auth/oauth.py",
+      "auth/models.py",
+      "auth/tokens.py"
+    ],
+    "diff_chunks": [
+      "# diff chunk for auth/permissions.py",
+      "# diff chunk for auth/oauth.py",
+      "# diff chunk for auth/models.py",
+      "# diff chunk for auth/tokens.py"
+    ],
+    "review_comments": [],
+    "created_at": "2026-04-03T00:00:00+00:00",
+    "days_open": 3,
+    "diff_line_count": 232,
+    "_component": "auth",
+    "_reviewer": "eng_alice",
+    "_cycle_days": 2.5
+  },
+  {
+    "pr_id": "PR-1043",
+    "title": "Refactor deploy pipeline",
+    "author": "eng_frank",
+    "changed_files": [
+      "infra/terraform/main.tf"
+    ],
+    "diff_chunks": [
+      "# diff chunk for infra/terraform/main.tf"
+    ],
+    "review_comments": [],
+    "created_at": "2026-02-01T00:00:00+00:00",
+    "days_open": 2,
+    "diff_line_count": 197,
+    "_component": "infra",
+    "_reviewer": "eng_eve",
+    "_cycle_days": 2.14
+  },
+  {
+    "pr_id": "PR-1044",
+    "title": "Refactor deploy pipeline",
+    "author": "eng_frank",
+    "changed_files": [
+      "infra/scripts/migrate.sh",
+      "infra/monitoring/alerts.yaml",
+      "infra/deploy.yml"
+    ],
+    "diff_chunks": [
+      "# diff chunk for infra/scripts/migrate.sh",
+      "# diff chunk for infra/monitoring/alerts.yaml",
+      "# diff chunk for infra/deploy.yml"
+    ],
+    "review_comments": [],
+    "created_at": "2026-01-09T00:00:00+00:00",
+    "days_open": 2,
+    "diff_line_count": 449,
+    "_component": "infra",
+    "_reviewer": "eng_eve",
+    "_cycle_days": 2.07
+  },
+  {
+    "pr_id": "PR-1045",
+    "title": "Update auth models for multi-tenant",
+    "author": "eng_dave",
+    "changed_files": [
+      "auth/middleware.py"
+    ],
+    "diff_chunks": [
+      "# diff chunk for auth/middleware.py"
+    ],
+    "review_comments": [
+      "LGTM, minor nits inline"
+    ],
+    "created_at": "2025-11-05T00:00:00+00:00",
+    "days_open": 3,
+    "diff_line_count": 1003,
+    "_component": "auth",
+    "_reviewer": "eng_dave",
+    "_cycle_days": 3.3
+  },
+  {
+    "pr_id": "PR-1046",
+    "title": "Update auth models for multi-tenant",
+    "author": "eng_alice",
+    "changed_files": [
+      "auth/permissions.py",
+      "auth/models.py",
+      "auth/tests/test_tokens.py"
+    ],
+    "diff_chunks": [
+      "# diff chunk for auth/permissions.py",
+      "# diff chunk for auth/models.py",
+      "# diff chunk for auth/tests/test_tokens.py"
+    ],
+    "review_comments": [],
+    "created_at": "2026-01-01T00:00:00+00:00",
+    "days_open": 2,
+    "diff_line_count": 133,
+    "_component": "auth",
+    "_reviewer": "eng_dave",
+    "_cycle_days": 2.2
+  },
+  {
+    "pr_id": "PR-1047",
+    "title": "Add webhook signature validation",
+    "author": "eng_frank",
+    "changed_files": [
+      "payments/tests/test_processor.py"
+    ],
+    "diff_chunks": [
+      "# diff chunk for payments/tests/test_processor.py"
+    ],
+    "review_comments": [
+      "Needs security review before merge"
+    ],
+    "created_at": "2026-04-08T00:00:00+00:00",
+    "days_open": 2,
+    "diff_line_count": 314,
+    "_component": "payments",
+    "_reviewer": "eng_bob",
+    "_cycle_days": 2.13
+  },
+  {
+    "pr_id": "PR-1048",
+    "title": "Refactor payment models for new schema",
+    "author": "eng_eve",
+    "changed_files": [
+      "payments/utils.py"
+    ],
+    "diff_chunks": [
+      "# diff chunk for payments/utils.py"
+    ],
+    "review_comments": [
+      "@eng_alice can you take a look at this?",
+      "Needs security review before merge"
+    ],
+    "created_at": "2026-02-22T00:00:00+00:00",
+    "days_open": 6,
+    "diff_line_count": 82,
+    "_component": "payments",
+    "_reviewer": "eng_alice",
+    "_cycle_days": 5.72
+  },
+  {
+    "pr_id": "PR-1049",
+    "title": "Update auth models for multi-tenant",
+    "author": "eng_eve",
+    "changed_files": [
+      "auth/permissions.py",
+      "auth/middleware.py"
+    ],
+    "diff_chunks": [
+      "# diff chunk for auth/permissions.py",
+      "# diff chunk for auth/middleware.py"
+    ],
+    "review_comments": [],
+    "created_at": "2025-11-21T00:00:00+00:00",
+    "days_open": 5,
+    "diff_line_count": 598,
+    "_component": "auth",
+    "_reviewer": "eng_alice",
+    "_cycle_days": 4.62
+  },
+  {
+    "pr_id": "PR-1050",
+    "title": "Refactor dashboard views",
+    "author": "eng_frank",
+    "changed_files": [
+      "dashboard/views.py",
+      "dashboard/filters.py",
+      "dashboard/tests/test_views.py"
+    ],
+    "diff_chunks": [
+      "# diff chunk for dashboard/views.py",
+      "# diff chunk for dashboard/filters.py",
+      "# diff chunk for dashboard/tests/test_views.py"
+    ],
+    "review_comments": [],
+    "created_at": "2026-01-20T00:00:00+00:00",
+    "days_open": 2,
+    "diff_line_count": 112,
+    "_component": "dashboard",
+    "_reviewer": "eng_dave",
+    "_cycle_days": 2.17
+  },
+  {
+    "pr_id": "PR-1051",
+    "title": "Add webhook signature validation",
+    "author": "eng_eve",
+    "changed_files": [
+      "payments/processor.py",
+      "payments/validators.py",
+      "payments/models.py",
+      "payments/utils.py"
+    ],
+    "diff_chunks": [
+      "# diff chunk for payments/processor.py",
+      "# diff chunk for payments/validators.py",
+      "# diff chunk for payments/models.py",
+      "# diff chunk for payments/utils.py"
+    ],
+    "review_comments": [
+      "@eng_carol can you take a look at this?",
+      "Needs security review before merge",
+      "LGTM, minor nits inline"
+    ],
+    "created_at": "2025-12-22T00:00:00+00:00",
+    "days_open": 6,
+    "diff_line_count": 415,
+    "_component": "payments",
+    "_reviewer": "eng_carol",
+    "_cycle_days": 5.64
+  },
+  {
+    "pr_id": "PR-1052",
+    "title": "Add monitoring alerts for latency",
+    "author": "eng_frank",
+    "changed_files": [
+      "infra/scripts/migrate.sh",
+      "infra/terraform/main.tf",
+      "infra/k8s/deployment.yaml",
+      "infra/deploy.yml"
+    ],
+    "diff_chunks": [
+      "# diff chunk for infra/scripts/migrate.sh",
+      "# diff chunk for infra/terraform/main.tf",
+      "# diff chunk for infra/k8s/deployment.yaml",
+      "# diff chunk for infra/deploy.yml"
+    ],
+    "review_comments": [],
+    "created_at": "2026-03-27T00:00:00+00:00",
+    "days_open": 1,
+    "diff_line_count": 187,
+    "_component": "infra",
+    "_reviewer": "eng_eve",
+    "_cycle_days": 1.13
+  },
+  {
+    "pr_id": "PR-1053",
+    "title": "Refactor dashboard views",
+    "author": "eng_eve",
+    "changed_files": [
+      "dashboard/filters.py",
+      "dashboard/views.py",
+      "dashboard/charts.py",
+      "dashboard/tests/test_views.py"
+    ],
+    "diff_chunks": [
+      "# diff chunk for dashboard/filters.py",
+      "# diff chunk for dashboard/views.py",
+      "# diff chunk for dashboard/charts.py",
+      "# diff chunk for dashboard/tests/test_views.py"
+    ],
+    "review_comments": [
+      "LGTM, minor nits inline"
+    ],
+    "created_at": "2026-01-18T00:00:00+00:00",
+    "days_open": 4,
+    "diff_line_count": 372,
+    "_component": "dashboard",
+    "_reviewer": "eng_frank",
+    "_cycle_days": 3.92
+  },
+  {
+    "pr_id": "PR-1054",
+    "title": "Update Kubernetes deployment config",
+    "author": "eng_alice",
+    "changed_files": [
+      "infra/scripts/migrate.sh",
+      "infra/k8s/deployment.yaml",
+      "infra/terraform/main.tf",
+      "infra/monitoring/alerts.yaml"
+    ],
+    "diff_chunks": [
+      "# diff chunk for infra/scripts/migrate.sh",
+      "# diff chunk for infra/k8s/deployment.yaml",
+      "# diff chunk for infra/terraform/main.tf",
+      "# diff chunk for infra/monitoring/alerts.yaml"
+    ],
+    "review_comments": [],
+    "created_at": "2025-11-04T00:00:00+00:00",
+    "days_open": 1,
+    "diff_line_count": 243,
+    "_component": "infra",
+    "_reviewer": "eng_alice",
+    "_cycle_days": 1.12
+  },
+  {
+    "pr_id": "PR-1055",
+    "title": "Refactor payment models for new schema",
+    "author": "eng_carol",
+    "changed_files": [
+      "payments/validators.py",
+      "payments/utils.py",
+      "payments/models.py"
+    ],
+    "diff_chunks": [
+      "# diff chunk for payments/validators.py",
+      "# diff chunk for payments/utils.py",
+      "# diff chunk for payments/models.py"
+    ],
+    "review_comments": [
+      "Needs security review before merge"
+    ],
+    "created_at": "2025-12-31T00:00:00+00:00",
+    "days_open": 2,
+    "diff_line_count": 112,
+    "_component": "payments",
+    "_reviewer": "eng_carol",
+    "_cycle_days": 2.03
+  },
+  {
+    "pr_id": "PR-1056",
+    "title": "Fix filter state bug",
+    "author": "eng_carol",
+    "changed_files": [
+      "dashboard/filters.py",
+      "dashboard/views.py"
+    ],
+    "diff_chunks": [
+      "# diff chunk for dashboard/filters.py",
+      "# diff chunk for dashboard/views.py"
+    ],
+    "review_comments": [
+      "LGTM, minor nits inline"
+    ],
+    "created_at": "2025-12-02T00:00:00+00:00",
+    "days_open": 2,
+    "diff_line_count": 109,
+    "_component": "dashboard",
+    "_reviewer": "eng_dave",
+    "_cycle_days": 2.47
+  },
+  {
+    "pr_id": "PR-1057",
+    "title": "Refactor dashboard views",
+    "author": "eng_carol",
+    "changed_files": [
+      "dashboard/charts.py"
+    ],
+    "diff_chunks": [
+      "# diff chunk for dashboard/charts.py"
+    ],
+    "review_comments": [
+      "LGTM, minor nits inline"
+    ],
+    "created_at": "2026-02-02T00:00:00+00:00",
+    "days_open": 5,
+    "diff_line_count": 505,
+    "_component": "dashboard",
+    "_reviewer": "eng_carol",
+    "_cycle_days": 4.59
+  },
+  {
+    "pr_id": "PR-1058",
+    "title": "Update payment validator edge cases",
+    "author": "eng_frank",
+    "changed_files": [
+      "payments/tests/test_processor.py",
+      "payments/webhook.py",
+      "payments/validators.py"
+    ],
+    "diff_chunks": [
+      "# diff chunk for payments/tests/test_processor.py",
+      "# diff chunk for payments/webhook.py",
+      "# diff chunk for payments/validators.py"
+    ],
+    "review_comments": [
+      "Needs security review before merge"
+    ],
+    "created_at": "2026-03-23T00:00:00+00:00",
+    "days_open": 1,
+    "diff_line_count": 223,
+    "_component": "payments",
+    "_reviewer": "eng_bob",
+    "_cycle_days": 1.48
+  },
+  {
+    "pr_id": "PR-1059",
+    "title": "Add new chart component",
+    "author": "eng_dave",
+    "changed_files": [
+      "dashboard/views.py",
+      "dashboard/tests/test_views.py",
+      "dashboard/charts.py",
+      "dashboard/filters.py"
+    ],
+    "diff_chunks": [
+      "# diff chunk for dashboard/views.py",
+      "# diff chunk for dashboard/tests/test_views.py",
+      "# diff chunk for dashboard/charts.py",
+      "# diff chunk for dashboard/filters.py"
+    ],
+    "review_comments": [],
+    "created_at": "2026-03-31T00:00:00+00:00",
+    "days_open": 4,
+    "diff_line_count": 63,
+    "_component": "dashboard",
+    "_reviewer": "eng_dave",
+    "_cycle_days": 3.97
+  },
+  {
+    "pr_id": "PR-1060",
+    "title": "Fix token refresh race condition",
+    "author": "eng_bob",
+    "changed_files": [
+      "auth/oauth.py"
+    ],
+    "diff_chunks": [
+      "# diff chunk for auth/oauth.py"
+    ],
+    "review_comments": [],
+    "created_at": "2026-01-02T00:00:00+00:00",
+    "days_open": 3,
+    "diff_line_count": 243,
+    "_component": "auth",
+    "_reviewer": "eng_bob",
+    "_cycle_days": 2.67
+  },
+  {
+    "pr_id": "PR-1061",
+    "title": "Update Kubernetes deployment config",
+    "author": "eng_dave",
+    "changed_files": [
+      "infra/terraform/main.tf",
+      "infra/deploy.yml",
+      "infra/monitoring/alerts.yaml",
+      "infra/scripts/migrate.sh"
+    ],
+    "diff_chunks": [
+      "# diff chunk for infra/terraform/main.tf",
+      "# diff chunk for infra/deploy.yml",
+      "# diff chunk for infra/monitoring/alerts.yaml",
+      "# diff chunk for infra/scripts/migrate.sh"
+    ],
+    "review_comments": [
+      "LGTM, minor nits inline"
+    ],
+    "created_at": "2026-02-24T00:00:00+00:00",
+    "days_open": 3,
+    "diff_line_count": 163,
+    "_component": "infra",
+    "_reviewer": "eng_alice",
+    "_cycle_days": 2.8
+  },
+  {
+    "pr_id": "PR-1062",
+    "title": "Refactor permissions middleware",
+    "author": "eng_bob",
+    "changed_files": [
+      "auth/models.py",
+      "auth/oauth.py",
+      "auth/tests/test_tokens.py",
+      "auth/tokens.py"
+    ],
+    "diff_chunks": [
+      "# diff chunk for auth/models.py",
+      "# diff chunk for auth/oauth.py",
+      "# diff chunk for auth/tests/test_tokens.py",
+      "# diff chunk for auth/tokens.py"
+    ],
+    "review_comments": [
+      "@eng_alice can you take a look at this?",
+      "LGTM, minor nits inline"
+    ],
+    "created_at": "2026-04-10T00:00:00+00:00",
+    "days_open": 7,
+    "diff_line_count": 69,
+    "_component": "auth",
+    "_reviewer": "eng_alice",
+    "_cycle_days": 6.54
+  },
+  {
+    "pr_id": "PR-1063",
+    "title": "Refactor dashboard views",
+    "author": "eng_alice",
+    "changed_files": [
+      "dashboard/tests/test_views.py",
+      "dashboard/views.py"
+    ],
+    "diff_chunks": [
+      "# diff chunk for dashboard/tests/test_views.py",
+      "# diff chunk for dashboard/views.py"
+    ],
+    "review_comments": [],
+    "created_at": "2025-11-30T00:00:00+00:00",
+    "days_open": 2,
+    "diff_line_count": 520,
+    "_component": "dashboard",
+    "_reviewer": "eng_carol",
+    "_cycle_days": 1.97
+  },
+  {
+    "pr_id": "PR-1064",
+    "title": "Refactor permissions middleware",
+    "author": "eng_alice",
+    "changed_files": [
+      "auth/models.py",
+      "auth/middleware.py",
+      "auth/tests/test_tokens.py"
+    ],
+    "diff_chunks": [
+      "# diff chunk for auth/models.py",
+      "# diff chunk for auth/middleware.py",
+      "# diff chunk for auth/tests/test_tokens.py"
+    ],
+    "review_comments": [],
+    "created_at": "2025-10-24T00:00:00+00:00",
+    "days_open": 2,
+    "diff_line_count": 128,
+    "_component": "auth",
+    "_reviewer": "eng_dave",
+    "_cycle_days": 2.07
+  },
+  {
+    "pr_id": "PR-1065",
+    "title": "Update Kubernetes deployment config",
+    "author": "eng_eve",
+    "changed_files": [
+      "infra/terraform/main.tf",
+      "infra/monitoring/alerts.yaml",
+      "infra/deploy.yml",
+      "infra/scripts/migrate.sh"
+    ],
+    "diff_chunks": [
+      "# diff chunk for infra/terraform/main.tf",
+      "# diff chunk for infra/monitoring/alerts.yaml",
+      "# diff chunk for infra/deploy.yml",
+      "# diff chunk for infra/scripts/migrate.sh"
+    ],
+    "review_comments": [
+      "@eng_alice can you take a look at this?"
+    ],
+    "created_at": "2026-02-19T00:00:00+00:00",
+    "days_open": 6,
+    "diff_line_count": 70,
+    "_component": "infra",
+    "_reviewer": "eng_alice",
+    "_cycle_days": 5.93
+  },
+  {
+    "pr_id": "PR-1066",
+    "title": "Update serializers for v2 schema",
+    "author": "eng_eve",
+    "changed_files": [
+      "api/pagination.py",
+      "api/serializers.py",
+      "api/tests/test_routes.py",
+      "api/throttling.py"
+    ],
+    "diff_chunks": [
+      "# diff chunk for api/pagination.py",
+      "# diff chunk for api/serializers.py",
+      "# diff chunk for api/tests/test_routes.py",
+      "# diff chunk for api/throttling.py"
+    ],
+    "review_comments": [],
+    "created_at": "2025-11-07T00:00:00+00:00",
+    "days_open": 4,
+    "diff_line_count": 94,
+    "_component": "api",
+    "_reviewer": "eng_carol",
+    "_cycle_days": 3.87
+  },
+  {
+    "pr_id": "PR-1067",
+    "title": "Refactor route handlers",
+    "author": "eng_dave",
+    "changed_files": [
+      "api/throttling.py",
+      "api/pagination.py",
+      "api/tests/test_routes.py",
+      "api/serializers.py"
+    ],
+    "diff_chunks": [
+      "# diff chunk for api/throttling.py",
+      "# diff chunk for api/pagination.py",
+      "# diff chunk for api/tests/test_routes.py",
+      "# diff chunk for api/serializers.py"
+    ],
+    "review_comments": [],
+    "created_at": "2025-11-29T00:00:00+00:00",
+    "days_open": 3,
+    "diff_line_count": 76,
+    "_component": "api",
+    "_reviewer": "eng_frank",
+    "_cycle_days": 2.68
+  },
+  {
+    "pr_id": "PR-1068",
+    "title": "Refactor route handlers",
+    "author": "eng_carol",
+    "changed_files": [
+      "api/tests/test_routes.py"
+    ],
+    "diff_chunks": [
+      "# diff chunk for api/tests/test_routes.py"
+    ],
+    "review_comments": [
+      "LGTM, minor nits inline"
+    ],
+    "created_at": "2025-12-21T00:00:00+00:00",
+    "days_open": 4,
+    "diff_line_count": 153,
+    "_component": "api",
+    "_reviewer": "eng_carol",
+    "_cycle_days": 3.83
+  },
+  {
+    "pr_id": "PR-1069",
+    "title": "Add monitoring alerts for latency",
+    "author": "eng_dave",
+    "changed_files": [
+      "infra/terraform/main.tf",
+      "infra/scripts/migrate.sh"
+    ],
+    "diff_chunks": [
+      "# diff chunk for infra/terraform/main.tf",
+      "# diff chunk for infra/scripts/migrate.sh"
+    ],
+    "review_comments": [
+      "LGTM, minor nits inline"
+    ],
+    "created_at": "2025-10-22T00:00:00+00:00",
+    "days_open": 3,
+    "diff_line_count": 304,
+    "_component": "infra",
+    "_reviewer": "eng_eve",
+    "_cycle_days": 2.93
+  },
+  {
+    "pr_id": "PR-1070",
+    "title": "Update auth models for multi-tenant",
+    "author": "eng_carol",
+    "changed_files": [
+      "auth/middleware.py",
+      "auth/models.py"
+    ],
+    "diff_chunks": [
+      "# diff chunk for auth/middleware.py",
+      "# diff chunk for auth/models.py"
+    ],
+    "review_comments": [],
+    "created_at": "2026-03-19T00:00:00+00:00",
+    "days_open": 1,
+    "diff_line_count": 408,
+    "_component": "auth",
+    "_reviewer": "eng_bob",
+    "_cycle_days": 1.27
+  },
+  {
+    "pr_id": "PR-1071",
+    "title": "Fix throttling for burst requests",
+    "author": "eng_eve",
+    "changed_files": [
+      "api/throttling.py",
+      "api/serializers.py"
+    ],
+    "diff_chunks": [
+      "# diff chunk for api/throttling.py",
+      "# diff chunk for api/serializers.py"
+    ],
+    "review_comments": [],
+    "created_at": "2026-01-10T00:00:00+00:00",
+    "days_open": 2,
+    "diff_line_count": 447,
+    "_component": "api",
+    "_reviewer": "eng_frank",
+    "_cycle_days": 2.46
+  },
+  {
+    "pr_id": "PR-1072",
+    "title": "Update payment validator edge cases",
+    "author": "eng_carol",
+    "changed_files": [
+      "payments/processor.py",
+      "payments/models.py",
+      "payments/utils.py"
+    ],
+    "diff_chunks": [
+      "# diff chunk for payments/processor.py",
+      "# diff chunk for payments/models.py",
+      "# diff chunk for payments/utils.py"
+    ],
+    "review_comments": [
+      "Needs security review before merge"
+    ],
+    "created_at": "2025-11-19T00:00:00+00:00",
+    "days_open": 2,
+    "diff_line_count": 374,
+    "_component": "payments",
+    "_reviewer": "eng_carol",
+    "_cycle_days": 1.7
+  },
+  {
+    "pr_id": "PR-1073",
+    "title": "Update auth models for multi-tenant",
+    "author": "eng_dave",
+    "changed_files": [
+      "auth/models.py",
+      "auth/permissions.py",
+      "auth/tokens.py",
+      "auth/oauth.py"
+    ],
+    "diff_chunks": [
+      "# diff chunk for auth/models.py",
+      "# diff chunk for auth/permissions.py",
+      "# diff chunk for auth/tokens.py",
+      "# diff chunk for auth/oauth.py"
+    ],
+    "review_comments": [
+      "LGTM, minor nits inline"
+    ],
+    "created_at": "2026-02-16T00:00:00+00:00",
+    "days_open": 4,
+    "diff_line_count": 370,
+    "_component": "auth",
+    "_reviewer": "eng_bob",
+    "_cycle_days": 3.55
+  },
+  {
+    "pr_id": "PR-1074",
+    "title": "Refactor payment models for new schema",
+    "author": "eng_carol",
+    "changed_files": [
+      "payments/validators.py",
+      "payments/processor.py"
+    ],
+    "diff_chunks": [
+      "# diff chunk for payments/validators.py",
+      "# diff chunk for payments/processor.py"
+    ],
+    "review_comments": [
+      "Needs security review before merge"
+    ],
+    "created_at": "2026-03-17T00:00:00+00:00",
+    "days_open": 3,
+    "diff_line_count": 397,
+    "_component": "payments",
+    "_reviewer": "eng_carol",
+    "_cycle_days": 2.97
+  },
+  {
+    "pr_id": "PR-1075",
+    "title": "Refactor payment models for new schema",
+    "author": "eng_dave",
+    "changed_files": [
+      "payments/validators.py",
+      "payments/webhook.py"
+    ],
+    "diff_chunks": [
+      "# diff chunk for payments/validators.py",
+      "# diff chunk for payments/webhook.py"
+    ],
+    "review_comments": [
+      "Needs security review before merge"
+    ],
+    "created_at": "2026-03-30T00:00:00+00:00",
+    "days_open": 4,
+    "diff_line_count": 166,
+    "_component": "payments",
+    "_reviewer": "eng_alice",
+    "_cycle_days": 3.72
+  },
+  {
+    "pr_id": "PR-1076",
+    "title": "Refactor route handlers",
+    "author": "eng_eve",
+    "changed_files": [
+      "api/pagination.py",
+      "api/throttling.py",
+      "api/tests/test_routes.py",
+      "api/routes.py"
+    ],
+    "diff_chunks": [
+      "# diff chunk for api/pagination.py",
+      "# diff chunk for api/throttling.py",
+      "# diff chunk for api/tests/test_routes.py",
+      "# diff chunk for api/routes.py"
+    ],
+    "review_comments": [
+      "LGTM, minor nits inline"
+    ],
+    "created_at": "2025-11-11T00:00:00+00:00",
+    "days_open": 4,
+    "diff_line_count": 368,
+    "_component": "api",
+    "_reviewer": "eng_frank",
+    "_cycle_days": 3.73
+  },
+  {
+    "pr_id": "PR-1077",
+    "title": "Add OAuth2 PKCE support",
+    "author": "eng_frank",
+    "changed_files": [
+      "auth/models.py"
+    ],
+    "diff_chunks": [
+      "# diff chunk for auth/models.py"
+    ],
+    "review_comments": [
+      "LGTM, minor nits inline"
+    ],
+    "created_at": "2026-03-07T00:00:00+00:00",
+    "days_open": 2,
+    "diff_line_count": 75,
+    "_component": "auth",
+    "_reviewer": "eng_bob",
+    "_cycle_days": 2.1
+  },
+  {
+    "pr_id": "PR-1078",
+    "title": "Fix payment processor retry logic",
+    "author": "eng_carol",
+    "changed_files": [
+      "payments/webhook.py",
+      "payments/tests/test_processor.py",
+      "payments/validators.py",
+      "payments/models.py"
+    ],
+    "diff_chunks": [
+      "# diff chunk for payments/webhook.py",
+      "# diff chunk for payments/tests/test_processor.py",
+      "# diff chunk for payments/validators.py",
+      "# diff chunk for payments/models.py"
+    ],
+    "review_comments": [
+      "Needs security review before merge",
+      "LGTM, minor nits inline"
+    ],
+    "created_at": "2025-10-26T00:00:00+00:00",
+    "days_open": 4,
+    "diff_line_count": 383,
+    "_component": "payments",
+    "_reviewer": "eng_bob",
+    "_cycle_days": 3.55
+  },
+  {
+    "pr_id": "PR-1079",
+    "title": "Update Kubernetes deployment config",
+    "author": "eng_dave",
+    "changed_files": [
+      "infra/k8s/deployment.yaml",
+      "infra/scripts/migrate.sh"
+    ],
+    "diff_chunks": [
+      "# diff chunk for infra/k8s/deployment.yaml",
+      "# diff chunk for infra/scripts/migrate.sh"
+    ],
+    "review_comments": [],
+    "created_at": "2025-11-06T00:00:00+00:00",
+    "days_open": 3,
+    "diff_line_count": 454,
+    "_component": "infra",
+    "_reviewer": "eng_eve",
+    "_cycle_days": 2.82
+  },
+  {
+    "pr_id": "PR-1080",
+    "title": "Refactor dashboard views",
+    "author": "eng_carol",
+    "changed_files": [
+      "dashboard/filters.py",
+      "dashboard/tests/test_views.py",
+      "dashboard/charts.py"
+    ],
+    "diff_chunks": [
+      "# diff chunk for dashboard/filters.py",
+      "# diff chunk for dashboard/tests/test_views.py",
+      "# diff chunk for dashboard/charts.py"
+    ],
+    "review_comments": [],
+    "created_at": "2025-10-24T00:00:00+00:00",
+    "days_open": 3,
+    "diff_line_count": 237,
+    "_component": "dashboard",
+    "_reviewer": "eng_frank",
+    "_cycle_days": 3.35
+  },
+  {
+    "pr_id": "PR-1081",
+    "title": "Add OAuth2 PKCE support",
+    "author": "eng_dave",
+    "changed_files": [
+      "auth/oauth.py",
+      "auth/permissions.py",
+      "auth/tests/test_tokens.py"
+    ],
+    "diff_chunks": [
+      "# diff chunk for auth/oauth.py",
+      "# diff chunk for auth/permissions.py",
+      "# diff chunk for auth/tests/test_tokens.py"
+    ],
+    "review_comments": [
+      "LGTM, minor nits inline"
+    ],
+    "created_at": "2026-04-13T00:00:00+00:00",
+    "days_open": 3,
+    "diff_line_count": 990,
+    "_component": "auth",
+    "_reviewer": "eng_bob",
+    "_cycle_days": 2.5
+  },
+  {
+    "pr_id": "PR-1082",
+    "title": "Fix Terraform variable references",
+    "author": "eng_frank",
+    "changed_files": [
+      "infra/terraform/main.tf",
+      "infra/k8s/deployment.yaml",
+      "infra/monitoring/alerts.yaml",
+      "infra/scripts/migrate.sh"
+    ],
+    "diff_chunks": [
+      "# diff chunk for infra/terraform/main.tf",
+      "# diff chunk for infra/k8s/deployment.yaml",
+      "# diff chunk for infra/monitoring/alerts.yaml",
+      "# diff chunk for infra/scripts/migrate.sh"
+    ],
+    "review_comments": [
+      "LGTM, minor nits inline"
+    ],
+    "created_at": "2026-02-21T00:00:00+00:00",
+    "days_open": 2,
+    "diff_line_count": 510,
+    "_component": "infra",
+    "_reviewer": "eng_alice",
+    "_cycle_days": 1.78
+  },
+  {
+    "pr_id": "PR-1083",
+    "title": "Refactor permissions middleware",
+    "author": "eng_frank",
+    "changed_files": [
+      "auth/middleware.py",
+      "auth/oauth.py",
+      "auth/permissions.py",
+      "auth/models.py"
+    ],
+    "diff_chunks": [
+      "# diff chunk for auth/middleware.py",
+      "# diff chunk for auth/oauth.py",
+      "# diff chunk for auth/permissions.py",
+      "# diff chunk for auth/models.py"
+    ],
+    "review_comments": [],
+    "created_at": "2026-03-16T00:00:00+00:00",
+    "days_open": 2,
+    "diff_line_count": 60,
+    "_component": "auth",
+    "_reviewer": "eng_alice",
+    "_cycle_days": 1.77
+  },
+  {
+    "pr_id": "PR-1084",
+    "title": "Add new chart component",
+    "author": "eng_bob",
+    "changed_files": [
+      "dashboard/charts.py",
+      "dashboard/tests/test_views.py",
+      "dashboard/filters.py"
+    ],
+    "diff_chunks": [
+      "# diff chunk for dashboard/charts.py",
+      "# diff chunk for dashboard/tests/test_views.py",
+      "# diff chunk for dashboard/filters.py"
+    ],
+    "review_comments": [],
+    "created_at": "2026-02-02T00:00:00+00:00",
+    "days_open": 4,
+    "diff_line_count": 188,
+    "_component": "dashboard",
+    "_reviewer": "eng_dave",
+    "_cycle_days": 3.69
+  },
+  {
+    "pr_id": "PR-1085",
+    "title": "Refactor dashboard views",
+    "author": "eng_alice",
+    "changed_files": [
+      "dashboard/filters.py",
+      "dashboard/views.py",
+      "dashboard/charts.py",
+      "dashboard/tests/test_views.py"
+    ],
+    "diff_chunks": [
+      "# diff chunk for dashboard/filters.py",
+      "# diff chunk for dashboard/views.py",
+      "# diff chunk for dashboard/charts.py",
+      "# diff chunk for dashboard/tests/test_views.py"
+    ],
+    "review_comments": [
+      "LGTM, minor nits inline"
+    ],
+    "created_at": "2026-02-10T00:00:00+00:00",
+    "days_open": 2,
+    "diff_line_count": 107,
+    "_component": "dashboard",
+    "_reviewer": "eng_dave",
+    "_cycle_days": 1.89
+  },
+  {
+    "pr_id": "PR-1086",
+    "title": "Fix throttling for burst requests",
+    "author": "eng_eve",
+    "changed_files": [
+      "api/throttling.py",
+      "api/routes.py"
+    ],
+    "diff_chunks": [
+      "# diff chunk for api/throttling.py",
+      "# diff chunk for api/routes.py"
+    ],
+    "review_comments": [
+      "LGTM, minor nits inline"
+    ],
+    "created_at": "2025-11-11T00:00:00+00:00",
+    "days_open": 4,
+    "diff_line_count": 145,
+    "_component": "api",
+    "_reviewer": "eng_eve",
+    "_cycle_days": 3.66
+  },
+  {
+    "pr_id": "PR-1087",
+    "title": "Update payment validator edge cases",
+    "author": "eng_frank",
+    "changed_files": [
+      "payments/webhook.py"
+    ],
+    "diff_chunks": [
+      "# diff chunk for payments/webhook.py"
+    ],
+    "review_comments": [
+      "Needs security review before merge",
+      "LGTM, minor nits inline"
+    ],
+    "created_at": "2026-04-07T00:00:00+00:00",
+    "days_open": 2,
+    "diff_line_count": 532,
+    "_component": "payments",
+    "_reviewer": "eng_bob",
+    "_cycle_days": 2.01
+  },
+  {
+    "pr_id": "PR-1088",
+    "title": "Update payment validator edge cases",
+    "author": "eng_alice",
+    "changed_files": [
+      "payments/models.py",
+      "payments/utils.py",
+      "payments/validators.py",
+      "payments/tests/test_processor.py"
+    ],
+    "diff_chunks": [
+      "# diff chunk for payments/models.py",
+      "# diff chunk for payments/utils.py",
+      "# diff chunk for payments/validators.py",
+      "# diff chunk for payments/tests/test_processor.py"
+    ],
+    "review_comments": [
+      "Needs security review before merge"
+    ],
+    "created_at": "2026-03-10T00:00:00+00:00",
+    "days_open": 2,
+    "diff_line_count": 187,
+    "_component": "payments",
+    "_reviewer": "eng_alice",
+    "_cycle_days": 1.88
+  },
+  {
+    "pr_id": "PR-1089",
+    "title": "Fix Terraform variable references",
+    "author": "eng_dave",
+    "changed_files": [
+      "infra/k8s/deployment.yaml",
+      "infra/scripts/migrate.sh",
+      "infra/monitoring/alerts.yaml"
+    ],
+    "diff_chunks": [
+      "# diff chunk for infra/k8s/deployment.yaml",
+      "# diff chunk for infra/scripts/migrate.sh",
+      "# diff chunk for infra/monitoring/alerts.yaml"
+    ],
+    "review_comments": [
+      "LGTM, minor nits inline"
+    ],
+    "created_at": "2026-02-17T00:00:00+00:00",
+    "days_open": 4,
+    "diff_line_count": 1306,
+    "_component": "infra",
+    "_reviewer": "eng_eve",
+    "_cycle_days": 3.5
+  },
+  {
+    "pr_id": "PR-1090",
+    "title": "Update Kubernetes deployment config",
+    "author": "eng_frank",
+    "changed_files": [
+      "infra/scripts/migrate.sh"
+    ],
+    "diff_chunks": [
+      "# diff chunk for infra/scripts/migrate.sh"
+    ],
+    "review_comments": [
+      "LGTM, minor nits inline"
+    ],
+    "created_at": "2026-03-26T00:00:00+00:00",
+    "days_open": 2,
+    "diff_line_count": 151,
+    "_component": "infra",
+    "_reviewer": "eng_alice",
+    "_cycle_days": 2.4
+  },
+  {
+    "pr_id": "PR-1091",
+    "title": "Add webhook signature validation",
+    "author": "eng_carol",
+    "changed_files": [
+      "payments/utils.py"
+    ],
+    "diff_chunks": [
+      "# diff chunk for payments/utils.py"
+    ],
+    "review_comments": [
+      "Needs security review before merge",
+      "LGTM, minor nits inline"
+    ],
+    "created_at": "2026-02-24T00:00:00+00:00",
+    "days_open": 3,
+    "diff_line_count": 82,
+    "_component": "payments",
+    "_reviewer": "eng_carol",
+    "_cycle_days": 2.68
+  },
+  {
+    "pr_id": "PR-1092",
+    "title": "Add pagination to list endpoints",
+    "author": "eng_bob",
+    "changed_files": [
+      "api/serializers.py",
+      "api/pagination.py"
+    ],
+    "diff_chunks": [
+      "# diff chunk for api/serializers.py",
+      "# diff chunk for api/pagination.py"
+    ],
+    "review_comments": [],
+    "created_at": "2026-03-05T00:00:00+00:00",
+    "days_open": 5,
+    "diff_line_count": 341,
+    "_component": "api",
+    "_reviewer": "eng_frank",
+    "_cycle_days": 5.31
+  },
+  {
+    "pr_id": "PR-1093",
+    "title": "Update auth models for multi-tenant",
+    "author": "eng_alice",
+    "changed_files": [
+      "auth/tokens.py"
+    ],
+    "diff_chunks": [
+      "# diff chunk for auth/tokens.py"
+    ],
+    "review_comments": [
+      "LGTM, minor nits inline"
+    ],
+    "created_at": "2026-02-10T00:00:00+00:00",
+    "days_open": 1,
+    "diff_line_count": 110,
+    "_component": "auth",
+    "_reviewer": "eng_alice",
+    "_cycle_days": 1.44
+  },
+  {
+    "pr_id": "PR-1094",
+    "title": "Update Kubernetes deployment config",
+    "author": "eng_alice",
+    "changed_files": [
+      "infra/monitoring/alerts.yaml",
+      "infra/deploy.yml",
+      "infra/k8s/deployment.yaml"
+    ],
+    "diff_chunks": [
+      "# diff chunk for infra/monitoring/alerts.yaml",
+      "# diff chunk for infra/deploy.yml",
+      "# diff chunk for infra/k8s/deployment.yaml"
+    ],
+    "review_comments": [],
+    "created_at": "2025-12-11T00:00:00+00:00",
+    "days_open": 1,
+    "diff_line_count": 429,
+    "_component": "infra",
+    "_reviewer": "eng_dave",
+    "_cycle_days": 0.5
+  },
+  {
+    "pr_id": "PR-1095",
+    "title": "Add monitoring alerts for latency",
+    "author": "eng_carol",
+    "changed_files": [
+      "infra/scripts/migrate.sh",
+      "infra/deploy.yml",
+      "infra/k8s/deployment.yaml",
+      "infra/terraform/main.tf"
+    ],
+    "diff_chunks": [
+      "# diff chunk for infra/scripts/migrate.sh",
+      "# diff chunk for infra/deploy.yml",
+      "# diff chunk for infra/k8s/deployment.yaml",
+      "# diff chunk for infra/terraform/main.tf"
+    ],
+    "review_comments": [
+      "LGTM, minor nits inline"
+    ],
+    "created_at": "2026-03-31T00:00:00+00:00",
+    "days_open": 1,
+    "diff_line_count": 57,
+    "_component": "infra",
+    "_reviewer": "eng_dave",
+    "_cycle_days": 1.06
+  },
+  {
+    "pr_id": "PR-1096",
+    "title": "Fix payment processor retry logic",
+    "author": "eng_bob",
+    "changed_files": [
+      "payments/validators.py",
+      "payments/utils.py",
+      "payments/models.py"
+    ],
+    "diff_chunks": [
+      "# diff chunk for payments/validators.py",
+      "# diff chunk for payments/utils.py",
+      "# diff chunk for payments/models.py"
+    ],
+    "review_comments": [
+      "Needs security review before merge"
+    ],
+    "created_at": "2025-12-23T00:00:00+00:00",
+    "days_open": 3,
+    "diff_line_count": 199,
+    "_component": "payments",
+    "_reviewer": "eng_carol",
+    "_cycle_days": 3.42
+  },
+  {
+    "pr_id": "PR-1097",
+    "title": "Update payment validator edge cases",
+    "author": "eng_frank",
+    "changed_files": [
+      "payments/validators.py",
+      "payments/tests/test_processor.py"
+    ],
+    "diff_chunks": [
+      "# diff chunk for payments/validators.py",
+      "# diff chunk for payments/tests/test_processor.py"
+    ],
+    "review_comments": [
+      "Needs security review before merge",
+      "LGTM, minor nits inline"
+    ],
+    "created_at": "2026-02-19T00:00:00+00:00",
+    "days_open": 1,
+    "diff_line_count": 569,
+    "_component": "payments",
+    "_reviewer": "eng_alice",
+    "_cycle_days": 1.4
+  },
+  {
+    "pr_id": "PR-1098",
+    "title": "Add new chart component",
+    "author": "eng_dave",
+    "changed_files": [
+      "dashboard/filters.py",
+      "dashboard/views.py",
+      "dashboard/charts.py"
+    ],
+    "diff_chunks": [
+      "# diff chunk for dashboard/filters.py",
+      "# diff chunk for dashboard/views.py",
+      "# diff chunk for dashboard/charts.py"
+    ],
+    "review_comments": [],
+    "created_at": "2026-04-01T00:00:00+00:00",
+    "days_open": 3,
+    "diff_line_count": 418,
+    "_component": "dashboard",
+    "_reviewer": "eng_carol",
+    "_cycle_days": 3.46
+  },
+  {
+    "pr_id": "PR-1099",
+    "title": "Update dashboard tests",
+    "author": "eng_alice",
+    "changed_files": [
+      "dashboard/filters.py"
+    ],
+    "diff_chunks": [
+      "# diff chunk for dashboard/filters.py"
+    ],
+    "review_comments": [],
+    "created_at": "2025-10-29T00:00:00+00:00",
+    "days_open": 1,
+    "diff_line_count": 266,
+    "_component": "dashboard",
+    "_reviewer": "eng_carol",
+    "_cycle_days": 0.78
+  },
+  {
+    "pr_id": "PR-1100",
+    "title": "Refactor payment models for new schema",
+    "author": "eng_carol",
+    "changed_files": [
+      "payments/webhook.py",
+      "payments/validators.py"
+    ],
+    "diff_chunks": [
+      "# diff chunk for payments/webhook.py",
+      "# diff chunk for payments/validators.py"
+    ],
+    "review_comments": [
+      "Needs security review before merge",
+      "LGTM, minor nits inline"
+    ],
+    "created_at": "2026-02-20T00:00:00+00:00",
+    "days_open": 2,
+    "diff_line_count": 253,
+    "_component": "payments",
+    "_reviewer": "eng_bob",
+    "_cycle_days": 2.35
+  },
+  {
+    "pr_id": "PR-1101",
+    "title": "Add webhook signature validation",
+    "author": "eng_carol",
+    "changed_files": [
+      "payments/utils.py"
+    ],
+    "diff_chunks": [
+      "# diff chunk for payments/utils.py"
+    ],
+    "review_comments": [
+      "Needs security review before merge",
+      "LGTM, minor nits inline"
+    ],
+    "created_at": "2025-11-01T00:00:00+00:00",
+    "days_open": 4,
+    "diff_line_count": 487,
+    "_component": "payments",
+    "_reviewer": "eng_carol",
+    "_cycle_days": 4.36
+  },
+  {
+    "pr_id": "PR-1102",
+    "title": "Add pagination to list endpoints",
+    "author": "eng_frank",
+    "changed_files": [
+      "api/serializers.py",
+      "api/throttling.py"
+    ],
+    "diff_chunks": [
+      "# diff chunk for api/serializers.py",
+      "# diff chunk for api/throttling.py"
+    ],
+    "review_comments": [],
+    "created_at": "2026-04-01T00:00:00+00:00",
+    "days_open": 2,
+    "diff_line_count": 379,
+    "_component": "api",
+    "_reviewer": "eng_frank",
+    "_cycle_days": 1.79
+  },
+  {
+    "pr_id": "PR-1103",
+    "title": "Fix payment processor retry logic",
+    "author": "eng_frank",
+    "changed_files": [
+      "payments/webhook.py",
+      "payments/models.py",
+      "payments/utils.py"
+    ],
+    "diff_chunks": [
+      "# diff chunk for payments/webhook.py",
+      "# diff chunk for payments/models.py",
+      "# diff chunk for payments/utils.py"
+    ],
+    "review_comments": [
+      "Needs security review before merge"
+    ],
+    "created_at": "2026-01-25T00:00:00+00:00",
+    "days_open": 2,
+    "diff_line_count": 414,
+    "_component": "payments",
+    "_reviewer": "eng_carol",
+    "_cycle_days": 2.44
+  },
+  {
+    "pr_id": "PR-1104",
+    "title": "Fix token refresh race condition",
+    "author": "eng_bob",
+    "changed_files": [
+      "auth/models.py",
+      "auth/tests/test_tokens.py",
+      "auth/oauth.py"
+    ],
+    "diff_chunks": [
+      "# diff chunk for auth/models.py",
+      "# diff chunk for auth/tests/test_tokens.py",
+      "# diff chunk for auth/oauth.py"
+    ],
+    "review_comments": [],
+    "created_at": "2025-11-14T00:00:00+00:00",
+    "days_open": 4,
+    "diff_line_count": 545,
+    "_component": "auth",
+    "_reviewer": "eng_dave",
+    "_cycle_days": 4.24
+  },
+  {
+    "pr_id": "PR-1105",
+    "title": "Add monitoring alerts for latency",
+    "author": "eng_alice",
+    "changed_files": [
+      "infra/monitoring/alerts.yaml",
+      "infra/terraform/main.tf",
+      "infra/deploy.yml",
+      "infra/scripts/migrate.sh"
+    ],
+    "diff_chunks": [
+      "# diff chunk for infra/monitoring/alerts.yaml",
+      "# diff chunk for infra/terraform/main.tf",
+      "# diff chunk for infra/deploy.yml",
+      "# diff chunk for infra/scripts/migrate.sh"
+    ],
+    "review_comments": [
+      "LGTM, minor nits inline"
+    ],
+    "created_at": "2026-01-07T00:00:00+00:00",
+    "days_open": 1,
+    "diff_line_count": 78,
+    "_component": "infra",
+    "_reviewer": "eng_alice",
+    "_cycle_days": 1.34
+  },
+  {
+    "pr_id": "PR-1106",
+    "title": "Fix throttling for burst requests",
+    "author": "eng_bob",
+    "changed_files": [
+      "api/routes.py"
+    ],
+    "diff_chunks": [
+      "# diff chunk for api/routes.py"
+    ],
+    "review_comments": [],
+    "created_at": "2025-12-12T00:00:00+00:00",
+    "days_open": 4,
+    "diff_line_count": 348,
+    "_component": "api",
+    "_reviewer": "eng_eve",
+    "_cycle_days": 4.2
+  },
+  {
+    "pr_id": "PR-1107",
+    "title": "Add new chart component",
+    "author": "eng_eve",
+    "changed_files": [
+      "dashboard/views.py",
+      "dashboard/charts.py",
+      "dashboard/tests/test_views.py"
+    ],
+    "diff_chunks": [
+      "# diff chunk for dashboard/views.py",
+      "# diff chunk for dashboard/charts.py",
+      "# diff chunk for dashboard/tests/test_views.py"
+    ],
+    "review_comments": [],
+    "created_at": "2025-12-28T00:00:00+00:00",
+    "days_open": 4,
+    "diff_line_count": 486,
+    "_component": "dashboard",
+    "_reviewer": "eng_carol",
+    "_cycle_days": 3.89
+  },
+  {
+    "pr_id": "PR-1108",
+    "title": "Update serializers for v2 schema",
+    "author": "eng_eve",
+    "changed_files": [
+      "api/pagination.py",
+      "api/routes.py",
+      "api/serializers.py",
+      "api/throttling.py"
+    ],
+    "diff_chunks": [
+      "# diff chunk for api/pagination.py",
+      "# diff chunk for api/routes.py",
+      "# diff chunk for api/serializers.py",
+      "# diff chunk for api/throttling.py"
+    ],
+    "review_comments": [
+      "@eng_frank can you take a look at this?"
+    ],
+    "created_at": "2026-01-25T00:00:00+00:00",
+    "days_open": 6,
+    "diff_line_count": 153,
+    "_component": "api",
+    "_reviewer": "eng_frank",
+    "_cycle_days": 6.01
+  },
+  {
+    "pr_id": "PR-1109",
+    "title": "Fix throttling for burst requests",
+    "author": "eng_alice",
+    "changed_files": [
+      "api/tests/test_routes.py",
+      "api/routes.py",
+      "api/serializers.py",
+      "api/pagination.py"
+    ],
+    "diff_chunks": [
+      "# diff chunk for api/tests/test_routes.py",
+      "# diff chunk for api/routes.py",
+      "# diff chunk for api/serializers.py",
+      "# diff chunk for api/pagination.py"
+    ],
+    "review_comments": [
+      "LGTM, minor nits inline"
+    ],
+    "created_at": "2026-01-22T00:00:00+00:00",
+    "days_open": 1,
+    "diff_line_count": 77,
+    "_component": "api",
+    "_reviewer": "eng_frank",
+    "_cycle_days": 0.5
+  },
+  {
+    "pr_id": "PR-1110",
+    "title": "Add webhook signature validation",
+    "author": "eng_eve",
+    "changed_files": [
+      "payments/models.py",
+      "payments/webhook.py",
+      "payments/utils.py"
+    ],
+    "diff_chunks": [
+      "# diff chunk for payments/models.py",
+      "# diff chunk for payments/webhook.py",
+      "# diff chunk for payments/utils.py"
+    ],
+    "review_comments": [
+      "Needs security review before merge",
+      "LGTM, minor nits inline"
+    ],
+    "created_at": "2026-03-23T00:00:00+00:00",
+    "days_open": 5,
+    "diff_line_count": 461,
+    "_component": "payments",
+    "_reviewer": "eng_bob",
+    "_cycle_days": 5.28
+  },
+  {
+    "pr_id": "PR-1111",
+    "title": "Update Kubernetes deployment config",
+    "author": "eng_bob",
+    "changed_files": [
+      "infra/scripts/migrate.sh",
+      "infra/monitoring/alerts.yaml",
+      "infra/terraform/main.tf",
+      "infra/k8s/deployment.yaml"
+    ],
+    "diff_chunks": [
+      "# diff chunk for infra/scripts/migrate.sh",
+      "# diff chunk for infra/monitoring/alerts.yaml",
+      "# diff chunk for infra/terraform/main.tf",
+      "# diff chunk for infra/k8s/deployment.yaml"
+    ],
+    "review_comments": [
+      "@eng_eve can you take a look at this?",
+      "LGTM, minor nits inline"
+    ],
+    "created_at": "2025-11-09T00:00:00+00:00",
+    "days_open": 7,
+    "diff_line_count": 290,
+    "_component": "infra",
+    "_reviewer": "eng_eve",
+    "_cycle_days": 6.7
+  },
+  {
+    "pr_id": "PR-1112",
+    "title": "Refactor dashboard views",
+    "author": "eng_dave",
+    "changed_files": [
+      "dashboard/views.py",
+      "dashboard/charts.py",
+      "dashboard/filters.py"
+    ],
+    "diff_chunks": [
+      "# diff chunk for dashboard/views.py",
+      "# diff chunk for dashboard/charts.py",
+      "# diff chunk for dashboard/filters.py"
+    ],
+    "review_comments": [
+      "LGTM, minor nits inline"
+    ],
+    "created_at": "2025-12-24T00:00:00+00:00",
+    "days_open": 3,
+    "diff_line_count": 502,
+    "_component": "dashboard",
+    "_reviewer": "eng_carol",
+    "_cycle_days": 2.57
+  },
+  {
+    "pr_id": "PR-1113",
+    "title": "Update payment validator edge cases",
+    "author": "eng_frank",
+    "changed_files": [
+      "payments/validators.py",
+      "payments/utils.py",
+      "payments/processor.py",
+      "payments/webhook.py"
+    ],
+    "diff_chunks": [
+      "# diff chunk for payments/validators.py",
+      "# diff chunk for payments/utils.py",
+      "# diff chunk for payments/processor.py",
+      "# diff chunk for payments/webhook.py"
+    ],
+    "review_comments": [
+      "Needs security review before merge",
+      "LGTM, minor nits inline"
+    ],
+    "created_at": "2025-11-23T00:00:00+00:00",
+    "days_open": 1,
+    "diff_line_count": 1208,
+    "_component": "payments",
+    "_reviewer": "eng_carol",
+    "_cycle_days": 1.13
+  },
+  {
+    "pr_id": "PR-1114",
+    "title": "Refactor deploy pipeline",
+    "author": "eng_bob",
+    "changed_files": [
+      "infra/deploy.yml",
+      "infra/k8s/deployment.yaml",
+      "infra/monitoring/alerts.yaml"
+    ],
+    "diff_chunks": [
+      "# diff chunk for infra/deploy.yml",
+      "# diff chunk for infra/k8s/deployment.yaml",
+      "# diff chunk for infra/monitoring/alerts.yaml"
+    ],
+    "review_comments": [
+      "@eng_alice can you take a look at this?"
+    ],
+    "created_at": "2026-02-14T00:00:00+00:00",
+    "days_open": 6,
+    "diff_line_count": 1430,
+    "_component": "infra",
+    "_reviewer": "eng_alice",
+    "_cycle_days": 6.35
+  },
+  {
+    "pr_id": "PR-1115",
+    "title": "Fix Terraform variable references",
+    "author": "eng_eve",
+    "changed_files": [
+      "infra/scripts/migrate.sh",
+      "infra/terraform/main.tf",
+      "infra/monitoring/alerts.yaml",
+      "infra/deploy.yml"
+    ],
+    "diff_chunks": [
+      "# diff chunk for infra/scripts/migrate.sh",
+      "# diff chunk for infra/terraform/main.tf",
+      "# diff chunk for infra/monitoring/alerts.yaml",
+      "# diff chunk for infra/deploy.yml"
+    ],
+    "review_comments": [
+      "LGTM, minor nits inline"
+    ],
+    "created_at": "2025-11-08T00:00:00+00:00",
+    "days_open": 4,
+    "diff_line_count": 390,
+    "_component": "infra",
+    "_reviewer": "eng_alice",
+    "_cycle_days": 3.55
+  },
+  {
+    "pr_id": "PR-1116",
+    "title": "Refactor payment models for new schema",
+    "author": "eng_eve",
+    "changed_files": [
+      "payments/models.py",
+      "payments/processor.py"
+    ],
+    "diff_chunks": [
+      "# diff chunk for payments/models.py",
+      "# diff chunk for payments/processor.py"
+    ],
+    "review_comments": [
+      "Needs security review before merge",
+      "LGTM, minor nits inline"
+    ],
+    "created_at": "2025-11-20T00:00:00+00:00",
+    "days_open": 5,
+    "diff_line_count": 329,
+    "_component": "payments",
+    "_reviewer": "eng_carol",
+    "_cycle_days": 4.92
+  },
+  {
+    "pr_id": "PR-1117",
+    "title": "Refactor route handlers",
+    "author": "eng_frank",
+    "changed_files": [
+      "api/pagination.py"
+    ],
+    "diff_chunks": [
+      "# diff chunk for api/pagination.py"
+    ],
+    "review_comments": [],
+    "created_at": "2025-11-26T00:00:00+00:00",
+    "days_open": 2,
+    "diff_line_count": 266,
+    "_component": "api",
+    "_reviewer": "eng_carol",
+    "_cycle_days": 2.01
+  },
+  {
+    "pr_id": "PR-1118",
+    "title": "Refactor permissions middleware",
+    "author": "eng_frank",
+    "changed_files": [
+      "auth/oauth.py",
+      "auth/permissions.py",
+      "auth/middleware.py",
+      "auth/tokens.py"
+    ],
+    "diff_chunks": [
+      "# diff chunk for auth/oauth.py",
+      "# diff chunk for auth/permissions.py",
+      "# diff chunk for auth/middleware.py",
+      "# diff chunk for auth/tokens.py"
+    ],
+    "review_comments": [],
+    "created_at": "2026-01-29T00:00:00+00:00",
+    "days_open": 3,
+    "diff_line_count": 247,
+    "_component": "auth",
+    "_reviewer": "eng_alice",
+    "_cycle_days": 2.96
+  },
+  {
+    "pr_id": "PR-1119",
+    "title": "Fix filter state bug",
+    "author": "eng_bob",
+    "changed_files": [
+      "dashboard/views.py",
+      "dashboard/filters.py",
+      "dashboard/tests/test_views.py"
+    ],
+    "diff_chunks": [
+      "# diff chunk for dashboard/views.py",
+      "# diff chunk for dashboard/filters.py",
+      "# diff chunk for dashboard/tests/test_views.py"
+    ],
+    "review_comments": [
+      "@eng_frank can you take a look at this?"
+    ],
+    "created_at": "2025-10-31T00:00:00+00:00",
+    "days_open": 6,
+    "diff_line_count": 85,
+    "_component": "dashboard",
+    "_reviewer": "eng_frank",
+    "_cycle_days": 5.7
+  },
+  {
+    "pr_id": "PR-1120",
+    "title": "Add monitoring alerts for latency",
+    "author": "eng_dave",
+    "changed_files": [
+      "infra/scripts/migrate.sh",
+      "infra/deploy.yml"
+    ],
+    "diff_chunks": [
+      "# diff chunk for infra/scripts/migrate.sh",
+      "# diff chunk for infra/deploy.yml"
+    ],
+    "review_comments": [],
+    "created_at": "2026-01-03T00:00:00+00:00",
+    "days_open": 2,
+    "diff_line_count": 96,
+    "_component": "infra",
+    "_reviewer": "eng_eve",
+    "_cycle_days": 2.18
+  },
+  {
+    "pr_id": "PR-1121",
+    "title": "Update dashboard tests",
+    "author": "eng_eve",
+    "changed_files": [
+      "dashboard/filters.py",
+      "dashboard/charts.py"
+    ],
+    "diff_chunks": [
+      "# diff chunk for dashboard/filters.py",
+      "# diff chunk for dashboard/charts.py"
+    ],
+    "review_comments": [],
+    "created_at": "2026-02-28T00:00:00+00:00",
+    "days_open": 5,
+    "diff_line_count": 164,
+    "_component": "dashboard",
+    "_reviewer": "eng_frank",
+    "_cycle_days": 4.82
+  },
+  {
+    "pr_id": "PR-1122",
+    "title": "Update dashboard tests",
+    "author": "eng_carol",
+    "changed_files": [
+      "dashboard/charts.py",
+      "dashboard/filters.py"
+    ],
+    "diff_chunks": [
+      "# diff chunk for dashboard/charts.py",
+      "# diff chunk for dashboard/filters.py"
+    ],
+    "review_comments": [
+      "LGTM, minor nits inline"
+    ],
+    "created_at": "2026-03-14T00:00:00+00:00",
+    "days_open": 3,
+    "diff_line_count": 470,
+    "_component": "dashboard",
+    "_reviewer": "eng_frank",
+    "_cycle_days": 3.06
+  },
+  {
+    "pr_id": "PR-1123",
+    "title": "Fix throttling for burst requests",
+    "author": "eng_eve",
+    "changed_files": [
+      "api/serializers.py"
+    ],
+    "diff_chunks": [
+      "# diff chunk for api/serializers.py"
+    ],
+    "review_comments": [
+      "@eng_carol can you take a look at this?"
+    ],
+    "created_at": "2026-02-08T00:00:00+00:00",
+    "days_open": 7,
+    "diff_line_count": 891,
+    "_component": "api",
+    "_reviewer": "eng_carol",
+    "_cycle_days": 6.95
+  },
+  {
+    "pr_id": "PR-1124",
+    "title": "Fix filter state bug",
+    "author": "eng_alice",
+    "changed_files": [
+      "dashboard/tests/test_views.py"
+    ],
+    "diff_chunks": [
+      "# diff chunk for dashboard/tests/test_views.py"
+    ],
+    "review_comments": [],
+    "created_at": "2026-04-05T00:00:00+00:00",
+    "days_open": 2,
+    "diff_line_count": 957,
+    "_component": "dashboard",
+    "_reviewer": "eng_frank",
+    "_cycle_days": 2.17
+  },
+  {
+    "pr_id": "PR-1125",
+    "title": "Fix filter state bug",
+    "author": "eng_alice",
+    "changed_files": [
+      "dashboard/charts.py",
+      "dashboard/views.py",
+      "dashboard/filters.py"
+    ],
+    "diff_chunks": [
+      "# diff chunk for dashboard/charts.py",
+      "# diff chunk for dashboard/views.py",
+      "# diff chunk for dashboard/filters.py"
+    ],
+    "review_comments": [],
+    "created_at": "2026-02-04T00:00:00+00:00",
+    "days_open": 2,
+    "diff_line_count": 57,
+    "_component": "dashboard",
+    "_reviewer": "eng_frank",
+    "_cycle_days": 1.79
+  },
+  {
+    "pr_id": "PR-1126",
+    "title": "Refactor dashboard views",
+    "author": "eng_dave",
+    "changed_files": [
+      "dashboard/charts.py",
+      "dashboard/filters.py"
+    ],
+    "diff_chunks": [
+      "# diff chunk for dashboard/charts.py",
+      "# diff chunk for dashboard/filters.py"
+    ],
+    "review_comments": [],
+    "created_at": "2025-11-14T00:00:00+00:00",
+    "days_open": 4,
+    "diff_line_count": 209,
+    "_component": "dashboard",
+    "_reviewer": "eng_dave",
+    "_cycle_days": 4.42
+  },
+  {
+    "pr_id": "PR-1127",
+    "title": "Fix token refresh race condition",
+    "author": "eng_carol",
+    "changed_files": [
+      "auth/middleware.py",
+      "auth/tests/test_tokens.py",
+      "auth/models.py",
+      "auth/permissions.py"
+    ],
+    "diff_chunks": [
+      "# diff chunk for auth/middleware.py",
+      "# diff chunk for auth/tests/test_tokens.py",
+      "# diff chunk for auth/models.py",
+      "# diff chunk for auth/permissions.py"
+    ],
+    "review_comments": [],
+    "created_at": "2025-12-02T00:00:00+00:00",
+    "days_open": 1,
+    "diff_line_count": 111,
+    "_component": "auth",
+    "_reviewer": "eng_alice",
+    "_cycle_days": 1.37
+  },
+  {
+    "pr_id": "PR-1128",
+    "title": "Add OAuth2 PKCE support",
+    "author": "eng_carol",
+    "changed_files": [
+      "auth/tokens.py",
+      "auth/middleware.py",
+      "auth/permissions.py",
+      "auth/oauth.py"
+    ],
+    "diff_chunks": [
+      "# diff chunk for auth/tokens.py",
+      "# diff chunk for auth/middleware.py",
+      "# diff chunk for auth/permissions.py",
+      "# diff chunk for auth/oauth.py"
+    ],
+    "review_comments": [],
+    "created_at": "2025-12-05T00:00:00+00:00",
+    "days_open": 2,
+    "diff_line_count": 140,
+    "_component": "auth",
+    "_reviewer": "eng_bob",
+    "_cycle_days": 2.03
+  },
+  {
+    "pr_id": "PR-1129",
+    "title": "Add new chart component",
+    "author": "eng_dave",
+    "changed_files": [
+      "dashboard/filters.py"
+    ],
+    "diff_chunks": [
+      "# diff chunk for dashboard/filters.py"
+    ],
+    "review_comments": [
+      "LGTM, minor nits inline"
+    ],
+    "created_at": "2026-04-01T00:00:00+00:00",
+    "days_open": 2,
+    "diff_line_count": 149,
+    "_component": "dashboard",
+    "_reviewer": "eng_frank",
+    "_cycle_days": 2.27
+  },
+  {
+    "pr_id": "PR-1130",
+    "title": "Add monitoring alerts for latency",
+    "author": "eng_frank",
+    "changed_files": [
+      "infra/k8s/deployment.yaml",
+      "infra/scripts/migrate.sh",
+      "infra/terraform/main.tf"
+    ],
+    "diff_chunks": [
+      "# diff chunk for infra/k8s/deployment.yaml",
+      "# diff chunk for infra/scripts/migrate.sh",
+      "# diff chunk for infra/terraform/main.tf"
+    ],
+    "review_comments": [
+      "LGTM, minor nits inline"
+    ],
+    "created_at": "2025-12-17T00:00:00+00:00",
+    "days_open": 2,
+    "diff_line_count": 222,
+    "_component": "infra",
+    "_reviewer": "eng_alice",
+    "_cycle_days": 1.77
+  },
+  {
+    "pr_id": "PR-1131",
+    "title": "Update payment validator edge cases",
+    "author": "eng_frank",
+    "changed_files": [
+      "payments/processor.py",
+      "payments/webhook.py"
+    ],
+    "diff_chunks": [
+      "# diff chunk for payments/processor.py",
+      "# diff chunk for payments/webhook.py"
+    ],
+    "review_comments": [
+      "Needs security review before merge"
+    ],
+    "created_at": "2026-04-08T00:00:00+00:00",
+    "days_open": 1,
+    "diff_line_count": 218,
+    "_component": "payments",
+    "_reviewer": "eng_alice",
+    "_cycle_days": 1.17
+  },
+  {
+    "pr_id": "PR-1132",
+    "title": "Refactor deploy pipeline",
+    "author": "eng_dave",
+    "changed_files": [
+      "infra/terraform/main.tf"
+    ],
+    "diff_chunks": [
+      "# diff chunk for infra/terraform/main.tf"
+    ],
+    "review_comments": [],
+    "created_at": "2026-02-08T00:00:00+00:00",
+    "days_open": 4,
+    "diff_line_count": 98,
+    "_component": "infra",
+    "_reviewer": "eng_dave",
+    "_cycle_days": 3.67
+  },
+  {
+    "pr_id": "PR-1133",
+    "title": "Fix filter state bug",
+    "author": "eng_frank",
+    "changed_files": [
+      "dashboard/tests/test_views.py",
+      "dashboard/charts.py",
+      "dashboard/filters.py",
+      "dashboard/views.py"
+    ],
+    "diff_chunks": [
+      "# diff chunk for dashboard/tests/test_views.py",
+      "# diff chunk for dashboard/charts.py",
+      "# diff chunk for dashboard/filters.py",
+      "# diff chunk for dashboard/views.py"
+    ],
+    "review_comments": [],
+    "created_at": "2025-12-31T00:00:00+00:00",
+    "days_open": 2,
+    "diff_line_count": 148,
+    "_component": "dashboard",
+    "_reviewer": "eng_carol",
+    "_cycle_days": 1.87
+  },
+  {
+    "pr_id": "PR-1134",
+    "title": "Fix Terraform variable references",
+    "author": "eng_carol",
+    "changed_files": [
+      "infra/terraform/main.tf",
+      "infra/scripts/migrate.sh",
+      "infra/monitoring/alerts.yaml"
+    ],
+    "diff_chunks": [
+      "# diff chunk for infra/terraform/main.tf",
+      "# diff chunk for infra/scripts/migrate.sh",
+      "# diff chunk for infra/monitoring/alerts.yaml"
+    ],
+    "review_comments": [],
+    "created_at": "2025-12-30T00:00:00+00:00",
+    "days_open": 1,
+    "diff_line_count": 70,
+    "_component": "infra",
+    "_reviewer": "eng_dave",
+    "_cycle_days": 1.04
+  },
+  {
+    "pr_id": "PR-1135",
+    "title": "Fix filter state bug",
+    "author": "eng_alice",
+    "changed_files": [
+      "dashboard/views.py",
+      "dashboard/tests/test_views.py",
+      "dashboard/charts.py"
+    ],
+    "diff_chunks": [
+      "# diff chunk for dashboard/views.py",
+      "# diff chunk for dashboard/tests/test_views.py",
+      "# diff chunk for dashboard/charts.py"
+    ],
+    "review_comments": [],
+    "created_at": "2026-01-15T00:00:00+00:00",
+    "days_open": 1,
+    "diff_line_count": 514,
+    "_component": "dashboard",
+    "_reviewer": "eng_dave",
+    "_cycle_days": 0.69
+  },
+  {
+    "pr_id": "PR-1136",
+    "title": "Fix payment processor retry logic",
+    "author": "eng_bob",
+    "changed_files": [
+      "payments/webhook.py"
+    ],
+    "diff_chunks": [
+      "# diff chunk for payments/webhook.py"
+    ],
+    "review_comments": [
+      "@eng_alice can you take a look at this?",
+      "Needs security review before merge",
+      "LGTM, minor nits inline"
+    ],
+    "created_at": "2025-11-04T00:00:00+00:00",
+    "days_open": 7,
+    "diff_line_count": 217,
+    "_component": "payments",
+    "_reviewer": "eng_alice",
+    "_cycle_days": 6.86
+  },
+  {
+    "pr_id": "PR-1137",
+    "title": "Fix Terraform variable references",
+    "author": "eng_bob",
+    "changed_files": [
+      "infra/monitoring/alerts.yaml"
+    ],
+    "diff_chunks": [
+      "# diff chunk for infra/monitoring/alerts.yaml"
+    ],
+    "review_comments": [
+      "@eng_alice can you take a look at this?",
+      "LGTM, minor nits inline"
+    ],
+    "created_at": "2026-03-14T00:00:00+00:00",
+    "days_open": 8,
+    "diff_line_count": 390,
+    "_component": "infra",
+    "_reviewer": "eng_alice",
+    "_cycle_days": 7.96
+  },
+  {
+    "pr_id": "PR-1138",
+    "title": "Fix throttling for burst requests",
+    "author": "eng_bob",
+    "changed_files": [
+      "api/tests/test_routes.py",
+      "api/throttling.py",
+      "api/pagination.py",
+      "api/routes.py"
+    ],
+    "diff_chunks": [
+      "# diff chunk for api/tests/test_routes.py",
+      "# diff chunk for api/throttling.py",
+      "# diff chunk for api/pagination.py",
+      "# diff chunk for api/routes.py"
+    ],
+    "review_comments": [
+      "@eng_carol can you take a look at this?",
+      "Bumping this \u2014 been open a while"
+    ],
+    "created_at": "2026-02-10T00:00:00+00:00",
+    "days_open": 10,
+    "diff_line_count": 790,
+    "_component": "api",
+    "_reviewer": "eng_carol",
+    "_cycle_days": 10.39
+  },
+  {
+    "pr_id": "PR-1139",
+    "title": "Update Kubernetes deployment config",
+    "author": "eng_carol",
+    "changed_files": [
+      "infra/deploy.yml",
+      "infra/scripts/migrate.sh"
+    ],
+    "diff_chunks": [
+      "# diff chunk for infra/deploy.yml",
+      "# diff chunk for infra/scripts/migrate.sh"
+    ],
+    "review_comments": [
+      "@eng_alice can you take a look at this?"
+    ],
+    "created_at": "2026-03-05T00:00:00+00:00",
+    "days_open": 6,
+    "diff_line_count": 302,
+    "_component": "infra",
+    "_reviewer": "eng_alice",
+    "_cycle_days": 6.3
+  },
+  {
+    "pr_id": "PR-1140",
+    "title": "Refactor route handlers",
+    "author": "eng_frank",
+    "changed_files": [
+      "api/pagination.py",
+      "api/serializers.py",
+      "api/tests/test_routes.py"
+    ],
+    "diff_chunks": [
+      "# diff chunk for api/pagination.py",
+      "# diff chunk for api/serializers.py",
+      "# diff chunk for api/tests/test_routes.py"
+    ],
+    "review_comments": [
+      "LGTM, minor nits inline"
+    ],
+    "created_at": "2025-10-21T00:00:00+00:00",
+    "days_open": 2,
+    "diff_line_count": 66,
+    "_component": "api",
+    "_reviewer": "eng_eve",
+    "_cycle_days": 2.25
+  },
+  {
+    "pr_id": "PR-1141",
+    "title": "Update Kubernetes deployment config",
+    "author": "eng_bob",
+    "changed_files": [
+      "infra/deploy.yml",
+      "infra/terraform/main.tf",
+      "infra/scripts/migrate.sh",
+      "infra/k8s/deployment.yaml"
+    ],
+    "diff_chunks": [
+      "# diff chunk for infra/deploy.yml",
+      "# diff chunk for infra/terraform/main.tf",
+      "# diff chunk for infra/scripts/migrate.sh",
+      "# diff chunk for infra/k8s/deployment.yaml"
+    ],
+    "review_comments": [
+      "LGTM, minor nits inline"
+    ],
+    "created_at": "2025-12-20T00:00:00+00:00",
+    "days_open": 4,
+    "diff_line_count": 101,
+    "_component": "infra",
+    "_reviewer": "eng_alice",
+    "_cycle_days": 4.12
+  },
+  {
+    "pr_id": "PR-1142",
+    "title": "Refactor payment models for new schema",
+    "author": "eng_carol",
+    "changed_files": [
+      "payments/utils.py",
+      "payments/processor.py",
+      "payments/webhook.py",
+      "payments/validators.py"
+    ],
+    "diff_chunks": [
+      "# diff chunk for payments/utils.py",
+      "# diff chunk for payments/processor.py",
+      "# diff chunk for payments/webhook.py",
+      "# diff chunk for payments/validators.py"
+    ],
+    "review_comments": [
+      "Needs security review before merge"
+    ],
+    "created_at": "2025-11-05T00:00:00+00:00",
+    "days_open": 1,
+    "diff_line_count": 172,
+    "_component": "payments",
+    "_reviewer": "eng_bob",
+    "_cycle_days": 0.5
+  },
+  {
+    "pr_id": "PR-1143",
+    "title": "Refactor permissions middleware",
+    "author": "eng_eve",
+    "changed_files": [
+      "auth/oauth.py",
+      "auth/middleware.py",
+      "auth/tests/test_tokens.py",
+      "auth/permissions.py"
+    ],
+    "diff_chunks": [
+      "# diff chunk for auth/oauth.py",
+      "# diff chunk for auth/middleware.py",
+      "# diff chunk for auth/tests/test_tokens.py",
+      "# diff chunk for auth/permissions.py"
+    ],
+    "review_comments": [
+      "LGTM, minor nits inline"
+    ],
+    "created_at": "2026-03-10T00:00:00+00:00",
+    "days_open": 5,
+    "diff_line_count": 593,
+    "_component": "auth",
+    "_reviewer": "eng_dave",
+    "_cycle_days": 4.98
+  },
+  {
+    "pr_id": "PR-1144",
+    "title": "Refactor permissions middleware",
+    "author": "eng_carol",
+    "changed_files": [
+      "auth/permissions.py"
+    ],
+    "diff_chunks": [
+      "# diff chunk for auth/permissions.py"
+    ],
+    "review_comments": [],
+    "created_at": "2026-02-27T00:00:00+00:00",
+    "days_open": 2,
+    "diff_line_count": 1466,
+    "_component": "auth",
+    "_reviewer": "eng_bob",
+    "_cycle_days": 1.82
+  },
+  {
+    "pr_id": "PR-1145",
+    "title": "Refactor permissions middleware",
+    "author": "eng_frank",
+    "changed_files": [
+      "auth/oauth.py",
+      "auth/tests/test_tokens.py"
+    ],
+    "diff_chunks": [
+      "# diff chunk for auth/oauth.py",
+      "# diff chunk for auth/tests/test_tokens.py"
+    ],
+    "review_comments": [],
+    "created_at": "2026-03-10T00:00:00+00:00",
+    "days_open": 2,
+    "diff_line_count": 186,
+    "_component": "auth",
+    "_reviewer": "eng_alice",
+    "_cycle_days": 1.75
+  },
+  {
+    "pr_id": "PR-1146",
+    "title": "Fix Terraform variable references",
+    "author": "eng_alice",
+    "changed_files": [
+      "infra/k8s/deployment.yaml",
+      "infra/scripts/migrate.sh",
+      "infra/terraform/main.tf"
+    ],
+    "diff_chunks": [
+      "# diff chunk for infra/k8s/deployment.yaml",
+      "# diff chunk for infra/scripts/migrate.sh",
+      "# diff chunk for infra/terraform/main.tf"
+    ],
+    "review_comments": [],
+    "created_at": "2025-11-06T00:00:00+00:00",
+    "days_open": 1,
+    "diff_line_count": 241,
+    "_component": "infra",
+    "_reviewer": "eng_dave",
+    "_cycle_days": 1.01
+  },
+  {
+    "pr_id": "PR-1147",
+    "title": "Update serializers for v2 schema",
+    "author": "eng_dave",
+    "changed_files": [
+      "api/routes.py"
+    ],
+    "diff_chunks": [
+      "# diff chunk for api/routes.py"
+    ],
+    "review_comments": [],
+    "created_at": "2026-03-09T00:00:00+00:00",
+    "days_open": 3,
+    "diff_line_count": 153,
+    "_component": "api",
+    "_reviewer": "eng_carol",
+    "_cycle_days": 2.97
+  },
+  {
+    "pr_id": "PR-1148",
+    "title": "Fix token refresh race condition",
+    "author": "eng_carol",
+    "changed_files": [
+      "auth/models.py",
+      "auth/tokens.py",
+      "auth/permissions.py"
+    ],
+    "diff_chunks": [
+      "# diff chunk for auth/models.py",
+      "# diff chunk for auth/tokens.py",
+      "# diff chunk for auth/permissions.py"
+    ],
+    "review_comments": [
+      "LGTM, minor nits inline"
+    ],
+    "created_at": "2025-12-08T00:00:00+00:00",
+    "days_open": 4,
+    "diff_line_count": 567,
+    "_component": "auth",
+    "_reviewer": "eng_bob",
+    "_cycle_days": 4.08
+  },
+  {
+    "pr_id": "PR-1149",
+    "title": "Fix filter state bug",
+    "author": "eng_alice",
+    "changed_files": [
+      "dashboard/filters.py"
+    ],
+    "diff_chunks": [
+      "# diff chunk for dashboard/filters.py"
+    ],
+    "review_comments": [],
+    "created_at": "2026-01-10T00:00:00+00:00",
+    "days_open": 2,
+    "diff_line_count": 113,
+    "_component": "dashboard",
+    "_reviewer": "eng_dave",
+    "_cycle_days": 1.63
+  },
+  {
+    "pr_id": "PR-1150",
+    "title": "Update serializers for v2 schema",
+    "author": "eng_eve",
+    "changed_files": [
+      "api/tests/test_routes.py",
+      "api/throttling.py",
+      "api/serializers.py",
+      "api/pagination.py"
+    ],
+    "diff_chunks": [
+      "# diff chunk for api/tests/test_routes.py",
+      "# diff chunk for api/throttling.py",
+      "# diff chunk for api/serializers.py",
+      "# diff chunk for api/pagination.py"
+    ],
+    "review_comments": [
+      "LGTM, minor nits inline"
+    ],
+    "created_at": "2025-12-12T00:00:00+00:00",
+    "days_open": 4,
+    "diff_line_count": 590,
+    "_component": "api",
+    "_reviewer": "eng_frank",
+    "_cycle_days": 4.21
+  },
+  {
+    "pr_id": "PR-1151",
+    "title": "Refactor deploy pipeline",
+    "author": "eng_dave",
+    "changed_files": [
+      "infra/deploy.yml"
+    ],
+    "diff_chunks": [
+      "# diff chunk for infra/deploy.yml"
+    ],
+    "review_comments": [],
+    "created_at": "2026-02-05T00:00:00+00:00",
+    "days_open": 2,
+    "diff_line_count": 961,
+    "_component": "infra",
+    "_reviewer": "eng_eve",
+    "_cycle_days": 2.17
+  },
+  {
+    "pr_id": "PR-1152",
+    "title": "Fix throttling for burst requests",
+    "author": "eng_eve",
+    "changed_files": [
+      "api/pagination.py",
+      "api/throttling.py",
+      "api/serializers.py"
+    ],
+    "diff_chunks": [
+      "# diff chunk for api/pagination.py",
+      "# diff chunk for api/throttling.py",
+      "# diff chunk for api/serializers.py"
+    ],
+    "review_comments": [
+      "LGTM, minor nits inline"
+    ],
+    "created_at": "2026-04-07T00:00:00+00:00",
+    "days_open": 1,
+    "diff_line_count": 77,
+    "_component": "api",
+    "_reviewer": "eng_carol",
+    "_cycle_days": 1.49
+  },
+  {
+    "pr_id": "PR-1153",
+    "title": "Refactor route handlers",
+    "author": "eng_eve",
+    "changed_files": [
+      "api/tests/test_routes.py",
+      "api/routes.py",
+      "api/throttling.py"
+    ],
+    "diff_chunks": [
+      "# diff chunk for api/tests/test_routes.py",
+      "# diff chunk for api/routes.py",
+      "# diff chunk for api/throttling.py"
+    ],
+    "review_comments": [
+      "LGTM, minor nits inline"
+    ],
+    "created_at": "2026-03-25T00:00:00+00:00",
+    "days_open": 4,
+    "diff_line_count": 148,
+    "_component": "api",
+    "_reviewer": "eng_carol",
+    "_cycle_days": 3.62
+  },
+  {
+    "pr_id": "PR-1154",
+    "title": "Refactor deploy pipeline",
+    "author": "eng_carol",
+    "changed_files": [
+      "infra/monitoring/alerts.yaml",
+      "infra/deploy.yml",
+      "infra/scripts/migrate.sh",
+      "infra/terraform/main.tf"
+    ],
+    "diff_chunks": [
+      "# diff chunk for infra/monitoring/alerts.yaml",
+      "# diff chunk for infra/deploy.yml",
+      "# diff chunk for infra/scripts/migrate.sh",
+      "# diff chunk for infra/terraform/main.tf"
+    ],
+    "review_comments": [
+      "LGTM, minor nits inline"
+    ],
+    "created_at": "2026-03-14T00:00:00+00:00",
+    "days_open": 3,
+    "diff_line_count": 508,
+    "_component": "infra",
+    "_reviewer": "eng_alice",
+    "_cycle_days": 2.74
+  },
+  {
+    "pr_id": "PR-1155",
+    "title": "Refactor deploy pipeline",
+    "author": "eng_dave",
+    "changed_files": [
+      "infra/k8s/deployment.yaml",
+      "infra/scripts/migrate.sh",
+      "infra/terraform/main.tf"
+    ],
+    "diff_chunks": [
+      "# diff chunk for infra/k8s/deployment.yaml",
+      "# diff chunk for infra/scripts/migrate.sh",
+      "# diff chunk for infra/terraform/main.tf"
+    ],
+    "review_comments": [
+      "LGTM, minor nits inline"
+    ],
+    "created_at": "2026-02-01T00:00:00+00:00",
+    "days_open": 5,
+    "diff_line_count": 181,
+    "_component": "infra",
+    "_reviewer": "eng_alice",
+    "_cycle_days": 4.69
+  },
+  {
+    "pr_id": "PR-1156",
+    "title": "Update Kubernetes deployment config",
+    "author": "eng_carol",
+    "changed_files": [
+      "infra/scripts/migrate.sh"
+    ],
+    "diff_chunks": [
+      "# diff chunk for infra/scripts/migrate.sh"
+    ],
+    "review_comments": [],
+    "created_at": "2025-11-20T00:00:00+00:00",
+    "days_open": 3,
+    "diff_line_count": 54,
+    "_component": "infra",
+    "_reviewer": "eng_eve",
+    "_cycle_days": 2.96
+  },
+  {
+    "pr_id": "PR-1157",
+    "title": "Refactor deploy pipeline",
+    "author": "eng_dave",
+    "changed_files": [
+      "infra/monitoring/alerts.yaml"
+    ],
+    "diff_chunks": [
+      "# diff chunk for infra/monitoring/alerts.yaml"
+    ],
+    "review_comments": [],
+    "created_at": "2025-12-17T00:00:00+00:00",
+    "days_open": 4,
+    "diff_line_count": 198,
+    "_component": "infra",
+    "_reviewer": "eng_dave",
+    "_cycle_days": 3.98
+  },
+  {
+    "pr_id": "PR-1158",
+    "title": "Fix token refresh race condition",
+    "author": "eng_frank",
+    "changed_files": [
+      "auth/middleware.py",
+      "auth/models.py"
+    ],
+    "diff_chunks": [
+      "# diff chunk for auth/middleware.py",
+      "# diff chunk for auth/models.py"
+    ],
+    "review_comments": [
+      "LGTM, minor nits inline"
+    ],
+    "created_at": "2026-01-28T00:00:00+00:00",
+    "days_open": 2,
+    "diff_line_count": 196,
+    "_component": "auth",
+    "_reviewer": "eng_dave",
+    "_cycle_days": 1.7
+  },
+  {
+    "pr_id": "PR-1159",
+    "title": "Update dashboard tests",
+    "author": "eng_eve",
+    "changed_files": [
+      "dashboard/charts.py"
+    ],
+    "diff_chunks": [
+      "# diff chunk for dashboard/charts.py"
+    ],
+    "review_comments": [],
+    "created_at": "2025-12-07T00:00:00+00:00",
+    "days_open": 2,
+    "diff_line_count": 576,
+    "_component": "dashboard",
+    "_reviewer": "eng_carol",
+    "_cycle_days": 2.37
+  },
+  {
+    "pr_id": "PR-1160",
+    "title": "Fix Terraform variable references",
+    "author": "eng_dave",
+    "changed_files": [
+      "infra/monitoring/alerts.yaml",
+      "infra/terraform/main.tf",
+      "infra/scripts/migrate.sh"
+    ],
+    "diff_chunks": [
+      "# diff chunk for infra/monitoring/alerts.yaml",
+      "# diff chunk for infra/terraform/main.tf",
+      "# diff chunk for infra/scripts/migrate.sh"
+    ],
+    "review_comments": [],
+    "created_at": "2025-10-26T00:00:00+00:00",
+    "days_open": 2,
+    "diff_line_count": 94,
+    "_component": "infra",
+    "_reviewer": "eng_alice",
+    "_cycle_days": 2.23
+  },
+  {
+    "pr_id": "PR-1161",
+    "title": "Fix Terraform variable references",
+    "author": "eng_dave",
+    "changed_files": [
+      "infra/k8s/deployment.yaml",
+      "infra/terraform/main.tf",
+      "infra/monitoring/alerts.yaml"
+    ],
+    "diff_chunks": [
+      "# diff chunk for infra/k8s/deployment.yaml",
+      "# diff chunk for infra/terraform/main.tf",
+      "# diff chunk for infra/monitoring/alerts.yaml"
+    ],
+    "review_comments": [],
+    "created_at": "2026-02-24T00:00:00+00:00",
+    "days_open": 2,
+    "diff_line_count": 113,
+    "_component": "infra",
+    "_reviewer": "eng_alice",
+    "_cycle_days": 2.45
+  },
+  {
+    "pr_id": "PR-1162",
+    "title": "Add new chart component",
+    "author": "eng_carol",
+    "changed_files": [
+      "dashboard/tests/test_views.py",
+      "dashboard/charts.py",
+      "dashboard/views.py",
+      "dashboard/filters.py"
+    ],
+    "diff_chunks": [
+      "# diff chunk for dashboard/tests/test_views.py",
+      "# diff chunk for dashboard/charts.py",
+      "# diff chunk for dashboard/views.py",
+      "# diff chunk for dashboard/filters.py"
+    ],
+    "review_comments": [],
+    "created_at": "2026-04-08T00:00:00+00:00",
+    "days_open": 5,
+    "diff_line_count": 347,
+    "_component": "dashboard",
+    "_reviewer": "eng_frank",
+    "_cycle_days": 5.35
+  },
+  {
+    "pr_id": "PR-1163",
+    "title": "Fix throttling for burst requests",
+    "author": "eng_dave",
+    "changed_files": [
+      "api/tests/test_routes.py",
+      "api/pagination.py",
+      "api/routes.py"
+    ],
+    "diff_chunks": [
+      "# diff chunk for api/tests/test_routes.py",
+      "# diff chunk for api/pagination.py",
+      "# diff chunk for api/routes.py"
+    ],
+    "review_comments": [],
+    "created_at": "2026-03-22T00:00:00+00:00",
+    "days_open": 2,
+    "diff_line_count": 309,
+    "_component": "api",
+    "_reviewer": "eng_eve",
+    "_cycle_days": 2.36
+  },
+  {
+    "pr_id": "PR-1164",
+    "title": "Add OAuth2 PKCE support",
+    "author": "eng_alice",
+    "changed_files": [
+      "auth/middleware.py",
+      "auth/tests/test_tokens.py"
+    ],
+    "diff_chunks": [
+      "# diff chunk for auth/middleware.py",
+      "# diff chunk for auth/tests/test_tokens.py"
+    ],
+    "review_comments": [],
+    "created_at": "2026-01-03T00:00:00+00:00",
+    "days_open": 2,
+    "diff_line_count": 315,
+    "_component": "auth",
+    "_reviewer": "eng_dave",
+    "_cycle_days": 2.17
+  },
+  {
+    "pr_id": "PR-1165",
+    "title": "Add OAuth2 PKCE support",
+    "author": "eng_alice",
+    "changed_files": [
+      "auth/models.py",
+      "auth/tokens.py",
+      "auth/permissions.py",
+      "auth/oauth.py"
+    ],
+    "diff_chunks": [
+      "# diff chunk for auth/models.py",
+      "# diff chunk for auth/tokens.py",
+      "# diff chunk for auth/permissions.py",
+      "# diff chunk for auth/oauth.py"
+    ],
+    "review_comments": [
+      "LGTM, minor nits inline"
+    ],
+    "created_at": "2026-02-04T00:00:00+00:00",
+    "days_open": 1,
+    "diff_line_count": 1268,
+    "_component": "auth",
+    "_reviewer": "eng_bob",
+    "_cycle_days": 0.78
+  },
+  {
+    "pr_id": "PR-1166",
+    "title": "Fix Terraform variable references",
+    "author": "eng_bob",
+    "changed_files": [
+      "infra/deploy.yml",
+      "infra/scripts/migrate.sh"
+    ],
+    "diff_chunks": [
+      "# diff chunk for infra/deploy.yml",
+      "# diff chunk for infra/scripts/migrate.sh"
+    ],
+    "review_comments": [
+      "@eng_dave can you take a look at this?"
+    ],
+    "created_at": "2025-12-13T00:00:00+00:00",
+    "days_open": 8,
+    "diff_line_count": 289,
+    "_component": "infra",
+    "_reviewer": "eng_dave",
+    "_cycle_days": 8.16
+  },
+  {
+    "pr_id": "PR-1167",
+    "title": "Fix payment processor retry logic",
+    "author": "eng_alice",
+    "changed_files": [
+      "payments/tests/test_processor.py",
+      "payments/utils.py",
+      "payments/validators.py",
+      "payments/processor.py"
+    ],
+    "diff_chunks": [
+      "# diff chunk for payments/tests/test_processor.py",
+      "# diff chunk for payments/utils.py",
+      "# diff chunk for payments/validators.py",
+      "# diff chunk for payments/processor.py"
+    ],
+    "review_comments": [
+      "Needs security review before merge",
+      "LGTM, minor nits inline"
+    ],
+    "created_at": "2025-12-10T00:00:00+00:00",
+    "days_open": 2,
+    "diff_line_count": 77,
+    "_component": "payments",
+    "_reviewer": "eng_alice",
+    "_cycle_days": 1.81
+  },
+  {
+    "pr_id": "PR-1168",
+    "title": "Fix throttling for burst requests",
+    "author": "eng_bob",
+    "changed_files": [
+      "api/pagination.py"
+    ],
+    "diff_chunks": [
+      "# diff chunk for api/pagination.py"
+    ],
+    "review_comments": [
+      "@eng_eve can you take a look at this?"
+    ],
+    "created_at": "2026-02-02T00:00:00+00:00",
+    "days_open": 6,
+    "diff_line_count": 567,
+    "_component": "api",
+    "_reviewer": "eng_eve",
+    "_cycle_days": 5.87
+  },
+  {
+    "pr_id": "PR-1169",
+    "title": "Fix token refresh race condition",
+    "author": "eng_eve",
+    "changed_files": [
+      "auth/middleware.py",
+      "auth/models.py",
+      "auth/tests/test_tokens.py"
+    ],
+    "diff_chunks": [
+      "# diff chunk for auth/middleware.py",
+      "# diff chunk for auth/models.py",
+      "# diff chunk for auth/tests/test_tokens.py"
+    ],
+    "review_comments": [],
+    "created_at": "2026-03-02T00:00:00+00:00",
+    "days_open": 4,
+    "diff_line_count": 1127,
+    "_component": "auth",
+    "_reviewer": "eng_alice",
+    "_cycle_days": 4.43
+  },
+  {
+    "pr_id": "PR-1170",
+    "title": "Add webhook signature validation",
+    "author": "eng_carol",
+    "changed_files": [
+      "payments/models.py",
+      "payments/utils.py",
+      "payments/processor.py"
+    ],
+    "diff_chunks": [
+      "# diff chunk for payments/models.py",
+      "# diff chunk for payments/utils.py",
+      "# diff chunk for payments/processor.py"
+    ],
+    "review_comments": [
+      "Needs security review before merge",
+      "LGTM, minor nits inline"
+    ],
+    "created_at": "2026-02-11T00:00:00+00:00",
+    "days_open": 2,
+    "diff_line_count": 164,
+    "_component": "payments",
+    "_reviewer": "eng_carol",
+    "_cycle_days": 2.01
+  },
+  {
+    "pr_id": "PR-1171",
+    "title": "Add webhook signature validation",
+    "author": "eng_frank",
+    "changed_files": [
+      "payments/tests/test_processor.py",
+      "payments/processor.py",
+      "payments/models.py"
+    ],
+    "diff_chunks": [
+      "# diff chunk for payments/tests/test_processor.py",
+      "# diff chunk for payments/processor.py",
+      "# diff chunk for payments/models.py"
+    ],
+    "review_comments": [
+      "Needs security review before merge",
+      "LGTM, minor nits inline"
+    ],
+    "created_at": "2026-01-14T00:00:00+00:00",
+    "days_open": 2,
+    "diff_line_count": 128,
+    "_component": "payments",
+    "_reviewer": "eng_carol",
+    "_cycle_days": 2.27
+  },
+  {
+    "pr_id": "PR-1172",
+    "title": "Add new chart component",
+    "author": "eng_bob",
+    "changed_files": [
+      "dashboard/charts.py",
+      "dashboard/views.py",
+      "dashboard/filters.py",
+      "dashboard/tests/test_views.py"
+    ],
+    "diff_chunks": [
+      "# diff chunk for dashboard/charts.py",
+      "# diff chunk for dashboard/views.py",
+      "# diff chunk for dashboard/filters.py",
+      "# diff chunk for dashboard/tests/test_views.py"
+    ],
+    "review_comments": [
+      "LGTM, minor nits inline"
+    ],
+    "created_at": "2025-12-04T00:00:00+00:00",
+    "days_open": 5,
+    "diff_line_count": 145,
+    "_component": "dashboard",
+    "_reviewer": "eng_dave",
+    "_cycle_days": 5.24
+  },
+  {
+    "pr_id": "PR-1173",
+    "title": "Add webhook signature validation",
+    "author": "eng_eve",
+    "changed_files": [
+      "payments/webhook.py",
+      "payments/models.py"
+    ],
+    "diff_chunks": [
+      "# diff chunk for payments/webhook.py",
+      "# diff chunk for payments/models.py"
+    ],
+    "review_comments": [
+      "Needs security review before merge",
+      "LGTM, minor nits inline"
+    ],
+    "created_at": "2025-12-06T00:00:00+00:00",
+    "days_open": 2,
+    "diff_line_count": 1149,
+    "_component": "payments",
+    "_reviewer": "eng_alice",
+    "_cycle_days": 2.29
+  },
+  {
+    "pr_id": "PR-1174",
+    "title": "Update Kubernetes deployment config",
+    "author": "eng_dave",
+    "changed_files": [
+      "infra/scripts/migrate.sh"
+    ],
+    "diff_chunks": [
+      "# diff chunk for infra/scripts/migrate.sh"
+    ],
+    "review_comments": [],
+    "created_at": "2026-03-16T00:00:00+00:00",
+    "days_open": 2,
+    "diff_line_count": 180,
+    "_component": "infra",
+    "_reviewer": "eng_alice",
+    "_cycle_days": 1.95
+  },
+  {
+    "pr_id": "PR-1175",
+    "title": "Fix Terraform variable references",
+    "author": "eng_dave",
+    "changed_files": [
+      "infra/terraform/main.tf",
+      "infra/deploy.yml",
+      "infra/monitoring/alerts.yaml",
+      "infra/scripts/migrate.sh"
+    ],
+    "diff_chunks": [
+      "# diff chunk for infra/terraform/main.tf",
+      "# diff chunk for infra/deploy.yml",
+      "# diff chunk for infra/monitoring/alerts.yaml",
+      "# diff chunk for infra/scripts/migrate.sh"
+    ],
+    "review_comments": [
+      "LGTM, minor nits inline"
+    ],
+    "created_at": "2025-11-21T00:00:00+00:00",
+    "days_open": 3,
+    "diff_line_count": 570,
+    "_component": "infra",
+    "_reviewer": "eng_dave",
+    "_cycle_days": 3.26
+  },
+  {
+    "pr_id": "PR-1176",
+    "title": "Update payment validator edge cases",
+    "author": "eng_eve",
+    "changed_files": [
+      "payments/validators.py",
+      "payments/webhook.py",
+      "payments/utils.py"
+    ],
+    "diff_chunks": [
+      "# diff chunk for payments/validators.py",
+      "# diff chunk for payments/webhook.py",
+      "# diff chunk for payments/utils.py"
+    ],
+    "review_comments": [
+      "@eng_carol can you take a look at this?",
+      "Needs security review before merge"
+    ],
+    "created_at": "2025-11-05T00:00:00+00:00",
+    "days_open": 7,
+    "diff_line_count": 632,
+    "_component": "payments",
+    "_reviewer": "eng_carol",
+    "_cycle_days": 7.34
+  },
+  {
+    "pr_id": "PR-1177",
+    "title": "Fix throttling for burst requests",
+    "author": "eng_dave",
+    "changed_files": [
+      "api/pagination.py",
+      "api/routes.py"
+    ],
+    "diff_chunks": [
+      "# diff chunk for api/pagination.py",
+      "# diff chunk for api/routes.py"
+    ],
+    "review_comments": [
+      "LGTM, minor nits inline"
+    ],
+    "created_at": "2026-03-04T00:00:00+00:00",
+    "days_open": 3,
+    "diff_line_count": 146,
+    "_component": "api",
+    "_reviewer": "eng_eve",
+    "_cycle_days": 3.24
+  },
+  {
+    "pr_id": "PR-1178",
+    "title": "Fix token refresh race condition",
+    "author": "eng_alice",
+    "changed_files": [
+      "auth/oauth.py",
+      "auth/models.py",
+      "auth/tokens.py",
+      "auth/middleware.py"
+    ],
+    "diff_chunks": [
+      "# diff chunk for auth/oauth.py",
+      "# diff chunk for auth/models.py",
+      "# diff chunk for auth/tokens.py",
+      "# diff chunk for auth/middleware.py"
+    ],
+    "review_comments": [
+      "LGTM, minor nits inline"
+    ],
+    "created_at": "2025-12-22T00:00:00+00:00",
+    "days_open": 1,
+    "diff_line_count": 437,
+    "_component": "auth",
+    "_reviewer": "eng_dave",
+    "_cycle_days": 1.41
+  },
+  {
+    "pr_id": "PR-1179",
+    "title": "Fix payment processor retry logic",
+    "author": "eng_alice",
+    "changed_files": [
+      "payments/webhook.py"
+    ],
+    "diff_chunks": [
+      "# diff chunk for payments/webhook.py"
+    ],
+    "review_comments": [
+      "Needs security review before merge",
+      "LGTM, minor nits inline"
+    ],
+    "created_at": "2026-02-25T00:00:00+00:00",
+    "days_open": 2,
+    "diff_line_count": 514,
+    "_component": "payments",
+    "_reviewer": "eng_bob",
+    "_cycle_days": 1.73
+  },
+  {
+    "pr_id": "PR-1180",
+    "title": "Add new chart component",
+    "author": "eng_eve",
+    "changed_files": [
+      "dashboard/tests/test_views.py"
+    ],
+    "diff_chunks": [
+      "# diff chunk for dashboard/tests/test_views.py"
+    ],
+    "review_comments": [
+      "@eng_carol can you take a look at this?"
+    ],
+    "created_at": "2025-12-27T00:00:00+00:00",
+    "days_open": 7,
+    "diff_line_count": 325,
+    "_component": "dashboard",
+    "_reviewer": "eng_carol",
+    "_cycle_days": 6.85
+  },
+  {
+    "pr_id": "PR-1181",
+    "title": "Fix token refresh race condition",
+    "author": "eng_eve",
+    "changed_files": [
+      "auth/oauth.py",
+      "auth/tests/test_tokens.py",
+      "auth/permissions.py"
+    ],
+    "diff_chunks": [
+      "# diff chunk for auth/oauth.py",
+      "# diff chunk for auth/tests/test_tokens.py",
+      "# diff chunk for auth/permissions.py"
+    ],
+    "review_comments": [],
+    "created_at": "2026-02-17T00:00:00+00:00",
+    "days_open": 5,
+    "diff_line_count": 1189,
+    "_component": "auth",
+    "_reviewer": "eng_dave",
+    "_cycle_days": 4.89
+  },
+  {
+    "pr_id": "PR-1182",
+    "title": "Update dashboard tests",
+    "author": "eng_carol",
+    "changed_files": [
+      "dashboard/tests/test_views.py",
+      "dashboard/filters.py"
+    ],
+    "diff_chunks": [
+      "# diff chunk for dashboard/tests/test_views.py",
+      "# diff chunk for dashboard/filters.py"
+    ],
+    "review_comments": [],
+    "created_at": "2025-12-13T00:00:00+00:00",
+    "days_open": 2,
+    "diff_line_count": 192,
+    "_component": "dashboard",
+    "_reviewer": "eng_carol",
+    "_cycle_days": 2.31
+  },
+  {
+    "pr_id": "PR-1183",
+    "title": "Refactor deploy pipeline",
+    "author": "eng_carol",
+    "changed_files": [
+      "infra/k8s/deployment.yaml",
+      "infra/scripts/migrate.sh",
+      "infra/deploy.yml",
+      "infra/terraform/main.tf"
+    ],
+    "diff_chunks": [
+      "# diff chunk for infra/k8s/deployment.yaml",
+      "# diff chunk for infra/scripts/migrate.sh",
+      "# diff chunk for infra/deploy.yml",
+      "# diff chunk for infra/terraform/main.tf"
+    ],
+    "review_comments": [
+      "LGTM, minor nits inline"
+    ],
+    "created_at": "2026-02-01T00:00:00+00:00",
+    "days_open": 4,
+    "diff_line_count": 276,
+    "_component": "infra",
+    "_reviewer": "eng_alice",
+    "_cycle_days": 4.13
+  },
+  {
+    "pr_id": "PR-1184",
+    "title": "Fix payment processor retry logic",
+    "author": "eng_eve",
+    "changed_files": [
+      "payments/validators.py",
+      "payments/webhook.py"
+    ],
+    "diff_chunks": [
+      "# diff chunk for payments/validators.py",
+      "# diff chunk for payments/webhook.py"
+    ],
+    "review_comments": [
+      "Needs security review before merge",
+      "LGTM, minor nits inline"
+    ],
+    "created_at": "2026-02-12T00:00:00+00:00",
+    "days_open": 5,
+    "diff_line_count": 156,
+    "_component": "payments",
+    "_reviewer": "eng_bob",
+    "_cycle_days": 5.27
+  },
+  {
+    "pr_id": "PR-1185",
+    "title": "Refactor dashboard views",
+    "author": "eng_carol",
+    "changed_files": [
+      "dashboard/views.py",
+      "dashboard/tests/test_views.py",
+      "dashboard/filters.py",
+      "dashboard/charts.py"
+    ],
+    "diff_chunks": [
+      "# diff chunk for dashboard/views.py",
+      "# diff chunk for dashboard/tests/test_views.py",
+      "# diff chunk for dashboard/filters.py",
+      "# diff chunk for dashboard/charts.py"
+    ],
+    "review_comments": [],
+    "created_at": "2025-12-17T00:00:00+00:00",
+    "days_open": 5,
+    "diff_line_count": 98,
+    "_component": "dashboard",
+    "_reviewer": "eng_carol",
+    "_cycle_days": 4.64
+  },
+  {
+    "pr_id": "PR-1186",
+    "title": "Update serializers for v2 schema",
+    "author": "eng_alice",
+    "changed_files": [
+      "api/serializers.py",
+      "api/tests/test_routes.py",
+      "api/throttling.py",
+      "api/routes.py"
+    ],
+    "diff_chunks": [
+      "# diff chunk for api/serializers.py",
+      "# diff chunk for api/tests/test_routes.py",
+      "# diff chunk for api/throttling.py",
+      "# diff chunk for api/routes.py"
+    ],
+    "review_comments": [],
+    "created_at": "2025-11-28T00:00:00+00:00",
+    "days_open": 2,
+    "diff_line_count": 98,
+    "_component": "api",
+    "_reviewer": "eng_carol",
+    "_cycle_days": 1.65
+  },
+  {
+    "pr_id": "PR-1187",
+    "title": "Add new chart component",
+    "author": "eng_eve",
+    "changed_files": [
+      "dashboard/tests/test_views.py",
+      "dashboard/views.py",
+      "dashboard/charts.py",
+      "dashboard/filters.py"
+    ],
+    "diff_chunks": [
+      "# diff chunk for dashboard/tests/test_views.py",
+      "# diff chunk for dashboard/views.py",
+      "# diff chunk for dashboard/charts.py",
+      "# diff chunk for dashboard/filters.py"
+    ],
+    "review_comments": [
+      "LGTM, minor nits inline"
+    ],
+    "created_at": "2026-02-25T00:00:00+00:00",
+    "days_open": 2,
+    "diff_line_count": 333,
+    "_component": "dashboard",
+    "_reviewer": "eng_frank",
+    "_cycle_days": 2.3
+  },
+  {
+    "pr_id": "PR-1188",
+    "title": "Add monitoring alerts for latency",
+    "author": "eng_bob",
+    "changed_files": [
+      "infra/terraform/main.tf",
+      "infra/k8s/deployment.yaml",
+      "infra/deploy.yml",
+      "infra/scripts/migrate.sh"
+    ],
+    "diff_chunks": [
+      "# diff chunk for infra/terraform/main.tf",
+      "# diff chunk for infra/k8s/deployment.yaml",
+      "# diff chunk for infra/deploy.yml",
+      "# diff chunk for infra/scripts/migrate.sh"
+    ],
+    "review_comments": [],
+    "created_at": "2026-02-19T00:00:00+00:00",
+    "days_open": 3,
+    "diff_line_count": 333,
+    "_component": "infra",
+    "_reviewer": "eng_eve",
+    "_cycle_days": 3.33
+  },
+  {
+    "pr_id": "PR-1189",
+    "title": "Update dashboard tests",
+    "author": "eng_eve",
+    "changed_files": [
+      "dashboard/tests/test_views.py",
+      "dashboard/charts.py",
+      "dashboard/views.py",
+      "dashboard/filters.py"
+    ],
+    "diff_chunks": [
+      "# diff chunk for dashboard/tests/test_views.py",
+      "# diff chunk for dashboard/charts.py",
+      "# diff chunk for dashboard/views.py",
+      "# diff chunk for dashboard/filters.py"
+    ],
+    "review_comments": [
+      "@eng_carol can you take a look at this?"
+    ],
+    "created_at": "2026-03-06T00:00:00+00:00",
+    "days_open": 7,
+    "diff_line_count": 331,
+    "_component": "dashboard",
+    "_reviewer": "eng_carol",
+    "_cycle_days": 7.47
+  },
+  {
+    "pr_id": "PR-1190",
+    "title": "Fix token refresh race condition",
+    "author": "eng_eve",
+    "changed_files": [
+      "auth/tests/test_tokens.py"
+    ],
+    "diff_chunks": [
+      "# diff chunk for auth/tests/test_tokens.py"
+    ],
+    "review_comments": [
+      "@eng_alice can you take a look at this?"
+    ],
+    "created_at": "2026-04-06T00:00:00+00:00",
+    "days_open": 8,
+    "diff_line_count": 634,
+    "_component": "auth",
+    "_reviewer": "eng_alice",
+    "_cycle_days": 7.6
+  },
+  {
+    "pr_id": "PR-1191",
+    "title": "Update payment validator edge cases",
+    "author": "eng_frank",
+    "changed_files": [
+      "payments/processor.py",
+      "payments/utils.py",
+      "payments/validators.py"
+    ],
+    "diff_chunks": [
+      "# diff chunk for payments/processor.py",
+      "# diff chunk for payments/utils.py",
+      "# diff chunk for payments/validators.py"
+    ],
+    "review_comments": [
+      "Needs security review before merge",
+      "LGTM, minor nits inline"
+    ],
+    "created_at": "2025-11-01T00:00:00+00:00",
+    "days_open": 2,
+    "diff_line_count": 105,
+    "_component": "payments",
+    "_reviewer": "eng_alice",
+    "_cycle_days": 1.89
+  },
+  {
+    "pr_id": "PR-1192",
+    "title": "Add webhook signature validation",
+    "author": "eng_alice",
+    "changed_files": [
+      "payments/utils.py"
+    ],
+    "diff_chunks": [
+      "# diff chunk for payments/utils.py"
+    ],
+    "review_comments": [
+      "Needs security review before merge"
+    ],
+    "created_at": "2025-10-22T00:00:00+00:00",
+    "days_open": 1,
+    "diff_line_count": 474,
+    "_component": "payments",
+    "_reviewer": "eng_carol",
+    "_cycle_days": 1.19
+  },
+  {
+    "pr_id": "PR-1193",
+    "title": "Update payment validator edge cases",
+    "author": "eng_alice",
+    "changed_files": [
+      "payments/models.py",
+      "payments/tests/test_processor.py",
+      "payments/validators.py"
+    ],
+    "diff_chunks": [
+      "# diff chunk for payments/models.py",
+      "# diff chunk for payments/tests/test_processor.py",
+      "# diff chunk for payments/validators.py"
+    ],
+    "review_comments": [
+      "Needs security review before merge"
+    ],
+    "created_at": "2026-03-29T00:00:00+00:00",
+    "days_open": 3,
+    "diff_line_count": 298,
+    "_component": "payments",
+    "_reviewer": "eng_alice",
+    "_cycle_days": 2.67
+  },
+  {
+    "pr_id": "PR-1194",
+    "title": "Refactor deploy pipeline",
+    "author": "eng_bob",
+    "changed_files": [
+      "infra/deploy.yml"
+    ],
+    "diff_chunks": [
+      "# diff chunk for infra/deploy.yml"
+    ],
+    "review_comments": [
+      "LGTM, minor nits inline"
+    ],
+    "created_at": "2026-03-26T00:00:00+00:00",
+    "days_open": 4,
+    "diff_line_count": 1300,
+    "_component": "infra",
+    "_reviewer": "eng_eve",
+    "_cycle_days": 3.88
+  },
+  {
+    "pr_id": "PR-1195",
+    "title": "Update payment validator edge cases",
+    "author": "eng_frank",
+    "changed_files": [
+      "payments/tests/test_processor.py",
+      "payments/models.py",
+      "payments/processor.py",
+      "payments/utils.py"
+    ],
+    "diff_chunks": [
+      "# diff chunk for payments/tests/test_processor.py",
+      "# diff chunk for payments/models.py",
+      "# diff chunk for payments/processor.py",
+      "# diff chunk for payments/utils.py"
+    ],
+    "review_comments": [
+      "Needs security review before merge",
+      "LGTM, minor nits inline"
+    ],
+    "created_at": "2026-04-08T00:00:00+00:00",
+    "days_open": 1,
+    "diff_line_count": 93,
+    "_component": "payments",
+    "_reviewer": "eng_bob",
+    "_cycle_days": 1.46
+  },
+  {
+    "pr_id": "PR-1196",
+    "title": "Fix throttling for burst requests",
+    "author": "eng_alice",
+    "changed_files": [
+      "api/serializers.py"
+    ],
+    "diff_chunks": [
+      "# diff chunk for api/serializers.py"
+    ],
+    "review_comments": [],
+    "created_at": "2026-01-28T00:00:00+00:00",
+    "days_open": 2,
+    "diff_line_count": 1177,
+    "_component": "api",
+    "_reviewer": "eng_frank",
+    "_cycle_days": 2.01
+  },
+  {
+    "pr_id": "PR-1197",
+    "title": "Add new chart component",
+    "author": "eng_alice",
+    "changed_files": [
+      "dashboard/filters.py",
+      "dashboard/charts.py",
+      "dashboard/views.py",
+      "dashboard/tests/test_views.py"
+    ],
+    "diff_chunks": [
+      "# diff chunk for dashboard/filters.py",
+      "# diff chunk for dashboard/charts.py",
+      "# diff chunk for dashboard/views.py",
+      "# diff chunk for dashboard/tests/test_views.py"
+    ],
+    "review_comments": [],
+    "created_at": "2025-12-11T00:00:00+00:00",
+    "days_open": 1,
+    "diff_line_count": 194,
+    "_component": "dashboard",
+    "_reviewer": "eng_dave",
+    "_cycle_days": 1.18
+  },
+  {
+    "pr_id": "PR-1198",
+    "title": "Update payment validator edge cases",
+    "author": "eng_dave",
+    "changed_files": [
+      "payments/models.py",
+      "payments/processor.py",
+      "payments/tests/test_processor.py",
+      "payments/webhook.py"
+    ],
+    "diff_chunks": [
+      "# diff chunk for payments/models.py",
+      "# diff chunk for payments/processor.py",
+      "# diff chunk for payments/tests/test_processor.py",
+      "# diff chunk for payments/webhook.py"
+    ],
+    "review_comments": [
+      "Needs security review before merge",
+      "LGTM, minor nits inline"
+    ],
+    "created_at": "2025-12-14T00:00:00+00:00",
+    "days_open": 3,
+    "diff_line_count": 69,
+    "_component": "payments",
+    "_reviewer": "eng_bob",
+    "_cycle_days": 3.1
+  },
+  {
+    "pr_id": "PR-1199",
+    "title": "Fix filter state bug",
+    "author": "eng_bob",
+    "changed_files": [
+      "dashboard/charts.py",
+      "dashboard/filters.py",
+      "dashboard/views.py"
+    ],
+    "diff_chunks": [
+      "# diff chunk for dashboard/charts.py",
+      "# diff chunk for dashboard/filters.py",
+      "# diff chunk for dashboard/views.py"
+    ],
+    "review_comments": [
+      "@eng_frank can you take a look at this?",
+      "LGTM, minor nits inline"
+    ],
+    "created_at": "2026-03-28T00:00:00+00:00",
+    "days_open": 6,
+    "diff_line_count": 243,
+    "_component": "dashboard",
+    "_reviewer": "eng_frank",
+    "_cycle_days": 5.86
+  },
+  {
+    "pr_id": "PR-1200",
+    "title": "Update dashboard tests",
+    "author": "eng_carol",
+    "changed_files": [
+      "dashboard/filters.py",
+      "dashboard/charts.py",
+      "dashboard/views.py",
+      "dashboard/tests/test_views.py"
+    ],
+    "diff_chunks": [
+      "# diff chunk for dashboard/filters.py",
+      "# diff chunk for dashboard/charts.py",
+      "# diff chunk for dashboard/views.py",
+      "# diff chunk for dashboard/tests/test_views.py"
+    ],
+    "review_comments": [],
+    "created_at": "2026-03-27T00:00:00+00:00",
+    "days_open": 3,
+    "diff_line_count": 73,
+    "_component": "dashboard",
+    "_reviewer": "eng_carol",
+    "_cycle_days": 3.21
+  },
+  {
+    "pr_id": "PR-1201",
+    "title": "Add webhook signature validation",
+    "author": "eng_alice",
+    "changed_files": [
+      "payments/validators.py",
+      "payments/processor.py",
+      "payments/models.py"
+    ],
+    "diff_chunks": [
+      "# diff chunk for payments/validators.py",
+      "# diff chunk for payments/processor.py",
+      "# diff chunk for payments/models.py"
+    ],
+    "review_comments": [
+      "Needs security review before merge"
+    ],
+    "created_at": "2026-01-03T00:00:00+00:00",
+    "days_open": 3,
+    "diff_line_count": 191,
+    "_component": "payments",
+    "_reviewer": "eng_alice",
+    "_cycle_days": 2.63
+  },
+  {
+    "pr_id": "PR-1202",
+    "title": "Fix Terraform variable references",
+    "author": "eng_eve",
+    "changed_files": [
+      "infra/terraform/main.tf",
+      "infra/monitoring/alerts.yaml",
+      "infra/k8s/deployment.yaml"
+    ],
+    "diff_chunks": [
+      "# diff chunk for infra/terraform/main.tf",
+      "# diff chunk for infra/monitoring/alerts.yaml",
+      "# diff chunk for infra/k8s/deployment.yaml"
+    ],
+    "review_comments": [
+      "LGTM, minor nits inline"
+    ],
+    "created_at": "2026-03-12T00:00:00+00:00",
+    "days_open": 5,
+    "diff_line_count": 147,
+    "_component": "infra",
+    "_reviewer": "eng_dave",
+    "_cycle_days": 4.66
+  },
+  {
+    "pr_id": "PR-1203",
+    "title": "Fix filter state bug",
+    "author": "eng_carol",
+    "changed_files": [
+      "dashboard/tests/test_views.py",
+      "dashboard/filters.py"
+    ],
+    "diff_chunks": [
+      "# diff chunk for dashboard/tests/test_views.py",
+      "# diff chunk for dashboard/filters.py"
+    ],
+    "review_comments": [],
+    "created_at": "2025-11-12T00:00:00+00:00",
+    "days_open": 4,
+    "diff_line_count": 69,
+    "_component": "dashboard",
+    "_reviewer": "eng_carol",
+    "_cycle_days": 3.57
+  },
+  {
+    "pr_id": "PR-1204",
+    "title": "Refactor route handlers",
+    "author": "eng_alice",
+    "changed_files": [
+      "api/throttling.py",
+      "api/pagination.py",
+      "api/serializers.py"
+    ],
+    "diff_chunks": [
+      "# diff chunk for api/throttling.py",
+      "# diff chunk for api/pagination.py",
+      "# diff chunk for api/serializers.py"
+    ],
+    "review_comments": [
+      "LGTM, minor nits inline"
+    ],
+    "created_at": "2025-11-03T00:00:00+00:00",
+    "days_open": 1,
+    "diff_line_count": 989,
+    "_component": "api",
+    "_reviewer": "eng_eve",
+    "_cycle_days": 0.5
+  },
+  {
+    "pr_id": "PR-1205",
+    "title": "Refactor deploy pipeline",
+    "author": "eng_frank",
+    "changed_files": [
+      "infra/terraform/main.tf",
+      "infra/scripts/migrate.sh",
+      "infra/monitoring/alerts.yaml"
+    ],
+    "diff_chunks": [
+      "# diff chunk for infra/terraform/main.tf",
+      "# diff chunk for infra/scripts/migrate.sh",
+      "# diff chunk for infra/monitoring/alerts.yaml"
+    ],
+    "review_comments": [
+      "LGTM, minor nits inline"
+    ],
+    "created_at": "2026-02-15T00:00:00+00:00",
+    "days_open": 2,
+    "diff_line_count": 130,
+    "_component": "infra",
+    "_reviewer": "eng_eve",
+    "_cycle_days": 1.97
+  },
+  {
+    "pr_id": "PR-1206",
+    "title": "Refactor route handlers",
+    "author": "eng_alice",
+    "changed_files": [
+      "api/tests/test_routes.py",
+      "api/routes.py"
+    ],
+    "diff_chunks": [
+      "# diff chunk for api/tests/test_routes.py",
+      "# diff chunk for api/routes.py"
+    ],
+    "review_comments": [
+      "LGTM, minor nits inline"
+    ],
+    "created_at": "2025-12-21T00:00:00+00:00",
+    "days_open": 1,
+    "diff_line_count": 1158,
+    "_component": "api",
+    "_reviewer": "eng_eve",
+    "_cycle_days": 0.83
+  },
+  {
+    "pr_id": "PR-1207",
+    "title": "Update payment validator edge cases",
+    "author": "eng_dave",
+    "changed_files": [
+      "payments/models.py",
+      "payments/webhook.py"
+    ],
+    "diff_chunks": [
+      "# diff chunk for payments/models.py",
+      "# diff chunk for payments/webhook.py"
+    ],
+    "review_comments": [
+      "Needs security review before merge",
+      "LGTM, minor nits inline"
+    ],
+    "created_at": "2025-12-31T00:00:00+00:00",
+    "days_open": 2,
+    "diff_line_count": 524,
+    "_component": "payments",
+    "_reviewer": "eng_alice",
+    "_cycle_days": 2.0
+  },
+  {
+    "pr_id": "PR-1208",
+    "title": "Add monitoring alerts for latency",
+    "author": "eng_dave",
+    "changed_files": [
+      "infra/monitoring/alerts.yaml",
+      "infra/deploy.yml",
+      "infra/scripts/migrate.sh"
+    ],
+    "diff_chunks": [
+      "# diff chunk for infra/monitoring/alerts.yaml",
+      "# diff chunk for infra/deploy.yml",
+      "# diff chunk for infra/scripts/migrate.sh"
+    ],
+    "review_comments": [],
+    "created_at": "2026-02-14T00:00:00+00:00",
+    "days_open": 2,
+    "diff_line_count": 478,
+    "_component": "infra",
+    "_reviewer": "eng_alice",
+    "_cycle_days": 2.31
+  },
+  {
+    "pr_id": "PR-1209",
+    "title": "Add monitoring alerts for latency",
+    "author": "eng_alice",
+    "changed_files": [
+      "infra/deploy.yml",
+      "infra/monitoring/alerts.yaml",
+      "infra/scripts/migrate.sh",
+      "infra/k8s/deployment.yaml"
+    ],
+    "diff_chunks": [
+      "# diff chunk for infra/deploy.yml",
+      "# diff chunk for infra/monitoring/alerts.yaml",
+      "# diff chunk for infra/scripts/migrate.sh",
+      "# diff chunk for infra/k8s/deployment.yaml"
+    ],
+    "review_comments": [],
+    "created_at": "2026-02-21T00:00:00+00:00",
+    "days_open": 1,
+    "diff_line_count": 585,
+    "_component": "infra",
+    "_reviewer": "eng_alice",
+    "_cycle_days": 1.23
+  },
+  {
+    "pr_id": "PR-1210",
+    "title": "Add new chart component",
+    "author": "eng_carol",
+    "changed_files": [
+      "dashboard/filters.py",
+      "dashboard/views.py"
+    ],
+    "diff_chunks": [
+      "# diff chunk for dashboard/filters.py",
+      "# diff chunk for dashboard/views.py"
+    ],
+    "review_comments": [
+      "LGTM, minor nits inline"
+    ],
+    "created_at": "2025-12-16T00:00:00+00:00",
+    "days_open": 4,
+    "diff_line_count": 200,
+    "_component": "dashboard",
+    "_reviewer": "eng_carol",
+    "_cycle_days": 3.9
+  },
+  {
+    "pr_id": "PR-1211",
+    "title": "Update payment validator edge cases",
+    "author": "eng_frank",
+    "changed_files": [
+      "payments/utils.py",
+      "payments/validators.py"
+    ],
+    "diff_chunks": [
+      "# diff chunk for payments/utils.py",
+      "# diff chunk for payments/validators.py"
+    ],
+    "review_comments": [
+      "Needs security review before merge",
+      "LGTM, minor nits inline"
+    ],
+    "created_at": "2026-01-19T00:00:00+00:00",
+    "days_open": 1,
+    "diff_line_count": 129,
+    "_component": "payments",
+    "_reviewer": "eng_alice",
+    "_cycle_days": 1.2
+  },
+  {
+    "pr_id": "PR-1212",
+    "title": "Fix throttling for burst requests",
+    "author": "eng_alice",
+    "changed_files": [
+      "api/routes.py",
+      "api/serializers.py",
+      "api/pagination.py"
+    ],
+    "diff_chunks": [
+      "# diff chunk for api/routes.py",
+      "# diff chunk for api/serializers.py",
+      "# diff chunk for api/pagination.py"
+    ],
+    "review_comments": [
+      "LGTM, minor nits inline"
+    ],
+    "created_at": "2026-02-15T00:00:00+00:00",
+    "days_open": 2,
+    "diff_line_count": 79,
+    "_component": "api",
+    "_reviewer": "eng_eve",
+    "_cycle_days": 1.52
+  },
+  {
+    "pr_id": "PR-1213",
+    "title": "Fix throttling for burst requests",
+    "author": "eng_eve",
+    "changed_files": [
+      "api/serializers.py",
+      "api/tests/test_routes.py",
+      "api/pagination.py",
+      "api/throttling.py"
+    ],
+    "diff_chunks": [
+      "# diff chunk for api/serializers.py",
+      "# diff chunk for api/tests/test_routes.py",
+      "# diff chunk for api/pagination.py",
+      "# diff chunk for api/throttling.py"
+    ],
+    "review_comments": [],
+    "created_at": "2026-01-07T00:00:00+00:00",
+    "days_open": 4,
+    "diff_line_count": 168,
+    "_component": "api",
+    "_reviewer": "eng_frank",
+    "_cycle_days": 3.63
+  },
+  {
+    "pr_id": "PR-1214",
+    "title": "Fix filter state bug",
+    "author": "eng_eve",
+    "changed_files": [
+      "dashboard/filters.py",
+      "dashboard/tests/test_views.py"
+    ],
+    "diff_chunks": [
+      "# diff chunk for dashboard/filters.py",
+      "# diff chunk for dashboard/tests/test_views.py"
+    ],
+    "review_comments": [
+      "LGTM, minor nits inline"
+    ],
+    "created_at": "2026-04-02T00:00:00+00:00",
+    "days_open": 4,
+    "diff_line_count": 51,
+    "_component": "dashboard",
+    "_reviewer": "eng_dave",
+    "_cycle_days": 3.91
+  },
+  {
+    "pr_id": "PR-1215",
+    "title": "Refactor route handlers",
+    "author": "eng_carol",
+    "changed_files": [
+      "api/tests/test_routes.py",
+      "api/pagination.py",
+      "api/throttling.py",
+      "api/serializers.py"
+    ],
+    "diff_chunks": [
+      "# diff chunk for api/tests/test_routes.py",
+      "# diff chunk for api/pagination.py",
+      "# diff chunk for api/throttling.py",
+      "# diff chunk for api/serializers.py"
+    ],
+    "review_comments": [],
+    "created_at": "2025-11-13T00:00:00+00:00",
+    "days_open": 4,
+    "diff_line_count": 79,
+    "_component": "api",
+    "_reviewer": "eng_carol",
+    "_cycle_days": 4.0
+  },
+  {
+    "pr_id": "PR-1216",
+    "title": "Add pagination to list endpoints",
+    "author": "eng_dave",
+    "changed_files": [
+      "api/serializers.py"
+    ],
+    "diff_chunks": [
+      "# diff chunk for api/serializers.py"
+    ],
+    "review_comments": [
+      "LGTM, minor nits inline"
+    ],
+    "created_at": "2026-01-28T00:00:00+00:00",
+    "days_open": 4,
+    "diff_line_count": 514,
+    "_component": "api",
+    "_reviewer": "eng_frank",
+    "_cycle_days": 3.58
+  },
+  {
+    "pr_id": "PR-1217",
+    "title": "Fix token refresh race condition",
+    "author": "eng_carol",
+    "changed_files": [
+      "auth/oauth.py",
+      "auth/models.py"
+    ],
+    "diff_chunks": [
+      "# diff chunk for auth/oauth.py",
+      "# diff chunk for auth/models.py"
+    ],
+    "review_comments": [],
+    "created_at": "2025-12-31T00:00:00+00:00",
+    "days_open": 4,
+    "diff_line_count": 398,
+    "_component": "auth",
+    "_reviewer": "eng_alice",
+    "_cycle_days": 4.4
+  },
+  {
+    "pr_id": "PR-1218",
+    "title": "Refactor deploy pipeline",
+    "author": "eng_bob",
+    "changed_files": [
+      "infra/monitoring/alerts.yaml",
+      "infra/deploy.yml",
+      "infra/k8s/deployment.yaml",
+      "infra/scripts/migrate.sh"
+    ],
+    "diff_chunks": [
+      "# diff chunk for infra/monitoring/alerts.yaml",
+      "# diff chunk for infra/deploy.yml",
+      "# diff chunk for infra/k8s/deployment.yaml",
+      "# diff chunk for infra/scripts/migrate.sh"
+    ],
+    "review_comments": [
+      "@eng_dave can you take a look at this?",
+      "LGTM, minor nits inline"
+    ],
+    "created_at": "2025-12-15T00:00:00+00:00",
+    "days_open": 6,
+    "diff_line_count": 85,
+    "_component": "infra",
+    "_reviewer": "eng_dave",
+    "_cycle_days": 5.88
+  },
+  {
+    "pr_id": "PR-1219",
+    "title": "Add monitoring alerts for latency",
+    "author": "eng_eve",
+    "changed_files": [
+      "infra/scripts/migrate.sh",
+      "infra/monitoring/alerts.yaml",
+      "infra/deploy.yml",
+      "infra/terraform/main.tf"
+    ],
+    "diff_chunks": [
+      "# diff chunk for infra/scripts/migrate.sh",
+      "# diff chunk for infra/monitoring/alerts.yaml",
+      "# diff chunk for infra/deploy.yml",
+      "# diff chunk for infra/terraform/main.tf"
+    ],
+    "review_comments": [],
+    "created_at": "2025-11-25T00:00:00+00:00",
+    "days_open": 3,
+    "diff_line_count": 550,
+    "_component": "infra",
+    "_reviewer": "eng_dave",
+    "_cycle_days": 3.25
+  },
+  {
+    "pr_id": "PR-1220",
+    "title": "Refactor route handlers",
+    "author": "eng_alice",
+    "changed_files": [
+      "api/tests/test_routes.py",
+      "api/throttling.py",
+      "api/pagination.py",
+      "api/routes.py"
+    ],
+    "diff_chunks": [
+      "# diff chunk for api/tests/test_routes.py",
+      "# diff chunk for api/throttling.py",
+      "# diff chunk for api/pagination.py",
+      "# diff chunk for api/routes.py"
+    ],
+    "review_comments": [
+      "LGTM, minor nits inline"
+    ],
+    "created_at": "2025-11-23T00:00:00+00:00",
+    "days_open": 1,
+    "diff_line_count": 187,
+    "_component": "api",
+    "_reviewer": "eng_frank",
+    "_cycle_days": 1.32
+  },
+  {
+    "pr_id": "PR-1221",
+    "title": "Update Kubernetes deployment config",
+    "author": "eng_alice",
+    "changed_files": [
+      "infra/deploy.yml",
+      "infra/k8s/deployment.yaml",
+      "infra/scripts/migrate.sh",
+      "infra/monitoring/alerts.yaml"
+    ],
+    "diff_chunks": [
+      "# diff chunk for infra/deploy.yml",
+      "# diff chunk for infra/k8s/deployment.yaml",
+      "# diff chunk for infra/scripts/migrate.sh",
+      "# diff chunk for infra/monitoring/alerts.yaml"
+    ],
+    "review_comments": [
+      "LGTM, minor nits inline"
+    ],
+    "created_at": "2025-12-24T00:00:00+00:00",
+    "days_open": 2,
+    "diff_line_count": 479,
+    "_component": "infra",
+    "_reviewer": "eng_eve",
+    "_cycle_days": 1.69
+  },
+  {
+    "pr_id": "PR-1222",
+    "title": "Refactor dashboard views",
+    "author": "eng_alice",
+    "changed_files": [
+      "dashboard/tests/test_views.py",
+      "dashboard/views.py",
+      "dashboard/filters.py"
+    ],
+    "diff_chunks": [
+      "# diff chunk for dashboard/tests/test_views.py",
+      "# diff chunk for dashboard/views.py",
+      "# diff chunk for dashboard/filters.py"
+    ],
+    "review_comments": [],
+    "created_at": "2026-02-25T00:00:00+00:00",
+    "days_open": 2,
+    "diff_line_count": 307,
+    "_component": "dashboard",
+    "_reviewer": "eng_carol",
+    "_cycle_days": 1.64
+  },
+  {
+    "pr_id": "PR-1223",
+    "title": "Refactor deploy pipeline",
+    "author": "eng_carol",
+    "changed_files": [
+      "infra/terraform/main.tf",
+      "infra/monitoring/alerts.yaml",
+      "infra/scripts/migrate.sh"
+    ],
+    "diff_chunks": [
+      "# diff chunk for infra/terraform/main.tf",
+      "# diff chunk for infra/monitoring/alerts.yaml",
+      "# diff chunk for infra/scripts/migrate.sh"
+    ],
+    "review_comments": [
+      "LGTM, minor nits inline"
+    ],
+    "created_at": "2025-10-27T00:00:00+00:00",
+    "days_open": 1,
+    "diff_line_count": 365,
+    "_component": "infra",
+    "_reviewer": "eng_dave",
+    "_cycle_days": 1.5
+  },
+  {
+    "pr_id": "PR-1224",
+    "title": "Update payment validator edge cases",
+    "author": "eng_carol",
+    "changed_files": [
+      "payments/webhook.py",
+      "payments/tests/test_processor.py"
+    ],
+    "diff_chunks": [
+      "# diff chunk for payments/webhook.py",
+      "# diff chunk for payments/tests/test_processor.py"
+    ],
+    "review_comments": [
+      "Needs security review before merge"
+    ],
+    "created_at": "2026-01-26T00:00:00+00:00",
+    "days_open": 3,
+    "diff_line_count": 1486,
+    "_component": "payments",
+    "_reviewer": "eng_bob",
+    "_cycle_days": 2.91
+  },
+  {
+    "pr_id": "PR-1225",
+    "title": "Refactor dashboard views",
+    "author": "eng_bob",
+    "changed_files": [
+      "dashboard/tests/test_views.py",
+      "dashboard/views.py",
+      "dashboard/filters.py",
+      "dashboard/charts.py"
+    ],
+    "diff_chunks": [
+      "# diff chunk for dashboard/tests/test_views.py",
+      "# diff chunk for dashboard/views.py",
+      "# diff chunk for dashboard/filters.py",
+      "# diff chunk for dashboard/charts.py"
+    ],
+    "review_comments": [
+      "@eng_dave can you take a look at this?",
+      "LGTM, minor nits inline"
+    ],
+    "created_at": "2025-12-08T00:00:00+00:00",
+    "days_open": 7,
+    "diff_line_count": 521,
+    "_component": "dashboard",
+    "_reviewer": "eng_dave",
+    "_cycle_days": 6.68
+  },
+  {
+    "pr_id": "PR-1226",
+    "title": "Add new chart component",
+    "author": "eng_dave",
+    "changed_files": [
+      "dashboard/tests/test_views.py"
+    ],
+    "diff_chunks": [
+      "# diff chunk for dashboard/tests/test_views.py"
+    ],
+    "review_comments": [],
+    "created_at": "2025-11-07T00:00:00+00:00",
+    "days_open": 5,
+    "diff_line_count": 50,
+    "_component": "dashboard",
+    "_reviewer": "eng_dave",
+    "_cycle_days": 5.37
+  },
+  {
+    "pr_id": "PR-1227",
+    "title": "Refactor deploy pipeline",
+    "author": "eng_dave",
+    "changed_files": [
+      "infra/terraform/main.tf",
+      "infra/monitoring/alerts.yaml",
+      "infra/k8s/deployment.yaml"
+    ],
+    "diff_chunks": [
+      "# diff chunk for infra/terraform/main.tf",
+      "# diff chunk for infra/monitoring/alerts.yaml",
+      "# diff chunk for infra/k8s/deployment.yaml"
+    ],
+    "review_comments": [
+      "LGTM, minor nits inline"
+    ],
+    "created_at": "2025-11-29T00:00:00+00:00",
+    "days_open": 5,
+    "diff_line_count": 159,
+    "_component": "infra",
+    "_reviewer": "eng_alice",
+    "_cycle_days": 4.79
+  },
+  {
+    "pr_id": "PR-1228",
+    "title": "Update serializers for v2 schema",
+    "author": "eng_frank",
+    "changed_files": [
+      "api/routes.py",
+      "api/tests/test_routes.py",
+      "api/throttling.py",
+      "api/serializers.py"
+    ],
+    "diff_chunks": [
+      "# diff chunk for api/routes.py",
+      "# diff chunk for api/tests/test_routes.py",
+      "# diff chunk for api/throttling.py",
+      "# diff chunk for api/serializers.py"
+    ],
+    "review_comments": [],
+    "created_at": "2025-12-23T00:00:00+00:00",
+    "days_open": 1,
+    "diff_line_count": 250,
+    "_component": "api",
+    "_reviewer": "eng_frank",
+    "_cycle_days": 1.49
+  },
+  {
+    "pr_id": "PR-1229",
+    "title": "Fix token refresh race condition",
+    "author": "eng_frank",
+    "changed_files": [
+      "auth/middleware.py",
+      "auth/permissions.py",
+      "auth/oauth.py"
+    ],
+    "diff_chunks": [
+      "# diff chunk for auth/middleware.py",
+      "# diff chunk for auth/permissions.py",
+      "# diff chunk for auth/oauth.py"
+    ],
+    "review_comments": [],
+    "created_at": "2026-03-28T00:00:00+00:00",
+    "days_open": 2,
+    "diff_line_count": 1495,
+    "_component": "auth",
+    "_reviewer": "eng_dave",
+    "_cycle_days": 1.83
+  },
+  {
+    "pr_id": "PR-1230",
+    "title": "Fix payment processor retry logic",
+    "author": "eng_dave",
+    "changed_files": [
+      "payments/tests/test_processor.py"
+    ],
+    "diff_chunks": [
+      "# diff chunk for payments/tests/test_processor.py"
+    ],
+    "review_comments": [
+      "Needs security review before merge",
+      "LGTM, minor nits inline"
+    ],
+    "created_at": "2026-03-25T00:00:00+00:00",
+    "days_open": 2,
+    "diff_line_count": 419,
+    "_component": "payments",
+    "_reviewer": "eng_bob",
+    "_cycle_days": 1.78
+  },
+  {
+    "pr_id": "PR-1231",
+    "title": "Add OAuth2 PKCE support",
+    "author": "eng_eve",
+    "changed_files": [
+      "auth/middleware.py",
+      "auth/models.py",
+      "auth/tokens.py"
+    ],
+    "diff_chunks": [
+      "# diff chunk for auth/middleware.py",
+      "# diff chunk for auth/models.py",
+      "# diff chunk for auth/tokens.py"
+    ],
+    "review_comments": [
+      "LGTM, minor nits inline"
+    ],
+    "created_at": "2025-12-17T00:00:00+00:00",
+    "days_open": 3,
+    "diff_line_count": 163,
+    "_component": "auth",
+    "_reviewer": "eng_alice",
+    "_cycle_days": 3.44
+  },
+  {
+    "pr_id": "PR-1232",
+    "title": "Add webhook signature validation",
+    "author": "eng_alice",
+    "changed_files": [
+      "payments/tests/test_processor.py",
+      "payments/webhook.py"
+    ],
+    "diff_chunks": [
+      "# diff chunk for payments/tests/test_processor.py",
+      "# diff chunk for payments/webhook.py"
+    ],
+    "review_comments": [
+      "Needs security review before merge"
+    ],
+    "created_at": "2026-04-01T00:00:00+00:00",
+    "days_open": 2,
+    "diff_line_count": 126,
+    "_component": "payments",
+    "_reviewer": "eng_carol",
+    "_cycle_days": 1.75
+  },
+  {
+    "pr_id": "PR-1233",
+    "title": "Refactor dashboard views",
+    "author": "eng_carol",
+    "changed_files": [
+      "dashboard/charts.py",
+      "dashboard/views.py",
+      "dashboard/filters.py",
+      "dashboard/tests/test_views.py"
+    ],
+    "diff_chunks": [
+      "# diff chunk for dashboard/charts.py",
+      "# diff chunk for dashboard/views.py",
+      "# diff chunk for dashboard/filters.py",
+      "# diff chunk for dashboard/tests/test_views.py"
+    ],
+    "review_comments": [],
+    "created_at": "2026-03-18T00:00:00+00:00",
+    "days_open": 4,
+    "diff_line_count": 410,
+    "_component": "dashboard",
+    "_reviewer": "eng_dave",
+    "_cycle_days": 4.25
+  },
+  {
+    "pr_id": "PR-1234",
+    "title": "Refactor dashboard views",
+    "author": "eng_carol",
+    "changed_files": [
+      "dashboard/charts.py"
+    ],
+    "diff_chunks": [
+      "# diff chunk for dashboard/charts.py"
+    ],
+    "review_comments": [],
+    "created_at": "2025-11-28T00:00:00+00:00",
+    "days_open": 2,
+    "diff_line_count": 341,
+    "_component": "dashboard",
+    "_reviewer": "eng_dave",
+    "_cycle_days": 1.93
+  }
+]

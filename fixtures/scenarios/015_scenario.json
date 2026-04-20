@@ -1,0 +1,41 @@
+{
+  "scenario_id": "015",
+  "description": "Generated scenario \u2014 dashboard/ clean",
+  "pr": {
+    "pr_id": "PR-GEN-015",
+    "title": "Update dashboard tests",
+    "author": "eng_carol",
+    "changed_files": [
+      "dashboard/tests/test_views.py",
+      "dashboard/charts.py"
+    ],
+    "diff_chunks": [
+      "# Generated diff chunk"
+    ],
+    "review_comments": [
+      "Awaiting review \u2014 day 9"
+    ],
+    "created_at": "2026-04-10T00:00:00+00:00",
+    "days_open": 9,
+    "diff_line_count": 90
+  },
+  "ticket": {
+    "ticket_id": "PROJ-GEN-015",
+    "title": "Update dashboard tests",
+    "description": "Task description for generated scenario.",
+    "status": "In Progress",
+    "assignee": "eng_carol",
+    "component": "dashboard",
+    "created_at": "2026-04-08T00:00:00+00:00",
+    "sprint_name": "Sprint 24"
+  },
+  "slack": null,
+  "gold_output": {
+    "status": "no_issue",
+    "blocker_type": null,
+    "expected_severity_min": null,
+    "expected_owner": null,
+    "expected_recurrence_min": 0,
+    "notes": "Generated scenario \u2014 loose gold labels"
+  }
+}

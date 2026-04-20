@@ -1,0 +1,41 @@
+{
+  "scenario_id": "009",
+  "description": "Generated scenario \u2014 api/ with blocker",
+  "pr": {
+    "pr_id": "PR-GEN-009",
+    "title": "Add pagination to list endpoints",
+    "author": "eng_carol",
+    "changed_files": [
+      "api/routes.py",
+      "api/pagination.py",
+      "api/throttling.py",
+      "api/serializers.py"
+    ],
+    "diff_chunks": [
+      "# Generated diff chunk"
+    ],
+    "review_comments": [],
+    "created_at": "2026-04-16T00:00:00+00:00",
+    "days_open": 3,
+    "diff_line_count": 152
+  },
+  "ticket": {
+    "ticket_id": "PROJ-GEN-009",
+    "title": "Add pagination to list endpoints",
+    "description": "Task description for generated scenario.",
+    "status": "In Progress",
+    "assignee": "eng_carol",
+    "component": "api",
+    "created_at": "2026-04-14T00:00:00+00:00",
+    "sprint_name": "Sprint 24"
+  },
+  "slack": null,
+  "gold_output": {
+    "status": "insight",
+    "blocker_type": "scope_creep",
+    "expected_severity_min": 2,
+    "expected_owner": null,
+    "expected_recurrence_min": 0,
+    "notes": "Generated scenario \u2014 loose gold labels"
+  }
+}

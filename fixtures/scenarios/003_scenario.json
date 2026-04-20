@@ -1,0 +1,43 @@
+{
+  "scenario_id": "003",
+  "description": "No issue \u2014 PR merged, ticket closed, all signals consistent",
+  "pr": {
+    "pr_id": "PR-DEMO-003",
+    "title": "Add filter state persistence to dashboard",
+    "author": "eng_carol",
+    "changed_files": [
+      "dashboard/filters.py",
+      "dashboard/tests/test_views.py"
+    ],
+    "diff_chunks": [
+      "+ class FilterStateManager:\n+     def persist(self, state): ...",
+      "+ def test_filter_persistence(): ..."
+    ],
+    "review_comments": [
+      "LGTM! Nice clean implementation",
+      "Merged"
+    ],
+    "created_at": "2026-04-17T00:00:00+00:00",
+    "days_open": 2,
+    "diff_line_count": 87
+  },
+  "ticket": {
+    "ticket_id": "PROJ-488",
+    "title": "Persist filter state in dashboard",
+    "description": "Users should retain their filter selections after page reload.",
+    "status": "Done",
+    "assignee": "eng_carol",
+    "component": "dashboard",
+    "created_at": "2026-04-15T00:00:00+00:00",
+    "sprint_name": "Sprint 24"
+  },
+  "slack": null,
+  "gold_output": {
+    "status": "no_issue",
+    "blocker_type": null,
+    "expected_severity_min": null,
+    "expected_owner": null,
+    "expected_recurrence_min": 0,
+    "notes": "PR merged in 2 days (well within baseline), ticket closed, no blocker signals"
+  }
+}

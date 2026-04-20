@@ -1,0 +1,40 @@
+{
+  "scenario_id": "008",
+  "description": "Generated scenario \u2014 auth/ with blocker",
+  "pr": {
+    "pr_id": "PR-GEN-008",
+    "title": "Fix token refresh race condition",
+    "author": "eng_bob",
+    "changed_files": [
+      "auth/middleware.py"
+    ],
+    "diff_chunks": [
+      "# Generated diff chunk"
+    ],
+    "review_comments": [
+      "Awaiting review \u2014 day 11"
+    ],
+    "created_at": "2026-04-08T00:00:00+00:00",
+    "days_open": 11,
+    "diff_line_count": 251
+  },
+  "ticket": {
+    "ticket_id": "PROJ-GEN-008",
+    "title": "Update auth models for multi-tenant",
+    "description": "Task description for generated scenario.",
+    "status": "In Progress",
+    "assignee": "eng_bob",
+    "component": "auth",
+    "created_at": "2026-04-06T00:00:00+00:00",
+    "sprint_name": "Sprint 24"
+  },
+  "slack": null,
+  "gold_output": {
+    "status": "insight",
+    "blocker_type": "unclear_requirements",
+    "expected_severity_min": 2,
+    "expected_owner": null,
+    "expected_recurrence_min": 0,
+    "notes": "Generated scenario \u2014 loose gold labels"
+  }
+}

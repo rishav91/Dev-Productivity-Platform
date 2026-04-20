@@ -1,0 +1,67 @@
+{
+  "scenario_id": "001",
+  "description": "Review bottleneck in payments/ \u2014 eng_bob blocking",
+  "pr": {
+    "pr_id": "PR-DEMO-001",
+    "title": "Add idempotency keys to payment processor",
+    "author": "eng_alice",
+    "changed_files": [
+      "payments/processor.py",
+      "payments/models.py"
+    ],
+    "diff_chunks": [
+      "- process_payment(amount, card)\n+ process_payment(amount, card, idempotency_key=None)",
+      "+ if idempotency_key:\n+     return check_idempotency_cache(idempotency_key)"
+    ],
+    "review_comments": [
+      "@eng_bob can you review this? It's been sitting for a week",
+      "Bumping \u2014 this is blocking our Q2 payment reliability initiative"
+    ],
+    "created_at": "2026-04-10T00:00:00+00:00",
+    "days_open": 9,
+    "diff_line_count": 145
+  },
+  "ticket": {
+    "ticket_id": "PROJ-441",
+    "title": "Add idempotency to payment processor",
+    "description": "Payment processor must support idempotency keys to prevent duplicate charges on retry.",
+    "status": "In Progress",
+    "assignee": "eng_alice",
+    "component": "payments",
+    "created_at": "2026-04-07T00:00:00+00:00",
+    "sprint_name": "Sprint 24"
+  },
+  "slack": {
+    "thread_ts": "1745000000.000001",
+    "channel": "C_PAYMENTS",
+    "messages": [
+      {
+        "user_id": "eng_alice",
+        "text": "Hey, anyone know when Bob will review PR-DEMO-001?",
+        "ts": "1745000100.000001"
+      },
+      {
+        "user_id": "eng_carol",
+        "text": "Yeah we're waiting on Bob, he's been swamped",
+        "ts": "1745000200.000001"
+      },
+      {
+        "user_id": "eng_alice",
+        "text": "This is blocking the sprint goal",
+        "ts": "1745000300.000001"
+      }
+    ],
+    "participant_ids": [
+      "eng_alice",
+      "eng_carol"
+    ]
+  },
+  "gold_output": {
+    "status": "insight",
+    "blocker_type": "review_bottleneck",
+    "expected_severity_min": 3,
+    "expected_owner": "eng_bob",
+    "expected_recurrence_min": 2,
+    "notes": "eng_bob p85 cycle is 6.2 days, PR at 9 days is above p85, history sample >= 10"
+  }
+}

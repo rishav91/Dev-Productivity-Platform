@@ -1,0 +1,1067 @@
+[
+  {
+    "insight_id": "INS-2000",
+    "component": "payments",
+    "blocker_type": null,
+    "severity": null,
+    "owner": null,
+    "owner_confidence": null,
+    "status": "no_issue",
+    "summary": "No delivery blocker detected for this payments/ change.",
+    "recommended_actions": [
+      "No action required \u2014 delivery is on track"
+    ],
+    "evidence": [],
+    "missing_sources": [],
+    "confidence": 0.562,
+    "recurrence_count": 1,
+    "baseline_cycle_p85_days": 6.7,
+    "created_at": "2025-11-14T00:00:00+00:00"
+  },
+  {
+    "insight_id": "INS-2001",
+    "component": "api",
+    "blocker_type": null,
+    "severity": null,
+    "owner": null,
+    "owner_confidence": null,
+    "status": "no_issue",
+    "summary": "No delivery blocker detected for this api/ change.",
+    "recommended_actions": [
+      "No action required \u2014 delivery is on track"
+    ],
+    "evidence": [],
+    "missing_sources": [],
+    "confidence": 0.648,
+    "recurrence_count": 1,
+    "baseline_cycle_p85_days": 5.5,
+    "created_at": "2026-03-21T00:00:00+00:00"
+  },
+  {
+    "insight_id": "INS-2002",
+    "component": "infra",
+    "blocker_type": "dependency_block",
+    "severity": 2,
+    "owner": "eng_bob",
+    "owner_confidence": 0.908,
+    "status": "insight",
+    "summary": "PR in infra/ is blocked on an external dependency resolution.",
+    "recommended_actions": [
+      "Escalate dependency to owning team with deadline",
+      "Evaluate if the PR can be scoped to avoid the dependency"
+    ],
+    "evidence": [],
+    "missing_sources": [],
+    "confidence": 0.946,
+    "recurrence_count": 3,
+    "baseline_cycle_p85_days": 4.8,
+    "created_at": "2026-01-09T00:00:00+00:00"
+  },
+  {
+    "insight_id": "INS-2003",
+    "component": "auth",
+    "blocker_type": null,
+    "severity": null,
+    "owner": null,
+    "owner_confidence": null,
+    "status": "no_issue",
+    "summary": "No delivery blocker detected for this auth/ change.",
+    "recommended_actions": [
+      "No action required \u2014 delivery is on track"
+    ],
+    "evidence": [],
+    "missing_sources": [],
+    "confidence": 0.505,
+    "recurrence_count": 0,
+    "baseline_cycle_p85_days": 4.3,
+    "created_at": "2026-04-01T00:00:00+00:00"
+  },
+  {
+    "insight_id": "INS-2004",
+    "component": "payments",
+    "blocker_type": null,
+    "severity": null,
+    "owner": null,
+    "owner_confidence": null,
+    "status": "no_issue",
+    "summary": "No delivery blocker detected for this payments/ change.",
+    "recommended_actions": [
+      "No action required \u2014 delivery is on track"
+    ],
+    "evidence": [],
+    "missing_sources": [],
+    "confidence": 0.652,
+    "recurrence_count": 3,
+    "baseline_cycle_p85_days": 5.1,
+    "created_at": "2025-11-09T00:00:00+00:00"
+  },
+  {
+    "insight_id": "INS-2005",
+    "component": "dashboard",
+    "blocker_type": null,
+    "severity": 3,
+    "owner": "eng_eve",
+    "owner_confidence": 0.942,
+    "status": "insight",
+    "summary": "No delivery blocker detected for this dashboard/ change.",
+    "recommended_actions": [
+      "No action required \u2014 delivery is on track"
+    ],
+    "evidence": [],
+    "missing_sources": [],
+    "confidence": 0.733,
+    "recurrence_count": 1,
+    "baseline_cycle_p85_days": 5.7,
+    "created_at": "2026-02-25T00:00:00+00:00"
+  },
+  {
+    "insight_id": "INS-2006",
+    "component": "dashboard",
+    "blocker_type": null,
+    "severity": null,
+    "owner": null,
+    "owner_confidence": null,
+    "status": "no_issue",
+    "summary": "No delivery blocker detected for this dashboard/ change.",
+    "recommended_actions": [
+      "No action required \u2014 delivery is on track"
+    ],
+    "evidence": [],
+    "missing_sources": [],
+    "confidence": 0.593,
+    "recurrence_count": 1,
+    "baseline_cycle_p85_days": 3.3,
+    "created_at": "2025-12-28T00:00:00+00:00"
+  },
+  {
+    "insight_id": "INS-2007",
+    "component": "payments",
+    "blocker_type": null,
+    "severity": null,
+    "owner": null,
+    "owner_confidence": null,
+    "status": "no_issue",
+    "summary": "No delivery blocker detected for this payments/ change.",
+    "recommended_actions": [
+      "No action required \u2014 delivery is on track"
+    ],
+    "evidence": [],
+    "missing_sources": [],
+    "confidence": 0.636,
+    "recurrence_count": 0,
+    "baseline_cycle_p85_days": 4.5,
+    "created_at": "2025-11-14T00:00:00+00:00"
+  },
+  {
+    "insight_id": "INS-2008",
+    "component": "auth",
+    "blocker_type": "unclear_requirements",
+    "severity": 3,
+    "owner": null,
+    "owner_confidence": null,
+    "status": "insight",
+    "summary": "Ticket for auth/ lacks sufficient acceptance criteria for implementation.",
+    "recommended_actions": [
+      "Schedule a requirements clarification session with PM",
+      "Document agreed acceptance criteria in the ticket"
+    ],
+    "evidence": [],
+    "missing_sources": [],
+    "confidence": 0.86,
+    "recurrence_count": 2,
+    "baseline_cycle_p85_days": 3.8,
+    "created_at": "2026-01-20T00:00:00+00:00"
+  },
+  {
+    "insight_id": "INS-2009",
+    "component": "auth",
+    "blocker_type": null,
+    "severity": null,
+    "owner": null,
+    "owner_confidence": null,
+    "status": "no_issue",
+    "summary": "No delivery blocker detected for this auth/ change.",
+    "recommended_actions": [
+      "No action required \u2014 delivery is on track"
+    ],
+    "evidence": [],
+    "missing_sources": [],
+    "confidence": 0.72,
+    "recurrence_count": 0,
+    "baseline_cycle_p85_days": 4.7,
+    "created_at": "2026-03-19T00:00:00+00:00"
+  },
+  {
+    "insight_id": "INS-2010",
+    "component": "dashboard",
+    "blocker_type": null,
+    "severity": null,
+    "owner": null,
+    "owner_confidence": null,
+    "status": "no_issue",
+    "summary": "No delivery blocker detected for this dashboard/ change.",
+    "recommended_actions": [
+      "No action required \u2014 delivery is on track"
+    ],
+    "evidence": [],
+    "missing_sources": [],
+    "confidence": 0.579,
+    "recurrence_count": 0,
+    "baseline_cycle_p85_days": 5.5,
+    "created_at": "2025-11-22T00:00:00+00:00"
+  },
+  {
+    "insight_id": "INS-2011",
+    "component": "infra",
+    "blocker_type": null,
+    "severity": null,
+    "owner": null,
+    "owner_confidence": null,
+    "status": "no_issue",
+    "summary": "No delivery blocker detected for this infra/ change.",
+    "recommended_actions": [
+      "No action required \u2014 delivery is on track"
+    ],
+    "evidence": [],
+    "missing_sources": [],
+    "confidence": 0.758,
+    "recurrence_count": 2,
+    "baseline_cycle_p85_days": 3.8,
+    "created_at": "2026-03-07T00:00:00+00:00"
+  },
+  {
+    "insight_id": "INS-2012",
+    "component": "payments",
+    "blocker_type": null,
+    "severity": null,
+    "owner": null,
+    "owner_confidence": null,
+    "status": "no_issue",
+    "summary": "No delivery blocker detected for this payments/ change.",
+    "recommended_actions": [
+      "No action required \u2014 delivery is on track"
+    ],
+    "evidence": [],
+    "missing_sources": [],
+    "confidence": 0.569,
+    "recurrence_count": 0,
+    "baseline_cycle_p85_days": 3.2,
+    "created_at": "2025-12-09T00:00:00+00:00"
+  },
+  {
+    "insight_id": "INS-2013",
+    "component": "payments",
+    "blocker_type": "review_bottleneck",
+    "severity": 5,
+    "owner": "eng_bob",
+    "owner_confidence": 0.816,
+    "status": "insight",
+    "summary": "PR in payments/ has been awaiting review for an extended period, severity 5/5.",
+    "recommended_actions": [
+      "Assign a backup reviewer to unblock the PR",
+      "Add this reviewer to the sprint retrospective discussion"
+    ],
+    "evidence": [],
+    "missing_sources": [],
+    "confidence": 0.759,
+    "recurrence_count": 3,
+    "baseline_cycle_p85_days": 4.1,
+    "created_at": "2026-04-09T00:00:00+00:00"
+  },
+  {
+    "insight_id": "INS-2014",
+    "component": "auth",
+    "blocker_type": null,
+    "severity": null,
+    "owner": null,
+    "owner_confidence": null,
+    "status": "no_issue",
+    "summary": "No delivery blocker detected for this auth/ change.",
+    "recommended_actions": [
+      "No action required \u2014 delivery is on track"
+    ],
+    "evidence": [],
+    "missing_sources": [],
+    "confidence": 0.581,
+    "recurrence_count": 2,
+    "baseline_cycle_p85_days": 3.6,
+    "created_at": "2026-03-30T00:00:00+00:00"
+  },
+  {
+    "insight_id": "INS-2015",
+    "component": "payments",
+    "blocker_type": "review_bottleneck",
+    "severity": 2,
+    "owner": null,
+    "owner_confidence": null,
+    "status": "insight",
+    "summary": "PR in payments/ has been awaiting review for an extended period, severity 2/5.",
+    "recommended_actions": [
+      "Assign a backup reviewer to unblock the PR",
+      "Add this reviewer to the sprint retrospective discussion"
+    ],
+    "evidence": [],
+    "missing_sources": [],
+    "confidence": 0.936,
+    "recurrence_count": 2,
+    "baseline_cycle_p85_days": 6.9,
+    "created_at": "2025-12-20T00:00:00+00:00"
+  },
+  {
+    "insight_id": "INS-2016",
+    "component": "api",
+    "blocker_type": null,
+    "severity": null,
+    "owner": null,
+    "owner_confidence": null,
+    "status": "no_issue",
+    "summary": "No delivery blocker detected for this api/ change.",
+    "recommended_actions": [
+      "No action required \u2014 delivery is on track"
+    ],
+    "evidence": [],
+    "missing_sources": [],
+    "confidence": 0.502,
+    "recurrence_count": 2,
+    "baseline_cycle_p85_days": 5.8,
+    "created_at": "2026-02-26T00:00:00+00:00"
+  },
+  {
+    "insight_id": "INS-2017",
+    "component": "api",
+    "blocker_type": null,
+    "severity": null,
+    "owner": null,
+    "owner_confidence": null,
+    "status": "no_issue",
+    "summary": "No delivery blocker detected for this api/ change.",
+    "recommended_actions": [
+      "No action required \u2014 delivery is on track"
+    ],
+    "evidence": [],
+    "missing_sources": [],
+    "confidence": 0.639,
+    "recurrence_count": 3,
+    "baseline_cycle_p85_days": 8.0,
+    "created_at": "2025-11-18T00:00:00+00:00"
+  },
+  {
+    "insight_id": "INS-2018",
+    "component": "auth",
+    "blocker_type": null,
+    "severity": null,
+    "owner": null,
+    "owner_confidence": null,
+    "status": "no_issue",
+    "summary": "No delivery blocker detected for this auth/ change.",
+    "recommended_actions": [
+      "No action required \u2014 delivery is on track"
+    ],
+    "evidence": [],
+    "missing_sources": [],
+    "confidence": 0.545,
+    "recurrence_count": 0,
+    "baseline_cycle_p85_days": 4.2,
+    "created_at": "2026-01-04T00:00:00+00:00"
+  },
+  {
+    "insight_id": "INS-2019",
+    "component": "api",
+    "blocker_type": null,
+    "severity": null,
+    "owner": null,
+    "owner_confidence": null,
+    "status": "no_issue",
+    "summary": "No delivery blocker detected for this api/ change.",
+    "recommended_actions": [
+      "No action required \u2014 delivery is on track"
+    ],
+    "evidence": [],
+    "missing_sources": [],
+    "confidence": 0.785,
+    "recurrence_count": 3,
+    "baseline_cycle_p85_days": 7.2,
+    "created_at": "2026-04-18T00:00:00+00:00"
+  },
+  {
+    "insight_id": "INS-2020",
+    "component": "api",
+    "blocker_type": "scope_creep",
+    "severity": 3,
+    "owner": "eng_bob",
+    "owner_confidence": 0.678,
+    "status": "insight",
+    "summary": "Diff in api/ significantly exceeds ticket estimate, indicating scope creep.",
+    "recommended_actions": [
+      "Split the PR into smaller focused changes",
+      "Update the ticket with revised estimate"
+    ],
+    "evidence": [],
+    "missing_sources": [],
+    "confidence": 0.776,
+    "recurrence_count": 1,
+    "baseline_cycle_p85_days": 7.5,
+    "created_at": "2026-02-06T00:00:00+00:00"
+  },
+  {
+    "insight_id": "INS-2021",
+    "component": "infra",
+    "blocker_type": null,
+    "severity": null,
+    "owner": null,
+    "owner_confidence": null,
+    "status": "no_issue",
+    "summary": "No delivery blocker detected for this infra/ change.",
+    "recommended_actions": [
+      "No action required \u2014 delivery is on track"
+    ],
+    "evidence": [],
+    "missing_sources": [],
+    "confidence": 0.638,
+    "recurrence_count": 0,
+    "baseline_cycle_p85_days": 5.5,
+    "created_at": "2026-03-28T00:00:00+00:00"
+  },
+  {
+    "insight_id": "INS-2022",
+    "component": "dashboard",
+    "blocker_type": null,
+    "severity": 2,
+    "owner": "eng_bob",
+    "owner_confidence": 0.728,
+    "status": "insight",
+    "summary": "No delivery blocker detected for this dashboard/ change.",
+    "recommended_actions": [
+      "No action required \u2014 delivery is on track"
+    ],
+    "evidence": [],
+    "missing_sources": [],
+    "confidence": 0.78,
+    "recurrence_count": 2,
+    "baseline_cycle_p85_days": 7.6,
+    "created_at": "2026-02-03T00:00:00+00:00"
+  },
+  {
+    "insight_id": "INS-2023",
+    "component": "dashboard",
+    "blocker_type": null,
+    "severity": null,
+    "owner": null,
+    "owner_confidence": null,
+    "status": "no_issue",
+    "summary": "No delivery blocker detected for this dashboard/ change.",
+    "recommended_actions": [
+      "No action required \u2014 delivery is on track"
+    ],
+    "evidence": [],
+    "missing_sources": [],
+    "confidence": 0.595,
+    "recurrence_count": 1,
+    "baseline_cycle_p85_days": 3.4,
+    "created_at": "2026-02-08T00:00:00+00:00"
+  },
+  {
+    "insight_id": "INS-2024",
+    "component": "auth",
+    "blocker_type": "unclear_requirements",
+    "severity": 2,
+    "owner": null,
+    "owner_confidence": null,
+    "status": "insight",
+    "summary": "Ticket for auth/ lacks sufficient acceptance criteria for implementation.",
+    "recommended_actions": [
+      "Schedule a requirements clarification session with PM",
+      "Document agreed acceptance criteria in the ticket"
+    ],
+    "evidence": [],
+    "missing_sources": [],
+    "confidence": 0.697,
+    "recurrence_count": 2,
+    "baseline_cycle_p85_days": 5.0,
+    "created_at": "2025-12-20T00:00:00+00:00"
+  },
+  {
+    "insight_id": "INS-2025",
+    "component": "infra",
+    "blocker_type": null,
+    "severity": null,
+    "owner": null,
+    "owner_confidence": null,
+    "status": "no_issue",
+    "summary": "No delivery blocker detected for this infra/ change.",
+    "recommended_actions": [
+      "No action required \u2014 delivery is on track"
+    ],
+    "evidence": [],
+    "missing_sources": [],
+    "confidence": 0.636,
+    "recurrence_count": 2,
+    "baseline_cycle_p85_days": 7.3,
+    "created_at": "2025-12-21T00:00:00+00:00"
+  },
+  {
+    "insight_id": "INS-2026",
+    "component": "payments",
+    "blocker_type": "review_bottleneck",
+    "severity": 4,
+    "owner": "eng_alice",
+    "owner_confidence": 0.901,
+    "status": "insight",
+    "summary": "PR in payments/ has been awaiting review for an extended period, severity 4/5.",
+    "recommended_actions": [
+      "Assign a backup reviewer to unblock the PR",
+      "Add this reviewer to the sprint retrospective discussion"
+    ],
+    "evidence": [],
+    "missing_sources": [],
+    "confidence": 0.898,
+    "recurrence_count": 2,
+    "baseline_cycle_p85_days": 3.7,
+    "created_at": "2026-02-22T00:00:00+00:00"
+  },
+  {
+    "insight_id": "INS-2027",
+    "component": "auth",
+    "blocker_type": null,
+    "severity": null,
+    "owner": null,
+    "owner_confidence": null,
+    "status": "no_issue",
+    "summary": "No delivery blocker detected for this auth/ change.",
+    "recommended_actions": [
+      "No action required \u2014 delivery is on track"
+    ],
+    "evidence": [],
+    "missing_sources": [],
+    "confidence": 0.654,
+    "recurrence_count": 2,
+    "baseline_cycle_p85_days": 4.3,
+    "created_at": "2025-10-27T00:00:00+00:00"
+  },
+  {
+    "insight_id": "INS-2028",
+    "component": "auth",
+    "blocker_type": "unclear_requirements",
+    "severity": 5,
+    "owner": "eng_eve",
+    "owner_confidence": 0.678,
+    "status": "insight",
+    "summary": "Ticket for auth/ lacks sufficient acceptance criteria for implementation.",
+    "recommended_actions": [
+      "Schedule a requirements clarification session with PM",
+      "Document agreed acceptance criteria in the ticket"
+    ],
+    "evidence": [],
+    "missing_sources": [],
+    "confidence": 0.906,
+    "recurrence_count": 0,
+    "baseline_cycle_p85_days": 7.0,
+    "created_at": "2026-02-14T00:00:00+00:00"
+  },
+  {
+    "insight_id": "INS-2029",
+    "component": "auth",
+    "blocker_type": "unclear_requirements",
+    "severity": 2,
+    "owner": "eng_bob",
+    "owner_confidence": 0.897,
+    "status": "insight",
+    "summary": "Ticket for auth/ lacks sufficient acceptance criteria for implementation.",
+    "recommended_actions": [
+      "Schedule a requirements clarification session with PM",
+      "Document agreed acceptance criteria in the ticket"
+    ],
+    "evidence": [],
+    "missing_sources": [],
+    "confidence": 0.899,
+    "recurrence_count": 2,
+    "baseline_cycle_p85_days": 6.4,
+    "created_at": "2026-02-27T00:00:00+00:00"
+  },
+  {
+    "insight_id": "INS-2030",
+    "component": "payments",
+    "blocker_type": "review_bottleneck",
+    "severity": 4,
+    "owner": null,
+    "owner_confidence": null,
+    "status": "insight",
+    "summary": "PR in payments/ has been awaiting review for an extended period, severity 4/5.",
+    "recommended_actions": [
+      "Assign a backup reviewer to unblock the PR",
+      "Add this reviewer to the sprint retrospective discussion"
+    ],
+    "evidence": [],
+    "missing_sources": [],
+    "confidence": 0.925,
+    "recurrence_count": 1,
+    "baseline_cycle_p85_days": 7.5,
+    "created_at": "2026-04-02T00:00:00+00:00"
+  },
+  {
+    "insight_id": "INS-2031",
+    "component": "dashboard",
+    "blocker_type": null,
+    "severity": null,
+    "owner": null,
+    "owner_confidence": null,
+    "status": "no_issue",
+    "summary": "No delivery blocker detected for this dashboard/ change.",
+    "recommended_actions": [
+      "No action required \u2014 delivery is on track"
+    ],
+    "evidence": [],
+    "missing_sources": [],
+    "confidence": 0.772,
+    "recurrence_count": 0,
+    "baseline_cycle_p85_days": 3.2,
+    "created_at": "2026-01-24T00:00:00+00:00"
+  },
+  {
+    "insight_id": "INS-2032",
+    "component": "dashboard",
+    "blocker_type": null,
+    "severity": 5,
+    "owner": "eng_alice",
+    "owner_confidence": 0.855,
+    "status": "insight",
+    "summary": "No delivery blocker detected for this dashboard/ change.",
+    "recommended_actions": [
+      "No action required \u2014 delivery is on track"
+    ],
+    "evidence": [],
+    "missing_sources": [],
+    "confidence": 0.897,
+    "recurrence_count": 1,
+    "baseline_cycle_p85_days": 4.8,
+    "created_at": "2026-01-11T00:00:00+00:00"
+  },
+  {
+    "insight_id": "INS-2033",
+    "component": "auth",
+    "blocker_type": "unclear_requirements",
+    "severity": 5,
+    "owner": null,
+    "owner_confidence": null,
+    "status": "insight",
+    "summary": "Ticket for auth/ lacks sufficient acceptance criteria for implementation.",
+    "recommended_actions": [
+      "Schedule a requirements clarification session with PM",
+      "Document agreed acceptance criteria in the ticket"
+    ],
+    "evidence": [],
+    "missing_sources": [],
+    "confidence": 0.915,
+    "recurrence_count": 1,
+    "baseline_cycle_p85_days": 6.2,
+    "created_at": "2025-11-11T00:00:00+00:00"
+  },
+  {
+    "insight_id": "INS-2034",
+    "component": "dashboard",
+    "blocker_type": null,
+    "severity": null,
+    "owner": null,
+    "owner_confidence": null,
+    "status": "no_issue",
+    "summary": "No delivery blocker detected for this dashboard/ change.",
+    "recommended_actions": [
+      "No action required \u2014 delivery is on track"
+    ],
+    "evidence": [],
+    "missing_sources": [],
+    "confidence": 0.518,
+    "recurrence_count": 3,
+    "baseline_cycle_p85_days": 3.7,
+    "created_at": "2026-02-06T00:00:00+00:00"
+  },
+  {
+    "insight_id": "INS-2035",
+    "component": "auth",
+    "blocker_type": null,
+    "severity": null,
+    "owner": null,
+    "owner_confidence": null,
+    "status": "no_issue",
+    "summary": "No delivery blocker detected for this auth/ change.",
+    "recommended_actions": [
+      "No action required \u2014 delivery is on track"
+    ],
+    "evidence": [],
+    "missing_sources": [],
+    "confidence": 0.689,
+    "recurrence_count": 0,
+    "baseline_cycle_p85_days": 7.9,
+    "created_at": "2025-11-30T00:00:00+00:00"
+  },
+  {
+    "insight_id": "INS-2036",
+    "component": "api",
+    "blocker_type": null,
+    "severity": null,
+    "owner": null,
+    "owner_confidence": null,
+    "status": "no_issue",
+    "summary": "No delivery blocker detected for this api/ change.",
+    "recommended_actions": [
+      "No action required \u2014 delivery is on track"
+    ],
+    "evidence": [],
+    "missing_sources": [],
+    "confidence": 0.603,
+    "recurrence_count": 2,
+    "baseline_cycle_p85_days": 4.9,
+    "created_at": "2025-11-25T00:00:00+00:00"
+  },
+  {
+    "insight_id": "INS-2037",
+    "component": "auth",
+    "blocker_type": "unclear_requirements",
+    "severity": 3,
+    "owner": "eng_carol",
+    "owner_confidence": 0.893,
+    "status": "insight",
+    "summary": "Ticket for auth/ lacks sufficient acceptance criteria for implementation.",
+    "recommended_actions": [
+      "Schedule a requirements clarification session with PM",
+      "Document agreed acceptance criteria in the ticket"
+    ],
+    "evidence": [],
+    "missing_sources": [],
+    "confidence": 0.659,
+    "recurrence_count": 3,
+    "baseline_cycle_p85_days": 5.6,
+    "created_at": "2026-04-04T00:00:00+00:00"
+  },
+  {
+    "insight_id": "INS-2038",
+    "component": "infra",
+    "blocker_type": null,
+    "severity": null,
+    "owner": null,
+    "owner_confidence": null,
+    "status": "no_issue",
+    "summary": "No delivery blocker detected for this infra/ change.",
+    "recommended_actions": [
+      "No action required \u2014 delivery is on track"
+    ],
+    "evidence": [],
+    "missing_sources": [],
+    "confidence": 0.53,
+    "recurrence_count": 1,
+    "baseline_cycle_p85_days": 4.3,
+    "created_at": "2025-11-01T00:00:00+00:00"
+  },
+  {
+    "insight_id": "INS-2039",
+    "component": "payments",
+    "blocker_type": null,
+    "severity": null,
+    "owner": null,
+    "owner_confidence": null,
+    "status": "no_issue",
+    "summary": "No delivery blocker detected for this payments/ change.",
+    "recommended_actions": [
+      "No action required \u2014 delivery is on track"
+    ],
+    "evidence": [],
+    "missing_sources": [],
+    "confidence": 0.673,
+    "recurrence_count": 2,
+    "baseline_cycle_p85_days": 7.7,
+    "created_at": "2026-01-09T00:00:00+00:00"
+  },
+  {
+    "insight_id": "INS-2040",
+    "component": "auth",
+    "blocker_type": "unclear_requirements",
+    "severity": 4,
+    "owner": "eng_eve",
+    "owner_confidence": 0.861,
+    "status": "insight",
+    "summary": "Ticket for auth/ lacks sufficient acceptance criteria for implementation.",
+    "recommended_actions": [
+      "Schedule a requirements clarification session with PM",
+      "Document agreed acceptance criteria in the ticket"
+    ],
+    "evidence": [],
+    "missing_sources": [],
+    "confidence": 0.892,
+    "recurrence_count": 2,
+    "baseline_cycle_p85_days": 7.7,
+    "created_at": "2026-04-11T00:00:00+00:00"
+  },
+  {
+    "insight_id": "INS-2041",
+    "component": "infra",
+    "blocker_type": "dependency_block",
+    "severity": 3,
+    "owner": "eng_dave",
+    "owner_confidence": 0.743,
+    "status": "insight",
+    "summary": "PR in infra/ is blocked on an external dependency resolution.",
+    "recommended_actions": [
+      "Escalate dependency to owning team with deadline",
+      "Evaluate if the PR can be scoped to avoid the dependency"
+    ],
+    "evidence": [],
+    "missing_sources": [],
+    "confidence": 0.901,
+    "recurrence_count": 3,
+    "baseline_cycle_p85_days": 3.2,
+    "created_at": "2025-12-01T00:00:00+00:00"
+  },
+  {
+    "insight_id": "INS-2042",
+    "component": "payments",
+    "blocker_type": "review_bottleneck",
+    "severity": 3,
+    "owner": "eng_carol",
+    "owner_confidence": 0.71,
+    "status": "insight",
+    "summary": "PR in payments/ has been awaiting review for an extended period, severity 3/5.",
+    "recommended_actions": [
+      "Assign a backup reviewer to unblock the PR",
+      "Add this reviewer to the sprint retrospective discussion"
+    ],
+    "evidence": [],
+    "missing_sources": [],
+    "confidence": 0.656,
+    "recurrence_count": 1,
+    "baseline_cycle_p85_days": 4.7,
+    "created_at": "2025-11-12T00:00:00+00:00"
+  },
+  {
+    "insight_id": "INS-2043",
+    "component": "auth",
+    "blocker_type": null,
+    "severity": null,
+    "owner": null,
+    "owner_confidence": null,
+    "status": "no_issue",
+    "summary": "No delivery blocker detected for this auth/ change.",
+    "recommended_actions": [
+      "No action required \u2014 delivery is on track"
+    ],
+    "evidence": [],
+    "missing_sources": [],
+    "confidence": 0.518,
+    "recurrence_count": 1,
+    "baseline_cycle_p85_days": 6.9,
+    "created_at": "2026-03-12T00:00:00+00:00"
+  },
+  {
+    "insight_id": "INS-2044",
+    "component": "infra",
+    "blocker_type": null,
+    "severity": null,
+    "owner": null,
+    "owner_confidence": null,
+    "status": "no_issue",
+    "summary": "No delivery blocker detected for this infra/ change.",
+    "recommended_actions": [
+      "No action required \u2014 delivery is on track"
+    ],
+    "evidence": [],
+    "missing_sources": [],
+    "confidence": 0.612,
+    "recurrence_count": 3,
+    "baseline_cycle_p85_days": 5.9,
+    "created_at": "2025-10-31T00:00:00+00:00"
+  },
+  {
+    "insight_id": "INS-2045",
+    "component": "api",
+    "blocker_type": null,
+    "severity": null,
+    "owner": null,
+    "owner_confidence": null,
+    "status": "no_issue",
+    "summary": "No delivery blocker detected for this api/ change.",
+    "recommended_actions": [
+      "No action required \u2014 delivery is on track"
+    ],
+    "evidence": [],
+    "missing_sources": [],
+    "confidence": 0.793,
+    "recurrence_count": 3,
+    "baseline_cycle_p85_days": 6.2,
+    "created_at": "2025-12-28T00:00:00+00:00"
+  },
+  {
+    "insight_id": "INS-2046",
+    "component": "auth",
+    "blocker_type": null,
+    "severity": null,
+    "owner": null,
+    "owner_confidence": null,
+    "status": "no_issue",
+    "summary": "No delivery blocker detected for this auth/ change.",
+    "recommended_actions": [
+      "No action required \u2014 delivery is on track"
+    ],
+    "evidence": [],
+    "missing_sources": [],
+    "confidence": 0.567,
+    "recurrence_count": 1,
+    "baseline_cycle_p85_days": 4.9,
+    "created_at": "2025-11-19T00:00:00+00:00"
+  },
+  {
+    "insight_id": "INS-2047",
+    "component": "api",
+    "blocker_type": "scope_creep",
+    "severity": 2,
+    "owner": "eng_dave",
+    "owner_confidence": 0.66,
+    "status": "insight",
+    "summary": "Diff in api/ significantly exceeds ticket estimate, indicating scope creep.",
+    "recommended_actions": [
+      "Split the PR into smaller focused changes",
+      "Update the ticket with revised estimate"
+    ],
+    "evidence": [],
+    "missing_sources": [],
+    "confidence": 0.935,
+    "recurrence_count": 2,
+    "baseline_cycle_p85_days": 7.6,
+    "created_at": "2025-11-24T00:00:00+00:00"
+  },
+  {
+    "insight_id": "INS-2048",
+    "component": "infra",
+    "blocker_type": "dependency_block",
+    "severity": 2,
+    "owner": null,
+    "owner_confidence": null,
+    "status": "insight",
+    "summary": "PR in infra/ is blocked on an external dependency resolution.",
+    "recommended_actions": [
+      "Escalate dependency to owning team with deadline",
+      "Evaluate if the PR can be scoped to avoid the dependency"
+    ],
+    "evidence": [],
+    "missing_sources": [],
+    "confidence": 0.931,
+    "recurrence_count": 1,
+    "baseline_cycle_p85_days": 4.7,
+    "created_at": "2026-03-30T00:00:00+00:00"
+  },
+  {
+    "insight_id": "INS-2049",
+    "component": "api",
+    "blocker_type": "scope_creep",
+    "severity": 2,
+    "owner": "eng_frank",
+    "owner_confidence": 0.784,
+    "status": "insight",
+    "summary": "Diff in api/ significantly exceeds ticket estimate, indicating scope creep.",
+    "recommended_actions": [
+      "Split the PR into smaller focused changes",
+      "Update the ticket with revised estimate"
+    ],
+    "evidence": [],
+    "missing_sources": [],
+    "confidence": 0.896,
+    "recurrence_count": 2,
+    "baseline_cycle_p85_days": 4.0,
+    "created_at": "2026-01-23T00:00:00+00:00"
+  },
+  {
+    "insight_id": "INS-2050",
+    "component": "payments",
+    "blocker_type": "review_bottleneck",
+    "severity": 2,
+    "owner": null,
+    "owner_confidence": null,
+    "status": "insight",
+    "summary": "PR in payments/ has been awaiting review for an extended period, severity 2/5.",
+    "recommended_actions": [
+      "Assign a backup reviewer to unblock the PR",
+      "Add this reviewer to the sprint retrospective discussion"
+    ],
+    "evidence": [],
+    "missing_sources": [],
+    "confidence": 0.866,
+    "recurrence_count": 3,
+    "baseline_cycle_p85_days": 7.8,
+    "created_at": "2025-12-27T00:00:00+00:00"
+  },
+  {
+    "insight_id": "INS-2051",
+    "component": "dashboard",
+    "blocker_type": null,
+    "severity": null,
+    "owner": null,
+    "owner_confidence": null,
+    "status": "no_issue",
+    "summary": "No delivery blocker detected for this dashboard/ change.",
+    "recommended_actions": [
+      "No action required \u2014 delivery is on track"
+    ],
+    "evidence": [],
+    "missing_sources": [],
+    "confidence": 0.605,
+    "recurrence_count": 0,
+    "baseline_cycle_p85_days": 7.1,
+    "created_at": "2026-01-12T00:00:00+00:00"
+  },
+  {
+    "insight_id": "INS-2052",
+    "component": "infra",
+    "blocker_type": null,
+    "severity": null,
+    "owner": null,
+    "owner_confidence": null,
+    "status": "no_issue",
+    "summary": "No delivery blocker detected for this infra/ change.",
+    "recommended_actions": [
+      "No action required \u2014 delivery is on track"
+    ],
+    "evidence": [],
+    "missing_sources": [],
+    "confidence": 0.549,
+    "recurrence_count": 0,
+    "baseline_cycle_p85_days": 4.5,
+    "created_at": "2026-03-31T00:00:00+00:00"
+  },
+  {
+    "insight_id": "INS-2053",
+    "component": "api",
+    "blocker_type": null,
+    "severity": null,
+    "owner": null,
+    "owner_confidence": null,
+    "status": "no_issue",
+    "summary": "No delivery blocker detected for this api/ change.",
+    "recommended_actions": [
+      "No action required \u2014 delivery is on track"
+    ],
+    "evidence": [],
+    "missing_sources": [],
+    "confidence": 0.522,
+    "recurrence_count": 3,
+    "baseline_cycle_p85_days": 3.8,
+    "created_at": "2026-03-06T00:00:00+00:00"
+  },
+  {
+    "insight_id": "INS-2054",
+    "component": "payments",
+    "blocker_type": "review_bottleneck",
+    "severity": 2,
+    "owner": "eng_dave",
+    "owner_confidence": 0.779,
+    "status": "insight",
+    "summary": "PR in payments/ has been awaiting review for an extended period, severity 2/5.",
+    "recommended_actions": [
+      "Assign a backup reviewer to unblock the PR",
+      "Add this reviewer to the sprint retrospective discussion"
+    ],
+    "evidence": [],
+    "missing_sources": [],
+    "confidence": 0.751,
+    "recurrence_count": 1,
+    "baseline_cycle_p85_days": 6.0,
+    "created_at": "2026-04-11T00:00:00+00:00"
+  }
+]

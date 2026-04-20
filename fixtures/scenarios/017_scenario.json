@@ -1,0 +1,38 @@
+{
+  "scenario_id": "017",
+  "description": "Generated scenario \u2014 payments/ clean",
+  "pr": {
+    "pr_id": "PR-GEN-017",
+    "title": "Add webhook signature validation",
+    "author": "eng_eve",
+    "changed_files": [
+      "payments/validators.py"
+    ],
+    "diff_chunks": [
+      "# Generated diff chunk"
+    ],
+    "review_comments": [],
+    "created_at": "2026-04-15T00:00:00+00:00",
+    "days_open": 4,
+    "diff_line_count": 90
+  },
+  "ticket": {
+    "ticket_id": "PROJ-GEN-017",
+    "title": "Update payment validator edge cases",
+    "description": "Task description for generated scenario.",
+    "status": "In Progress",
+    "assignee": "eng_eve",
+    "component": "payments",
+    "created_at": "2026-04-13T00:00:00+00:00",
+    "sprint_name": "Sprint 24"
+  },
+  "slack": null,
+  "gold_output": {
+    "status": "no_issue",
+    "blocker_type": null,
+    "expected_severity_min": null,
+    "expected_owner": null,
+    "expected_recurrence_min": 0,
+    "notes": "Generated scenario \u2014 loose gold labels"
+  }
+}

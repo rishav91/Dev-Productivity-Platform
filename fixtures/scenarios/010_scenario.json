@@ -1,0 +1,38 @@
+{
+  "scenario_id": "010",
+  "description": "Generated scenario \u2014 dashboard/ clean",
+  "pr": {
+    "pr_id": "PR-GEN-010",
+    "title": "Refactor dashboard views",
+    "author": "eng_dave",
+    "changed_files": [
+      "dashboard/tests/test_views.py"
+    ],
+    "diff_chunks": [
+      "# Generated diff chunk"
+    ],
+    "review_comments": [],
+    "created_at": "2026-04-18T00:00:00+00:00",
+    "days_open": 1,
+    "diff_line_count": 482
+  },
+  "ticket": {
+    "ticket_id": "PROJ-GEN-010",
+    "title": "Add new chart component",
+    "description": "Task description for generated scenario.",
+    "status": "In Progress",
+    "assignee": "eng_dave",
+    "component": "dashboard",
+    "created_at": "2026-04-16T00:00:00+00:00",
+    "sprint_name": "Sprint 24"
+  },
+  "slack": null,
+  "gold_output": {
+    "status": "no_issue",
+    "blocker_type": null,
+    "expected_severity_min": null,
+    "expected_owner": null,
+    "expected_recurrence_min": 0,
+    "notes": "Generated scenario \u2014 loose gold labels"
+  }
+}

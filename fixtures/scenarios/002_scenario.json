@@ -1,0 +1,46 @@
+{
+  "scenario_id": "002",
+  "description": "Scope creep in api/ \u2014 PR diff far exceeds ticket estimate",
+  "pr": {
+    "pr_id": "PR-DEMO-002",
+    "title": "Update serializers for v2 schema",
+    "author": "eng_frank",
+    "changed_files": [
+      "api/serializers.py",
+      "api/routes.py",
+      "api/pagination.py",
+      "api/tests/test_routes.py"
+    ],
+    "diff_chunks": [
+      "# Major refactor of serialization layer",
+      "# Added 12 new endpoint handlers",
+      "# Rewrote pagination logic"
+    ],
+    "review_comments": [
+      "This is much bigger than the ticket described",
+      "Should we split this into smaller PRs?"
+    ],
+    "created_at": "2026-04-16T00:00:00+00:00",
+    "days_open": 3,
+    "diff_line_count": 847
+  },
+  "ticket": {
+    "ticket_id": "PROJ-502",
+    "title": "Update API serializers for v2 schema",
+    "description": "Small change to update serializer field names to match v2 schema. Estimate: 2-3 hours.",
+    "status": "In Progress",
+    "assignee": "eng_frank",
+    "component": "api",
+    "created_at": "2026-04-14T00:00:00+00:00",
+    "sprint_name": "Sprint 24"
+  },
+  "slack": null,
+  "gold_output": {
+    "status": "insight",
+    "blocker_type": "scope_creep",
+    "expected_severity_min": 3,
+    "expected_owner": "eng_frank",
+    "expected_recurrence_min": 0,
+    "notes": "847 lines vs 'small change' estimate (2-3 hours), no Slack provided"
+  }
+}

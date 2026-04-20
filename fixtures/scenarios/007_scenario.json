@@ -1,0 +1,42 @@
+{
+  "scenario_id": "007",
+  "description": "Generated scenario \u2014 payments/ with blocker",
+  "pr": {
+    "pr_id": "PR-GEN-007",
+    "title": "Fix payment processor retry logic",
+    "author": "eng_alice",
+    "changed_files": [
+      "payments/webhook.py",
+      "payments/tests/test_processor.py",
+      "payments/validators.py"
+    ],
+    "diff_chunks": [
+      "# Generated diff chunk"
+    ],
+    "review_comments": [
+      "Awaiting review \u2014 day 7"
+    ],
+    "created_at": "2026-04-12T00:00:00+00:00",
+    "days_open": 7,
+    "diff_line_count": 406
+  },
+  "ticket": {
+    "ticket_id": "PROJ-GEN-007",
+    "title": "Refactor payment models for new schema",
+    "description": "Task description for generated scenario.",
+    "status": "In Progress",
+    "assignee": "eng_alice",
+    "component": "payments",
+    "created_at": "2026-04-10T00:00:00+00:00",
+    "sprint_name": "Sprint 24"
+  },
+  "slack": null,
+  "gold_output": {
+    "status": "insight",
+    "blocker_type": "review_bottleneck",
+    "expected_severity_min": 2,
+    "expected_owner": null,
+    "expected_recurrence_min": 0,
+    "notes": "Generated scenario \u2014 loose gold labels"
+  }
+}

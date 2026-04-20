@@ -1,0 +1,59 @@
+{
+  "scenario_id": "004",
+  "description": "Dependency block in infra/ \u2014 waiting on external team",
+  "pr": {
+    "pr_id": "PR-DEMO-004",
+    "title": "Update Terraform to use new VPC module",
+    "author": "eng_dave",
+    "changed_files": [
+      "infra/terraform/main.tf"
+    ],
+    "diff_chunks": [
+      "- vpc_module = \"v1.2\"\n+ vpc_module = \"v2.0\""
+    ],
+    "review_comments": [
+      "Blocked \u2014 waiting on networking team to publish v2.0 module"
+    ],
+    "created_at": "2026-04-14T00:00:00+00:00",
+    "days_open": 5,
+    "diff_line_count": 23
+  },
+  "ticket": {
+    "ticket_id": "PROJ-510",
+    "title": "Upgrade VPC Terraform module to v2",
+    "description": "Upgrade to v2.0 of internal VPC module for improved security groups.",
+    "status": "Blocked",
+    "assignee": "eng_dave",
+    "component": "infra",
+    "created_at": "2026-04-12T00:00:00+00:00",
+    "sprint_name": "Sprint 24"
+  },
+  "slack": {
+    "thread_ts": "1745001000.000001",
+    "channel": "C_INFRA",
+    "messages": [
+      {
+        "user_id": "eng_dave",
+        "text": "Still waiting on networking team for VPC v2 module",
+        "ts": "1745001100.000001"
+      },
+      {
+        "user_id": "eng_eve",
+        "text": "They said next week earliest",
+        "ts": "1745001200.000001"
+      }
+    ],
+    "participant_ids": [
+      "eng_dave",
+      "eng_eve"
+    ]
+  },
+  "gold_output": {
+    "status": "insight",
+    "blocker_type": "dependency_block",
+    "expected_severity_min": 2,
+    "expected_owner": "eng_dave",
+    "expected_recurrence_min": 0,
+    "notes": "Clear dependency block signal in ticket status + Slack"
+  }
+}
